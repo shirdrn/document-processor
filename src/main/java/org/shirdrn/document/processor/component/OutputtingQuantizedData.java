@@ -1,6 +1,7 @@
 package org.shirdrn.document.processor.component;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -26,13 +27,18 @@ public class OutputtingQuantizedData extends AbstractComponent {
 	private int wordNumber = 0;
 	private BufferedWriter writer;
 	private static final String CHARSET = "UTF-8"; 
+	private final File outputDir;
+	private final String termFile = "terms.txt";
+	private final String labelFile = "labels.txt";
 	
 	public OutputtingQuantizedData(Context context) {
 		super(context);
-		String output = context.getConfiguration().get("processor.dataset.train.svm.verctor.file");
-		LOG.info("Output path: output=" + output);
+		String dir = context.getConfiguration().get("processor.dataset.train.output.dir");
+		LOG.info("Output path: output=" + dir);
+		outputDir = new File(dir);
+		String train = context.getConfiguration().get("processor.dataset.train.svm.verctor.file");
 		try {
-			writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(output), CHARSET));
+			writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(outputDir, train)), CHARSET));
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
@@ -77,8 +83,43 @@ public class OutputtingQuantizedData extends AbstractComponent {
 				e.printStackTrace();
 			}
 		}
+		
+		// output labels and terms
+		output();
 	}
 	
+	private void output() {
+		output(labelFile, labelNumberMap);
+		output(termFile, wordNumberMap);
+	}
+
+	private void output(String file, Map<String, Integer> map) {
+		BufferedWriter w = null;
+		try {
+			w = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(
+					new File(outputDir, file)), CHARSET));
+			Iterator<Entry<String, Integer>> iter = map.entrySet().iterator();
+			while(iter.hasNext()) {
+				Entry<String, Integer> entry = iter.next();
+				w.write(entry.getValue().toString() + " " + entry.getKey());
+				w.newLine();
+			}
+			LOG.info("Output file: file=" + file);
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if(w != null) {
+				try {
+					w.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
 	private int getLabelNumber(String label) {
 		if(!labelNumberMap.containsKey(label)) {
 			labelNumber++;
