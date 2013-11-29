@@ -67,7 +67,15 @@ public class Term {
 	
 	@Override
 	public String toString() {
-		return "[word=" + word + ", freq=" + freq + ", tf=" + tf + ", tfidf=" + tfidf + "]";
+		StringBuffer buffer = new StringBuffer();
+		buffer.append("[")
+			.append("word=").append(word).append(", ")
+			.append("freq=").append(freq).append(", ")
+			.append("tf=").append(tf).append(", ")
+			.append("idf=").append(idf).append(", ")
+			.append("tf-idf=").append(tfidf)
+			.append("]");
+		return buffer.toString();
 	}
 
 }
