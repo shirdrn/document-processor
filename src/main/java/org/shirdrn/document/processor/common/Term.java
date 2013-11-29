@@ -21,8 +21,8 @@ public class Term {
 		return freq;
 	}
 
-	public void setFreq(int freq) {
-		this.freq = freq;
+	public void incrFreq() {
+		freq++;
 	}
 
 	public double getTf() {

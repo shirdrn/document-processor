@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import kevin.zhang.NLPIR;
@@ -42,10 +44,10 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 	}
 
 	@Override
-	public Set<Term> analyze(File file) {
+	public Map<String, Term> analyze(File file) {
 		String doc = file.getAbsolutePath();
 		LOG.info("Process document: file=" + doc);
-		Set<Term> terms = new HashSet<Term>(0);
+		Map<String, Term> terms = new HashMap<String, Term>(0);
 		BufferedReader br = null;
 		try {
 			br = new BufferedReader(new FileReader(file));
@@ -55,19 +57,23 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 				if(!line.isEmpty()) {
 					byte nativeBytes[] = analyzer.NLPIR_ParagraphProcess(line.getBytes(charSet), 1);
 					String content = new String(nativeBytes, 0, nativeBytes.length, charSet);
-					String[] words = content.split("\\s+");
-					for(String word : words) {
-						String[] ws = word.split("/");
-						if(ws.length == 2) {
-							String w = ws[0];
-							String lexicalCategory = ws[1];
-							if(!super.isStopword(w) 
+					String[] rawWords = content.split("\\s+");
+					for(String rawWord : rawWords) {
+						String[] words = rawWord.split("/");
+						if(words.length == 2) {
+							String word = words[0];
+							String lexicalCategory = words[1];
+							if(!super.isStopword(word) 
 									&& keptLexicalCategories.contains(lexicalCategory)) {
-								LOG.debug("Kept word: word" + w);
-								Term term = new Term(w);
-								terms.add(term);
+								LOG.debug("Kept word: word" + word);
+								Term term = terms.get(word);
+								if(term == null) {
+									term = new Term(word);
+									terms.put(word, term);
+								}
+								term.incrFreq();
 							} else {
-								LOG.debug("Discard: word=" + word);
+								LOG.debug("Discard: word=" + rawWord);
 							}
 						}
 					}

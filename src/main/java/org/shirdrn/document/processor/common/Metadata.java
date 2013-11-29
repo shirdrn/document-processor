@@ -68,9 +68,11 @@ public class Metadata {
 		docs.add(doc);
 	}
 	
-	public void addTermsToInvertedTable(String label, String doc, Set<Term> terms) {
-		for(Term term : terms) {
-			addTermToInvertedTable(label, doc, term);
+	public void addTermsToInvertedTable(String label, String doc, Map<String, Term> terms) {
+		Iterator<Entry<String, Term>> iter = terms.entrySet().iterator();
+		while(iter.hasNext()) {
+			Entry<String, Term> entry = iter.next();
+			addTermToInvertedTable(label, doc, entry.getValue());
 		}
 	}
 	
@@ -99,30 +101,13 @@ public class Metadata {
 		return size;
 	}
 	
-	public void addTerm(String label, String doc, Term term) {
+	public void addTerms(String label, String doc, Map<String, Term> terms) {
 		Map<String, Map<String, Term>> docs = termTable.get(label);
 		if(docs == null) {
 			docs = new HashMap<String, Map<String, Term>>();
 			termTable.put(label, docs);
 		}
-		Map<String, Term> terms = docs.get(doc);
-		if(terms == null) {
-			terms = new HashMap<String, Term>();
-			docs.put(doc, terms);
-		}
-		String word = term.getWord();
-		Term t = terms.get(word);
-		if(t == null) {
-			t = term;
-			terms.put(word, t);
-		}
-		t.setFreq(1 + t.getFreq());
-	}
-	
-	public void addTerms(String label, String doc, Set<Term> terms) {
-		for(Term term : terms) {
-			addTerm(label, doc, term);
-		}
+		docs.put(doc, terms);
 	}
 	
 	public int getLabelCount() {

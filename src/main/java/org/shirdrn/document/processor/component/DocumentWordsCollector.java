@@ -5,7 +5,6 @@ import java.io.FileFilter;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -49,12 +48,12 @@ public class DocumentWordsCollector extends AbstractDatasetManager {
 	private void analyze(String label, File file) {
 		String doc = file.getAbsolutePath();
 		LOG.info("Process document: label=" + label + ", file=" + doc);
-		Set<Term> terms = analyzer.analyze(file);
+		Map<String, Term> terms = analyzer.analyze(file);
 		context.getMetadata().addTerms(label, doc, terms);
 		// add inverted table as needed
 		context.getMetadata().addTermsToInvertedTable(label, doc, terms);
 		LOG.info("Done: file=" + file + ", termCount=" + terms.size());
-		LOG.debug("Terms: terms=" + terms);
+		LOG.debug("Terms in a doc: terms=" + terms);
 	}
 
 	private void stat() {

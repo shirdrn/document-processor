@@ -25,8 +25,8 @@ public class OutputtingQuantizedData extends AbstractDatasetManager {
 	private int labelNumber = 0;
 	private int wordNumber = 0;
 	private BufferedWriter writer;
-	private final String termFile = "terms.txt";
-	private final String labelFile = "labels.txt";
+	private final String termsFileName = "terms.txt";
+	private final String labelFileName = "labels.txt";
 	
 	public OutputtingQuantizedData(Context context) {
 		super(context);
@@ -78,12 +78,16 @@ public class OutputtingQuantizedData extends AbstractDatasetManager {
 		}
 		
 		// output labels and terms
-		output();
+		if(isTrainOpen) {
+			output();
+		}
 	}
 	
 	private void output() {
-		output(labelFile, labelNumberMap);
-		output(termFile, wordNumberMap);
+		LOG.info("Output label mapping file: labelFile=" + new File(outputDir, labelFileName));
+		output(labelFileName, labelNumberMap);
+		LOG.info("Output term mapping file: termsFile=" + new File(outputDir, termsFileName));
+		output(termsFileName, wordNumberMap);
 	}
 
 	private void output(String file, Map<String, Integer> map) {
@@ -97,7 +101,6 @@ public class OutputtingQuantizedData extends AbstractDatasetManager {
 				w.write(entry.getValue().toString() + " " + entry.getKey());
 				w.newLine();
 			}
-			LOG.info("Output file: file=" + file);
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

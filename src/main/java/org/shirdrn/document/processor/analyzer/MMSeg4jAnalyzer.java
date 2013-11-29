@@ -6,8 +6,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringReader;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -33,10 +33,10 @@ public class MMSeg4jAnalyzer extends AbstractDocumentAnalyzer implements Documen
 	}
 	
 	@Override
-	public Set<Term> analyze(File file) {
+	public Map<String, Term> analyze(File file) {
 		String doc = file.getAbsolutePath();
 		LOG.info("Process document: file=" + doc);
-		Set<Term> terms = new HashSet<Term>(0);
+		Map<String, Term> terms = new HashMap<String, Term>(0);
 		BufferedReader br = null;
 		try {
 			br = new BufferedReader(
@@ -50,10 +50,13 @@ public class MMSeg4jAnalyzer extends AbstractDocumentAnalyzer implements Documen
 					CharTermAttributeImpl attr = (CharTermAttributeImpl) ts.getAttribute(CharTermAttribute.class);  
 					String word = attr.toString().trim();
 					if(!word.isEmpty() && !super.isStopword(word)) {
-						Term term = new Term(word);
-						terms.add(term);
+						Term term = terms.get(word);
+						if(term == null) {
+							term = new Term(word);
+						}
+						term.incrFreq();
 					} else {
-						LOG.info("Filter out stop word: file=" + file + ", word=" + word);
+						LOG.debug("Filter out stop word: file=" + file + ", word=" + word);
 					}
 				}
 				ts.close();
