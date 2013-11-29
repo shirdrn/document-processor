@@ -14,6 +14,7 @@ import org.shirdrn.document.processor.utils.MetricUtils;
 public class DocumentTFIDFComputation extends AbstractComponent {
 
 	private static final Log LOG = LogFactory.getLog(DocumentTFIDFComputation.class);
+	
 	public DocumentTFIDFComputation(Context context) {
 		super(context);
 	}
@@ -42,7 +43,7 @@ public class DocumentTFIDFComputation extends AbstractComponent {
 					termEntry.getValue().setIdf(idf);
 					termEntry.getValue().setTf(tf);
 					termEntry.getValue().setTfidf(MetricUtils.tfidf(tf, idf));
-					LOG.info("Term detail: term=" + term);
+					LOG.info("Term detail: label=" + label + ", doc=" + doc + ", term=" + term);
 				}
 			}
 		}		
