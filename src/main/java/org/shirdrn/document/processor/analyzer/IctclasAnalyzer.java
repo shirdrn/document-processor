@@ -19,7 +19,6 @@ import org.shirdrn.document.processor.config.Configuration;
 public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements DocumentAnalyzer {
 
 	private static final Log LOG = LogFactory.getLog(IctclasAnalyzer.class);
-	private static final String CHARSET = "UTF-8";
 	private final NLPIR analyzer;
 	private final Set<String> keptLexicalCategories = new HashSet<String>();
 	
@@ -27,7 +26,7 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 		super(configuration);
 		analyzer = new NLPIR();
 		try {
-			boolean initialized = NLPIR.NLPIR_Init(".".getBytes(CHARSET), 1);
+			boolean initialized = NLPIR.NLPIR_Init(".".getBytes(charSet), 1);
 			if(!initialized) {
 				throw new RuntimeException("Fail to initialize!");
 			}
@@ -54,8 +53,8 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 			while((line = br.readLine()) != null) {
 				line = line.trim();
 				if(!line.isEmpty()) {
-					byte nativeBytes[] = analyzer.NLPIR_ParagraphProcess(line.getBytes(CHARSET), 1);
-					String content = new String(nativeBytes, 0, nativeBytes.length, CHARSET);
+					byte nativeBytes[] = analyzer.NLPIR_ParagraphProcess(line.getBytes(charSet), 1);
+					String content = new String(nativeBytes, 0, nativeBytes.length, charSet);
 					String[] words = content.split("\\s+");
 					for(String word : words) {
 						String[] ws = word.split("/");

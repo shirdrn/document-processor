@@ -16,11 +16,18 @@ import org.shirdrn.document.processor.config.Configuration;
 public class AbstractDocumentAnalyzer {
 
 	private static final Log LOG = LogFactory.getLog(AbstractDocumentAnalyzer.class);
+	protected String charSet = "UTF-8";
 	protected final Configuration configuration;
 	private final Set<String> stopwords = new HashSet<String>();
 	
 	public AbstractDocumentAnalyzer(Configuration configuration) {
 		this.configuration = configuration;
+		// set charset
+		String charSet = configuration.get("processor.common.charset");
+		if(charSet != null) {
+			this.charSet = charSet;
+		}
+		// stop words
 		String stopWordsDir = configuration.get("processor.analyzer.stopwords.path");
 		if(stopWordsDir != null) {
 			File dir = new File(stopWordsDir);
