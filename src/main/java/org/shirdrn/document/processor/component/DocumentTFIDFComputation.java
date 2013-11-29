@@ -32,7 +32,6 @@ public class DocumentTFIDFComputation extends AbstractComponent {
 				String doc = docsEntry.getKey();
 				Map<String, Term> terms = docsEntry.getValue();
 				for(Entry<String, Term> termEntry : terms.entrySet()) {
-					String word = termEntry.getKey();
 					Term term = termEntry.getValue();
 					int freq = term.getFreq();
 					int termCount = context.getMetadata().getTermCount(label, doc);

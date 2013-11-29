@@ -2,7 +2,6 @@ package org.shirdrn.document.processor.component;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -14,11 +13,11 @@ import java.util.Map.Entry;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.shirdrn.document.processor.common.AbstractComponent;
+import org.shirdrn.document.processor.common.AbstractDatasetManager;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.Term;
 
-public class OutputtingQuantizedData extends AbstractComponent {
+public class OutputtingQuantizedData extends AbstractDatasetManager {
 
 	private static final Log LOG = LogFactory.getLog(OutputtingQuantizedData.class);
 	private final Map<String, Integer> labelNumberMap = new HashMap<String, Integer>();
@@ -26,28 +25,22 @@ public class OutputtingQuantizedData extends AbstractComponent {
 	private int labelNumber = 0;
 	private int wordNumber = 0;
 	private BufferedWriter writer;
-	private static final String CHARSET = "UTF-8"; 
-	private final File outputDir;
 	private final String termFile = "terms.txt";
 	private final String labelFile = "labels.txt";
 	
 	public OutputtingQuantizedData(Context context) {
 		super(context);
-		String dir = context.getConfiguration().get("processor.dataset.train.output.dir");
-		LOG.info("Output path: output=" + dir);
-		outputDir = new File(dir);
-		String train = context.getConfiguration().get("processor.dataset.train.svm.verctor.file");
-		try {
-			writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(outputDir, train)), CHARSET));
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
 	}
 
 	@Override
 	public void fire() {
+		super.fire();
+		try {
+			writer = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream(new File(outputDir, outputVectorFile)), charSet));
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getMetadata().termTableIterator();
 		while(iter.hasNext()) {
 			Entry<String, Map<String, Map<String, Term>>> labelledDocsEntry = iter.next();
@@ -97,7 +90,7 @@ public class OutputtingQuantizedData extends AbstractComponent {
 		BufferedWriter w = null;
 		try {
 			w = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(
-					new File(outputDir, file)), CHARSET));
+					new File(outputDir, file)), charSet));
 			Iterator<Entry<String, Integer>> iter = map.entrySet().iterator();
 			while(iter.hasNext()) {
 				Entry<String, Integer> entry = iter.next();

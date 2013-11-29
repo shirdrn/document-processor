@@ -9,13 +9,13 @@ import java.util.Set;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.shirdrn.document.processor.common.AbstractComponent;
+import org.shirdrn.document.processor.common.AbstractDatasetManager;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.DocumentAnalyzer;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.utils.ReflectionUtils;
 
-public class DocumentWordsCollector extends AbstractComponent {
+public class DocumentWordsCollector extends AbstractDatasetManager {
 	
 	private static final Log LOG = LogFactory.getLog(DocumentWordsCollector.class);
 	private DocumentAnalyzer analyzer;
@@ -30,13 +30,12 @@ public class DocumentWordsCollector extends AbstractComponent {
 	
 	@Override
 	public void fire() {
-		File trainDatasetRootDir = context.getMetadata().getTrainDatasetRootDir();
-		for(String label : trainDatasetRootDir.list()) {
-			File labelDir = new File(trainDatasetRootDir, label);
+		for(String label : inputRootDir.list()) {
+			File labelDir = new File(inputRootDir, label);
 			File[] files = labelDir.listFiles(new FileFilter() {
 				@Override
 				public boolean accept(File pathname) {
-					return pathname.getAbsolutePath().endsWith(context.getMetadata().getFileExtensionName());
+					return pathname.getAbsolutePath().endsWith(fileExtensionName);
 				}
 			});
 			for(File file : files) {
