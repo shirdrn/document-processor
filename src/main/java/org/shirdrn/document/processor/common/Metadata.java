@@ -1,6 +1,5 @@
 package org.shirdrn.document.processor.common;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -12,9 +11,6 @@ import java.util.Set;
 
 public class Metadata {
 
-	private File trainDatasetRootDir;
-	private String fileExtensionName;
-	
 	private int totalDocCount;
 	private final List<String> labels = new ArrayList<String>();
 	// Map<类别, 文档数量>
@@ -25,22 +21,6 @@ public class Metadata {
 	//  Map<词 ,Map<类别, Set<文档>>>
 	private final Map<String, Map<String, Set<String>>> invertedTable = 
 			new HashMap<String, Map<String, Set<String>>>();
-	
-	public File getTrainDatasetRootDir() {
-		return trainDatasetRootDir;
-	}
-
-	public void setTrainDatasetRootDir(File trainDatasetRootDir) {
-		this.trainDatasetRootDir = trainDatasetRootDir;
-	}
-
-	public String getFileExtensionName() {
-		return fileExtensionName;
-	}
-
-	public void setFileExtensionName(String fileExtensionName) {
-		this.fileExtensionName = fileExtensionName;
-	}
 	
 	public void addLabel(String label) {
 		if(!labels.contains(label)) {
