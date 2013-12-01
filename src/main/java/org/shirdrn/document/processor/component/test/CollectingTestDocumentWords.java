@@ -23,7 +23,6 @@ public class CollectingTestDocumentWords extends AbstractDocumentWordsCollector 
 	
 	public CollectingTestDocumentWords(Context context) {
 		super(context);
-		CheckUtils.checkFileExists(labelVectorFile);
 	}
 
 	@Override
@@ -34,6 +33,9 @@ public class CollectingTestDocumentWords extends AbstractDocumentWordsCollector 
 	
 	@Override
 	protected void loadVectors() {
+		// check files
+		CheckUtils.checkFileExists(labelVectorFile);
+		CheckUtils.checkFileExists(termVectorFile);
 		// load term vector
 		loadTermVector();
 		// load label vector
