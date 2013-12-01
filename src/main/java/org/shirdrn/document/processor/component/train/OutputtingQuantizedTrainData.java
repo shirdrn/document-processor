@@ -30,7 +30,7 @@ public class OutputtingQuantizedTrainData extends AbstractOutputtingQuantizedDat
 		LOG.info("Output label mapping file: labelFile=" + labelVectorFile);
 		output(labelVectorFile, context.getMetadata().labelVectorMapIterator());
 		LOG.info("Output term mapping file: termsFile=" + termVectorFile);
-		output(labelVectorFile, context.getMetadata().termVectorMapIterator());
+		output(termVectorFile, context.getMetadata().termVectorMapIterator());
 	}
 	
 	private void output(File file, Iterator<Entry<String, Integer>> iter) {
