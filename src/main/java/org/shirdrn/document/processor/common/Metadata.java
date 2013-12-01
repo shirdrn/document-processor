@@ -51,6 +51,9 @@ public class Metadata {
 		labelledTotalDocCountMap.put(label, labelledDocCount);
 	}
 	
+	
+	//////// inverted table ////////
+	
 	public int getDocCount(Term term, String label) {
 		String word = term.getWord();
 		return invertedTable.get(word).get(label).size();
@@ -79,10 +82,6 @@ public class Metadata {
 		}
 	}
 	
-	public int getDocCount(String label) {
-		return termTable.get(label).size();
-	}
-	
 	public int getDocCount(Term term) {
 		String word = term.getWord();
 		int count = 0;
@@ -94,8 +93,18 @@ public class Metadata {
 		return count;
 	}
 	
+	public Iterator<Entry<String, Map<String, Set<String>>>> invertedTableIterator() {
+		return invertedTable.entrySet().iterator();
+	}
+	
 	public int getDocCountInThisLabel(Term term) {
 		return invertedTable.get(term.getWord()).size();
+	}
+	
+	//////// term table ////////
+	
+	public int getDocCount(String label) {
+		return termTable.get(label).size();
 	}
 	
 	public int getTermCount(String label, String doc) {
@@ -121,13 +130,11 @@ public class Metadata {
 		return termTable.keySet().size();
 	}
 	
-	public Iterator<Entry<String, Map<String, Set<String>>>> invertedTableIterator() {
-		return invertedTable.entrySet().iterator();
-	}
-	
 	public Iterator<Entry<String, Map<String, Map<String, Term>>>> termTableIterator() {
 		return termTable.entrySet().iterator();
 	}
+	
+	//////// term vector map ////////
 	
 	public Iterator<Entry<String, Integer>> termVectorMapIterator() {
 		return termVectorMap.entrySet().iterator();
@@ -145,15 +152,17 @@ public class Metadata {
 		termVectorMap.put(word, number);
 	}
 	
+	//////// label vector map
+	
 	public Iterator<Entry<String, Integer>> labelVectorMapIterator() {
 		return labelVectorMap.entrySet().iterator();
 	}
 	
 	public Integer getlabelNumber(String label) {
-		return termVectorMap.get(label);
+		return labelVectorMap.get(label);
 	}
 	
 	public void putLabelNumber(Integer number, String label) {
-		termVectorMap.put(label, number);
+		labelVectorMap.put(label, number);
 	}
 }
