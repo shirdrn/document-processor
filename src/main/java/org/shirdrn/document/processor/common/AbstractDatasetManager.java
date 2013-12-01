@@ -9,20 +9,37 @@ import org.shirdrn.document.processor.utils.CheckUtils;
 public abstract class AbstractDatasetManager extends AbstractComponent {
 
 	private static final Log LOG = LogFactory.getLog(AbstractDatasetManager.class);
-	protected final File inputRootDir;
-	protected final File outputDir;
-	protected final String outputVectorFile;
-	protected final String fileExtensionName;
-	protected final boolean isTrainOpen;
-	protected final boolean isTestOpen;
+	protected File inputRootDir;
+	protected File outputDir;
+	protected String outputVectorFile;
+	protected String fileExtensionName;
+	protected boolean isTrainOpen;
+	
+	protected boolean isTestOpen;
+	protected File termVectorFile;
+	protected File labelVectorFile;
 	
 	public AbstractDatasetManager(Context context) {
 		super(context);
-		fileExtensionName = context.getConfiguration().get("processor.dataset.train.file.extension", "");
+	}
+
+	@Override
+	public void fire() {
+		fileExtensionName = context.getConfiguration().get("processor.dataset.file.extension", "");
+		String termsFile = context.getConfiguration().get("processor.dataset.term.vector.file");
+		CheckUtils.checkNotNull(termsFile, "processor.dataset.term.vector.file");
+		termVectorFile = new File(termsFile);
+		
+		String labelsFile = context.getConfiguration().get("processor.dataset.label.vector.file");
+		CheckUtils.checkNotNull(labelsFile, "processor.dataset.label.vector.file");
+		labelVectorFile = new File(labelsFile);
+		
 		LOG.info("Train dataset file extension: name=" + fileExtensionName);
 		isTrainOpen = context.getConfiguration().getBoolean("processor.dataset.train.isopen", false);
 		isTestOpen = context.getConfiguration().getBoolean("processor.dataset.test.isopen", false);
-		if(isTrainOpen && isTestOpen) {
+		
+		// at least one is opened
+		if((isTrainOpen && isTestOpen) || (!isTrainOpen && !isTestOpen)) {
 			throw new RuntimeException("Please set open flag for TRAINING, or TEST, not BOTH!");			
 		}
 		if(isTrainOpen) {
@@ -50,16 +67,16 @@ public abstract class AbstractDatasetManager extends AbstractComponent {
 			inputRootDir = new File(testInputRootDir);
 			outputVectorFile = test;
 			outputDir = new File(testOutputDir);
+			
+			CheckUtils.checkFileExists(termVectorFile);
 		}
+		CheckUtils.checkFileExists(inputRootDir);
+		CheckUtils.checkFileExists(outputDir);
 		
 		// log file or directory information
 		LOG.info("Vector input root directory: outputDir=" + inputRootDir);
 		LOG.info("Vector output directory: outputDir=" + outputDir);
 		LOG.info("Vector output file: outputFile=" + outputVectorFile);
-	}
-
-	@Override
-	public void fire() {
 	}
 
 }

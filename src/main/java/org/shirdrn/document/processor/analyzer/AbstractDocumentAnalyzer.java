@@ -1,4 +1,4 @@
-package org.shirdrn.document.processor.common;
+package org.shirdrn.document.processor.analyzer;
 
 import java.io.BufferedReader;
 import java.io.File;

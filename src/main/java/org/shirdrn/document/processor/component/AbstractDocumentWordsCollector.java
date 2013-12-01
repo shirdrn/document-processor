@@ -14,12 +14,12 @@ import org.shirdrn.document.processor.common.DocumentAnalyzer;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.utils.ReflectionUtils;
 
-public class DocumentWordsCollector extends AbstractDatasetManager {
+public abstract class AbstractDocumentWordsCollector extends AbstractDatasetManager {
 	
-	private static final Log LOG = LogFactory.getLog(DocumentWordsCollector.class);
-	private DocumentAnalyzer analyzer;
+	private static final Log LOG = LogFactory.getLog(AbstractDocumentWordsCollector.class);
+	protected DocumentAnalyzer analyzer;
 
-	public DocumentWordsCollector(Context context) {
+	public AbstractDocumentWordsCollector(Context context) {
 		super(context);
 		String analyzerClass = context.getConfiguration().get("processor.document.analyzer.class");
 		LOG.info("Analyzer class name: class=" + analyzerClass);
@@ -29,6 +29,8 @@ public class DocumentWordsCollector extends AbstractDatasetManager {
 	
 	@Override
 	public void fire() {
+		super.fire();
+		loadVectors();
 		for(String label : inputRootDir.list()) {
 			File labelDir = new File(inputRootDir, label);
 			File[] files = labelDir.listFiles(new FileFilter() {
@@ -45,16 +47,9 @@ public class DocumentWordsCollector extends AbstractDatasetManager {
 		stat();
 	}
 	
-	private void analyze(String label, File file) {
-		String doc = file.getAbsolutePath();
-		LOG.info("Process document: label=" + label + ", file=" + doc);
-		Map<String, Term> terms = analyzer.analyze(file);
-		context.getMetadata().addTerms(label, doc, terms);
-		// add inverted table as needed
-		context.getMetadata().addTermsToInvertedTable(label, doc, terms);
-		LOG.info("Done: file=" + file + ", termCount=" + terms.size());
-		LOG.debug("Terms in a doc: terms=" + terms);
-	}
+	protected abstract void loadVectors();
+
+	protected abstract void analyze(String label, File file);
 
 	private void stat() {
 		LOG.info("STAT: totalDocCount=" + context.getMetadata().getTotalDocCount());

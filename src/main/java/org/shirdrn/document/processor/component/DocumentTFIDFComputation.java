@@ -39,7 +39,8 @@ public class DocumentTFIDFComputation extends AbstractComponent {
 					double tf = MetricUtils.tf(freq, termCount);
 					int totalDocCount = context.getMetadata().getTotalDocCount();
 					int docCountContainingTerm = context.getMetadata().getDocCount(term);
-					double idf = MetricUtils.idf(totalDocCount, docCountContainingTerm);
+					int docCountContainingTermInThisLabel = context.getMetadata().getDocCountInThisLabel(term);
+					double idf = MetricUtils.idf(totalDocCount, docCountContainingTermInThisLabel, docCountContainingTerm);
 					termEntry.getValue().setIdf(idf);
 					termEntry.getValue().setTf(tf);
 					termEntry.getValue().setTfidf(MetricUtils.tfidf(tf, idf));

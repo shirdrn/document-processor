@@ -13,7 +13,6 @@ import kevin.zhang.NLPIR;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.shirdrn.document.processor.common.AbstractDocumentAnalyzer;
 import org.shirdrn.document.processor.common.DocumentAnalyzer;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.config.Configuration;
@@ -89,7 +88,6 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 			} catch (IOException e) {
 				LOG.warn(e);
 			}
-			LOG.info("Done: file=" + file + ", termCount=" + terms.size());
 		}
 		return terms;
 	}

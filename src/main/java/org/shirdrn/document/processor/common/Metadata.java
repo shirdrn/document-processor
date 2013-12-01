@@ -22,6 +22,9 @@ public class Metadata {
 	private final Map<String, Map<String, Set<String>>> invertedTable = 
 			new HashMap<String, Map<String, Set<String>>>();
 	
+	private final Map<String, Integer> termVectorMap = new HashMap<String, Integer>(0); 
+	private final Map<String, Integer> labelVectorMap = new HashMap<String, Integer>(0);
+	
 	public void addLabel(String label) {
 		if(!labels.contains(label)) {
 			labels.add(label);
@@ -91,6 +94,10 @@ public class Metadata {
 		return count;
 	}
 	
+	public int getDocCountInThisLabel(Term term) {
+		return invertedTable.get(term.getWord()).size();
+	}
+	
 	public int getTermCount(String label, String doc) {
 		int size = 0;
 		// avoid empty file
@@ -120,5 +127,33 @@ public class Metadata {
 	
 	public Iterator<Entry<String, Map<String, Map<String, Term>>>> termTableIterator() {
 		return termTable.entrySet().iterator();
+	}
+	
+	public Iterator<Entry<String, Integer>> termVectorMapIterator() {
+		return termVectorMap.entrySet().iterator();
+	}
+	
+	public Integer getTermNumber(String word) {
+		return termVectorMap.get(word);
+	}
+	
+	public Integer getTermNumber(Term term) {
+		return termVectorMap.get(term.getWord());
+	}
+	
+	public void putTermNumber(Integer number, String word) {
+		termVectorMap.put(word, number);
+	}
+	
+	public Iterator<Entry<String, Integer>> labelVectorMapIterator() {
+		return labelVectorMap.entrySet().iterator();
+	}
+	
+	public Integer getlabelNumber(String label) {
+		return termVectorMap.get(label);
+	}
+	
+	public void putLabelNumber(Integer number, String label) {
+		termVectorMap.put(label, number);
 	}
 }

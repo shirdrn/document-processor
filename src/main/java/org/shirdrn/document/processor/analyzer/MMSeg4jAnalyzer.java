@@ -15,7 +15,6 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttributeImpl;
-import org.shirdrn.document.processor.common.AbstractDocumentAnalyzer;
 import org.shirdrn.document.processor.common.DocumentAnalyzer;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.config.Configuration;
