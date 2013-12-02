@@ -6,9 +6,8 @@ public class MetricUtils {
 		return (double) freq / termCount;
 	}
 	
-	public static double idf(int totalDocCount, 
-			int docCountContainingTermInThisLabel, int docCountContainingTerm) {
-		return log2((double) totalDocCount * docCountContainingTermInThisLabel / (1 + docCountContainingTerm));
+	public static double idf(int totalDocCount, int docCountContainingTerm) {
+		return log2((double) totalDocCount / (1 + docCountContainingTerm));
 	}
 	
 	private static double log2(double x) {
