@@ -27,7 +27,6 @@ public class DocumentProcessorDriver {
 					new DenoisingTrainDocumentTerms(context),
 					new OutputtingQuantizedTrainData(context)
 				};
-			prepareAndRun(chain);
 		} else {
 			// for test data
 			chain = new Component[] {
@@ -37,12 +36,12 @@ public class DocumentProcessorDriver {
 					new DenoisingTestDocumentTerms(context),
 					new OutputtingQuantizedTestData(context)
 				};
-			prepareAndRun(chain);
 		}
+		run(chain);
 		
 	}
 
-	private static void prepareAndRun(Component[] chain) {
+	private static void run(Component[] chain) {
 		for (int i = 0; i < chain.length - 1; i++) {
 			Component current = chain[i];
 			Component next = chain[i + 1];
