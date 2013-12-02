@@ -10,10 +10,15 @@ public class DenoisingTrainDocumentTerms extends AbstractDenoisingDocumentTerms 
 	}
 
 	@Override
-	protected double getMaxTFIDFPercent() {
+	protected int getKeptTermCount(int totalTermCount) {
 		double percent = 
 				context.getConfiguration().getDouble("processor.dataset.train.denoise.tfidf.maxpercent", 0.5);
-		return Math.min(percent, 0.5);
+		int keptTermCount = (int) Math.round((double) totalTermCount * percent);
+		int maxCount = keptTermCount;
+		if(keptTermCount == 0) {
+			maxCount = context.getConfiguration().getInt("processor.dataset.train.denoise.tfidf.maxCount", 5);
+		}
+		return maxCount;
 	}
 
 }

@@ -152,6 +152,10 @@ public class Metadata {
 		termVectorMap.put(word, number);
 	}
 	
+	public boolean containsTerm(String word) {
+		return termVectorMap.get(word) == null ? false : true;
+	}
+	
 	//////// label vector map
 	
 	public Iterator<Entry<String, Integer>> labelVectorMapIterator() {
@@ -164,5 +168,9 @@ public class Metadata {
 	
 	public void putLabelNumber(Integer number, String label) {
 		labelVectorMap.put(label, number);
+	}
+	
+	public boolean containsLabel(String label) {
+		return labelVectorMap.get(label) == null ? false : true;
 	}
 }

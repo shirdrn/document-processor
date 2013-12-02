@@ -5,9 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 import kevin.zhang.NLPIR;
 
@@ -21,7 +19,6 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 
 	private static final Log LOG = LogFactory.getLog(IctclasAnalyzer.class);
 	private final NLPIR analyzer;
-	private final Set<String> keptLexicalCategories = new HashSet<String>();
 	
 	public IctclasAnalyzer(Configuration configuration) {
 		super(configuration);
@@ -33,12 +30,6 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 			}
 		} catch (Exception e) {
 			throw new RuntimeException("", e);
-		}
-		// read configured lexical categories
-		String lexicalCategories = 
-				configuration.get("processor.document.analyzer.lexical.categories", "n");
-		for(String category : lexicalCategories.split("\\s*,\\s*")) {
-			keptLexicalCategories.add(category);
 		}
 	}
 
@@ -62,18 +53,15 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 						if(words.length == 2) {
 							String word = words[0];
 							String lexicalCategory = words[1];
-							if(!super.isStopword(word) 
-									&& keptLexicalCategories.contains(lexicalCategory)) {
-								LOG.debug("Kept word: word" + word);
-								Term term = terms.get(word);
-								if(term == null) {
-									term = new Term(word);
-									terms.put(word, term);
-								}
-								term.incrFreq();
-							} else {
-								LOG.debug("Discard: word=" + rawWord);
+							Term term = terms.get(word);
+							if(term == null) {
+								term = new Term(word);
+								// TODO set lexical category
+//								term.setLexicalCategory(lexicalCategory);
+								terms.put(word, term);
 							}
+							term.incrFreq();
+							LOG.debug("Got word: word=" + rawWord);
 						}
 					}
 				}

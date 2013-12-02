@@ -12,12 +12,14 @@ import org.shirdrn.document.processor.common.AbstractDatasetManager;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.DocumentAnalyzer;
 import org.shirdrn.document.processor.common.Term;
+import org.shirdrn.document.processor.common.TermFilter;
+import org.shirdrn.document.processor.filter.AggregatedTermFilter;
 import org.shirdrn.document.processor.utils.ReflectionUtils;
 
 public abstract class AbstractDocumentWordsCollector extends AbstractDatasetManager {
 	
 	private static final Log LOG = LogFactory.getLog(AbstractDocumentWordsCollector.class);
-	protected DocumentAnalyzer analyzer;
+	private final DocumentAnalyzer analyzer;
 
 	public AbstractDocumentWordsCollector(Context context) {
 		super(context);
@@ -30,7 +32,6 @@ public abstract class AbstractDocumentWordsCollector extends AbstractDatasetMana
 	@Override
 	public void fire() {
 		super.fire();
-		loadVectors();
 		for(String label : inputRootDir.list()) {
 			File labelDir = new File(inputRootDir, label);
 			File[] files = labelDir.listFiles(new FileFilter() {
@@ -47,9 +48,21 @@ public abstract class AbstractDocumentWordsCollector extends AbstractDatasetMana
 		stat();
 	}
 	
-	protected abstract void loadVectors();
+	protected void analyze(String label, File file) {
+		String doc = file.getAbsolutePath();
+		LOG.info("Process document: label=" + label + ", file=" + doc);
+		Map<String, Term> terms = analyzer.analyze(file);
+		// filter terms
+		filterTerms(terms);
+		// construct memory structure
+		context.getMetadata().addTerms(label, doc, terms);
+		// add inverted table as needed
+		context.getMetadata().addTermsToInvertedTable(label, doc, terms);
+		LOG.info("Done: file=" + file + ", termCount=" + terms.size());
+		LOG.debug("Terms in a doc: terms=" + terms);
+	}
 
-	protected abstract void analyze(String label, File file);
+	protected abstract void filterTerms(Map<String, Term> terms);
 
 	private void stat() {
 		LOG.info("STAT: totalDocCount=" + context.getMetadata().getTotalDocCount());

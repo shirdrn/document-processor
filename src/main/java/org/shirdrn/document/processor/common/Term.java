@@ -4,6 +4,7 @@ package org.shirdrn.document.processor.common;
 public class Term {
 
 	private String word;
+	private String lexicalCategory = "unknown";
 	private int freq = 0;
 	private double tf;
 	private double idf;
@@ -15,6 +16,14 @@ public class Term {
 
 	public void setWord(String word) {
 		this.word = word;
+	}
+
+	public String getLexicalCategory() {
+		return lexicalCategory;
+	}
+
+	public void setLexicalCategory(String lexicalCategory) {
+		this.lexicalCategory = lexicalCategory;
 	}
 
 	public int getFreq() {

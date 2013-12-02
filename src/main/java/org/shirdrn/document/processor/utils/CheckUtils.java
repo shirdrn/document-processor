@@ -18,16 +18,20 @@ public class CheckUtils {
 		}
 	}
 	
-	public static void checkFileExists(File file) {
-		if(!file.exists()) {
-			throw new RuntimeException("File does not exist: " + file);
+	public static void checkFile(File file, boolean throwExceptionWhenExistence) {
+		if(throwExceptionWhenExistence) {
+			if(file.exists()) {
+				throw new RuntimeException("File has been existed: " + file);
+			}
+		} else {
+			if(!file.exists()) {
+				throw new RuntimeException("File does not exist: " + file);
+			}
 		}
 	}
 	
-	public static void checkFileExists(String file) {
+	public static void checkFile(String file, boolean throwExceptionWhenExistence) {
 		File f = new File(file);
-		if(!f.exists()) {
-			throw new RuntimeException("File does not exist: file=" + file);
-		}
+		checkFile(f, throwExceptionWhenExistence);
 	}
 }
