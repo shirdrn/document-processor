@@ -26,7 +26,7 @@ public class ReflectionUtils {
 		return getInstance(className, baseClass, DEFAULT_CLASSLOADER, new Object[] {});
 	}
 	
-	public static <T> T getInstance(String className, Class<T> baseClass, Object... parameters) {
+	public static <T> T getInstance(String className, Class<T> baseClass, Object[] parameters) {
 		return getInstance(className, baseClass, DEFAULT_CLASSLOADER, parameters);
 	}
 	
@@ -38,40 +38,28 @@ public class ReflectionUtils {
 		T instance = null;
 		try {
 			Class<T> clazz = newClass(className, baseClass, classLoader);
-			instance = construct(clazz, parameters);
+			instance = construct(clazz, baseClass, parameters);
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 		return instance;
 	}
 	
-	public static Object getInstance(String className, Object... parameters) {
+	public static Object getInstance(String className, Object[] parameters) {
 		return getInstance(className, getClassLoader(null), parameters);
 	}
 
-	public static Object getInstance(String className, ClassLoader classLoader, Object... parameters) {
+	public static Object getInstance(String className, ClassLoader classLoader, Object[] parameters) {
 		return getInstance(className, classLoader, parameters);
 	}
 	
-	@SuppressWarnings("unchecked")
-	public static <T> T getInstance(String className, ClassLoader classLoader, Class<T> baseClass, Object... parameters) {
-		T instance = null;
-		try {
-			Class<?> clazz = Class.forName(className, true, getClassLoader(classLoader));
-			instance = (T) getInstance(clazz, parameters);
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-		return instance;
-	}
-	
 	
 	
 
-	public static <T> T getInstance(Class<T> clazz, Object... parameters) {
+	public static <T> T newInstance(Class<?> clazz, Class<T> baseClass, Object[] parameters) {
 		T instance = null;
 		try {
-			instance = construct(clazz, parameters);
+			instance = (T) construct(clazz, baseClass, parameters);
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
@@ -79,7 +67,7 @@ public class ReflectionUtils {
 	}
 
 	@SuppressWarnings("unchecked")
-	private static <T> T construct(Class<T> clazz, Object... parameters)
+	private static <T> T construct(Class<?> clazz, Class<T> baseClass, Object[] parameters)
 			throws InstantiationException, IllegalAccessException, InvocationTargetException {
 		T instance = null;
 		Constructor<T>[] constructors = (Constructor<T>[]) clazz.getConstructors();
@@ -92,11 +80,7 @@ public class ReflectionUtils {
 		return instance;
 	}
 
-	public static <T> T getInstance(Class<T> clazz) {
-		return newInstance(clazz);
-	}
-
-	private static <T> T newInstance(Class<T> clazz) {
+	public static <T> T newInstance(Class<T> clazz) {
 		T instance = null;
 		try {
 			instance = clazz.newInstance();
@@ -111,11 +95,11 @@ public class ReflectionUtils {
 	}
 
 	public static <T> Class<T> newClass(String className, Class<T> baseClass, ClassLoader classLoader) {
-		return newClazz(className, classLoader, baseClass);
+		return newClass(className, classLoader, baseClass);
 	}
 
 	@SuppressWarnings("unchecked")
-	private static <T> Class<T> newClazz(String className, ClassLoader classLoader, Class<T> baseClass) {
+	private static <T> Class<T> newClass(String className, ClassLoader classLoader, Class<T> baseClass) {
 		Class<T> clazz = null;
 		try {
 			clazz = (Class<T>) Class.forName(className, true, getClassLoader(classLoader));

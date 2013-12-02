@@ -30,7 +30,7 @@ public class CollectingTrainDocumentWords extends AbstractDocumentWordsCollector
 	public CollectingTrainDocumentWords(Context context) {
 		super(context);
 		for(Class<TermFilter> filterClass : filterClasses) {
-			TermFilter instance = ReflectionUtils.getInstance(filterClass, TermFilter.class, new Object[] { context });
+			TermFilter instance = ReflectionUtils.newInstance(filterClass, TermFilter.class, new Object[] { context });
 			if(instance == null) {
 				throw new RuntimeException("Fail to reflect: class=" + filterClass.getName());
 			}

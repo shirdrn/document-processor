@@ -12,8 +12,6 @@ import org.shirdrn.document.processor.common.AbstractDatasetManager;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.DocumentAnalyzer;
 import org.shirdrn.document.processor.common.Term;
-import org.shirdrn.document.processor.common.TermFilter;
-import org.shirdrn.document.processor.filter.AggregatedTermFilter;
 import org.shirdrn.document.processor.utils.ReflectionUtils;
 
 public abstract class AbstractDocumentWordsCollector extends AbstractDatasetManager {

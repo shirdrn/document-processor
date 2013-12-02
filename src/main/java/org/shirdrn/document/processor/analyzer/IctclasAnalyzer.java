@@ -57,7 +57,7 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 							if(term == null) {
 								term = new Term(word);
 								// TODO set lexical category
-//								term.setLexicalCategory(lexicalCategory);
+								term.setLexicalCategory(lexicalCategory);
 								terms.put(word, term);
 							}
 							term.incrFreq();

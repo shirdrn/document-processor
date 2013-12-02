@@ -26,6 +26,7 @@ public class TermVectorFilter implements TermFilter {
 	private Context context;
 	
 	public TermVectorFilter(Context context) {
+		this.context = context;
 		String terms = context.getConfiguration().get("processor.dataset.term.vector.file");
 		termVectorFile = new File(terms);
 		CheckUtils.checkFile(termVectorFile, false);

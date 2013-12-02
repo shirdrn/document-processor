@@ -25,6 +25,7 @@ public class LabelVectorFilter implements TermFilter {
 	private Context context;
 	
 	public LabelVectorFilter(Context context) {
+		this.context = context;
 		String labels = context.getConfiguration().get("processor.dataset.label.vector.file");
 		labelVectorFile = new File(labels);
 		CheckUtils.checkFile(labelVectorFile, false);
