@@ -3,11 +3,12 @@ package org.shirdrn.document.processor;
 import org.shirdrn.document.processor.common.Component;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.component.BasicContextInitializer;
-import org.shirdrn.document.processor.component.DenoisingDocumentTerms;
 import org.shirdrn.document.processor.component.DocumentTFIDFComputation;
 import org.shirdrn.document.processor.component.test.CollectingTestDocumentWords;
+import org.shirdrn.document.processor.component.test.DenoisingTestDocumentTerms;
 import org.shirdrn.document.processor.component.test.OutputtingQuantizedTestData;
 import org.shirdrn.document.processor.component.train.CollectingTrainDocumentWords;
+import org.shirdrn.document.processor.component.train.DenoisingTrainDocumentTerms;
 import org.shirdrn.document.processor.component.train.OutputtingQuantizedTrainData;
 
 public class DocumentProcessorDriver {
@@ -23,7 +24,7 @@ public class DocumentProcessorDriver {
 					new BasicContextInitializer(context),
 					new CollectingTrainDocumentWords(context),
 					new DocumentTFIDFComputation(context),
-					new DenoisingDocumentTerms(context),
+					new DenoisingTrainDocumentTerms(context),
 					new OutputtingQuantizedTrainData(context)
 				};
 			prepareAndRun(chain);
@@ -33,7 +34,7 @@ public class DocumentProcessorDriver {
 					new BasicContextInitializer(context),
 					new CollectingTestDocumentWords(context),
 					new DocumentTFIDFComputation(context),
-					new DenoisingDocumentTerms(context),
+					new DenoisingTestDocumentTerms(context),
 					new OutputtingQuantizedTestData(context)
 				};
 			prepareAndRun(chain);

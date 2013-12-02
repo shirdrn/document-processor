@@ -11,18 +11,17 @@ import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.utils.SortUtils;
 
-public class DenoisingDocumentTerms extends AbstractComponent {
+public abstract class AbstractDenoisingDocumentTerms extends AbstractComponent {
 
-	private static final Log LOG = LogFactory.getLog(DenoisingDocumentTerms.class);
+	private static final Log LOG = LogFactory.getLog(AbstractDenoisingDocumentTerms.class);
 	
-	public DenoisingDocumentTerms(Context context) {
+	public AbstractDenoisingDocumentTerms(Context context) {
 		super(context);
 	}
 
 	@Override
 	public void fire() {
-		double maxTFIDFPercent = 
-				context.getConfiguration().getDouble("processor.dataset.denoise.tfidf.maxpercent", 0.70);
+		double maxTFIDFPercent = getMaxTFIDFPercent();
 		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getMetadata().termTableIterator();
 		while(iter.hasNext()) {
 			Entry<String, Map<String, Map<String, Term>>> labelledDocsEntry = iter.next();
@@ -36,7 +35,7 @@ public class DenoisingDocumentTerms extends AbstractComponent {
 				LOG.debug("termCount=" + terms.size() + ", keptTermCount=" + keptTermCount);
 				// sort by TF-IDF
 				LOG.info("Sort by TDIDF for document: doc=" + doc);
-				Entry<String, Term>[] a = sort(terms, keptTermCount);
+				Entry<String, Term>[] a = sort(terms, Math.max(keptTermCount, 1));
 				if(LOG.isDebugEnabled()) {
 					StringBuffer buf = new StringBuffer();
 					for(int i=0; i<keptTermCount - 1; i++) {
@@ -60,5 +59,7 @@ public class DenoisingDocumentTerms extends AbstractComponent {
 		SortUtils.heapSort(a, true, keptTermCount);
 		return a;
 	}
+	
+	protected abstract double getMaxTFIDFPercent();
 
 }
