@@ -33,7 +33,11 @@ public class CollectingTestDocumentWords extends AbstractDocumentWordsCollector 
 	public CollectingTestDocumentWords(Context context) {
 		super(context);
 		for(Class<TermFilter> filterClass : filterClasses) {
-			filters.add(ReflectionUtils.getInstance(filterClass, TermFilter.class, context));
+			TermFilter instance = ReflectionUtils.getInstance(filterClass, TermFilter.class, new Object[] { context });
+			if(instance == null) {
+				throw new RuntimeException("Fail to reflect: class=" + filterClass.getName());
+			}
+			filters.add(instance);
 			LOG.info("Load filter class: class=" + filterClass.getName());
 		}
 	}
