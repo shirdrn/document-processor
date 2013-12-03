@@ -3,6 +3,7 @@ package org.shirdrn.document.processor.common;
 
 public class Term {
 
+	private int id;
 	private String word;
 	private String lexicalCategory = "unknown";
 	private int freq = 0;
@@ -10,6 +11,14 @@ public class Term {
 	private double idf;
 	private double tfidf = 0;
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getWord() {
 		return word;
 	}

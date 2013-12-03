@@ -28,17 +28,20 @@ public abstract class AbstractOutputtingQuantizedData extends AbstractDatasetMan
 	@Override
 	public void fire() {
 		super.fire();
+		// create term vectors for outputting/inputting
+		quantizeTermVectors();
+		// output train/test vectors
 		try {
 			writer = new BufferedWriter(new OutputStreamWriter(
 					new FileOutputStream(new File(outputDir, outputVectorFile)), charSet));
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
-		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getMetadata().termTableIterator();
+		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getVectorMetadata().termTableIterator();
 		while(iter.hasNext()) {
 			Entry<String, Map<String, Map<String, Term>>> labelledDocsEntry = iter.next();
 			String label = labelledDocsEntry.getKey();
-			Integer labelId = getLabelNumber(label);
+			Integer labelId = getLabelId(label);
 			if(labelId != null) {
 				Map<String, Map<String, Term>>  docs = labelledDocsEntry.getValue();
 				Iterator<Entry<String, Map<String, Term>>> docsIter = docs.entrySet().iterator();
@@ -49,12 +52,10 @@ public abstract class AbstractOutputtingQuantizedData extends AbstractDatasetMan
 					Map<String, Term> terms = docsEntry.getValue();
 					for(Entry<String, Term> termEntry : terms.entrySet()) {
 						String word = termEntry.getKey();
-						Integer wordId = getWordNumber(word);
+						Integer wordId = getWordId(labelId, word);
 						if(wordId != null) {
 							Term term = termEntry.getValue();
 							line.append(wordId).append(":").append(term.getTfidf()).append(" ");
-						} else {
-							LOG.warn("Word ID can not be found: word=" + word + ", wordId=null");
 						}
 					}
 					try {
@@ -77,10 +78,18 @@ public abstract class AbstractOutputtingQuantizedData extends AbstractDatasetMan
 				e.printStackTrace();
 			}
 		}
+		LOG.info("Finished: outputVectorFile=" + outputVectorFile);
 			
 	}
 	
-	protected abstract Integer getLabelNumber(String label);
-	protected abstract Integer getWordNumber(String word);
+	private Integer getWordId(Integer labelId, String word) {
+		return context.getVectorMetadata().getLabeledWordId(labelId, word);
+	}
+
+	private Integer getLabelId(String label) {
+		return context.getVectorMetadata().getlabelId(label);
+	}
+
+	protected abstract void quantizeTermVectors();
 
 }

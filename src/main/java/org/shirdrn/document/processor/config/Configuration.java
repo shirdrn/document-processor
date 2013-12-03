@@ -13,6 +13,12 @@ public final class Configuration implements ContextReadable, ContextWriteable {
 	private String prop;
 	private final Properties properties = new Properties();
 	
+	public Configuration(String config) {
+		super();
+		this.prop = config;
+		load();
+	}
+	
 	public Configuration() {
 		super();
 		this.prop = DEFAULT_CONFIG;

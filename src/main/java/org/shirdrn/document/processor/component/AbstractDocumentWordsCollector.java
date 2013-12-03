@@ -53,9 +53,9 @@ public abstract class AbstractDocumentWordsCollector extends AbstractDatasetMana
 		// filter terms
 		filterTerms(terms);
 		// construct memory structure
-		context.getMetadata().addTerms(label, doc, terms);
+		context.getVectorMetadata().addTerms(label, doc, terms);
 		// add inverted table as needed
-		context.getMetadata().addTermsToInvertedTable(label, doc, terms);
+		context.getVectorMetadata().addTermsToInvertedTable(label, doc, terms);
 		LOG.info("Done: file=" + file + ", termCount=" + terms.size());
 		LOG.debug("Terms in a doc: terms=" + terms);
 	}
@@ -63,9 +63,9 @@ public abstract class AbstractDocumentWordsCollector extends AbstractDatasetMana
 	protected abstract void filterTerms(Map<String, Term> terms);
 
 	private void stat() {
-		LOG.info("STAT: totalDocCount=" + context.getMetadata().getTotalDocCount());
-		LOG.info("STAT: labelCount=" + context.getMetadata().getLabelCount());
-		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getMetadata().termTableIterator();
+		LOG.info("STAT: totalDocCount=" + context.getVectorMetadata().getTotalDocCount());
+		LOG.info("STAT: labelCount=" + context.getVectorMetadata().getLabelCount());
+		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getVectorMetadata().termTableIterator();
 		while(iter.hasNext()) {
 			Entry<String, Map<String, Map<String, Term>>> entry = iter.next();
 			LOG.info("STAT: label=" + entry.getKey() + ", docCount=" + entry.getValue().size());

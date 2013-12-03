@@ -19,15 +19,10 @@ public class BasicContextInitializer extends AbstractDatasetManager {
 	@Override
 	public void fire() {
 		super.fire();
-		String labelDirs = context.getConfiguration().get("processor.dataset.train.label.dirs");
-		for(String label : labelDirs.split("\\s*,\\s*")) {
-			context.getMetadata().addLabel(label.trim());
-		}
-		
 		// get total document count for computing TF-IDF
 		int totalDocCount = 0;
 		for(String label : inputRootDir.list()) {
-			context.getMetadata().addLabel(label);
+			context.getVectorMetadata().addLabel(label);
 			LOG.info("Add label: label=" + label);
 			File labelDir = new File(inputRootDir, label);
 			File[] files = labelDir.listFiles(new FileFilter() {
@@ -36,12 +31,12 @@ public class BasicContextInitializer extends AbstractDatasetManager {
 					return pathname.getAbsolutePath().endsWith(fileExtensionName);
 				}
 			});
-			context.getMetadata().putLabelledTotalDocCount(label, files.length);
+			context.getVectorMetadata().putLabelledTotalDocCount(label, files.length);
 			LOG.info("Put document count: label= " + label + ", docCount=" + files.length);
 			totalDocCount += files.length;
 		}
 		LOG.info("Total documents: totalCount= " + totalDocCount);
-		context.getMetadata().setTotalDocCount(totalDocCount);
+		context.getVectorMetadata().setTotalDocCount(totalDocCount);
 	}
 
 }

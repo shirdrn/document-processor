@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class Metadata {
+public class VectorMetadata {
 
 	private int totalDocCount;
 	private final List<String> labels = new ArrayList<String>();
@@ -21,9 +21,14 @@ public class Metadata {
 	//  Map<词 ,Map<类别, Set<文档>>>
 	private final Map<String, Map<String, Set<String>>> invertedTable = 
 			new HashMap<String, Map<String, Set<String>>>();
+	// Map<类别编号, Map<词, 词编号>>
+	private final Map<Integer, Map<String, Integer>> termVectorsMap = 
+			new HashMap<Integer, Map<String, Integer>>(0); 
 	
-	private final Map<String, Integer> termVectorMap = new HashMap<String, Integer>(0); 
-	private final Map<String, Integer> labelVectorMap = new HashMap<String, Integer>(0);
+	// <labelId, label>
+	private final Map<Integer, String> globalIdToLabelMap = new HashMap<Integer, String>(0);
+	// <label, labelId>
+	private final Map<String, Integer> globalLabelToIdMap = new HashMap<String, Integer>(0);
 	
 	public void addLabel(String label) {
 		if(!labels.contains(label)) {
@@ -134,43 +139,62 @@ public class Metadata {
 		return termTable.entrySet().iterator();
 	}
 	
-	//////// term vector map ////////
+	//////// term vectors map ////////
 	
-	public Iterator<Entry<String, Integer>> termVectorMapIterator() {
-		return termVectorMap.entrySet().iterator();
+	public Iterator<Map.Entry<Integer,Map<String,Integer>>> termVectorsMapIterator() {
+		return termVectorsMap.entrySet().iterator();
 	}
 	
-	public Integer getTermNumber(String word) {
-		return termVectorMap.get(word);
+	public Integer getLabeledWordId(int labelId, String word) {
+		return termVectorsMap.get(labelId).get(word);
 	}
 	
-	public Integer getTermNumber(Term term) {
-		return termVectorMap.get(term.getWord());
+	public void putWordWithId(int labelId, String word, Integer wordId) {
+		Map<String, Integer> terms = termVectorsMap.get(labelId);
+		if(terms == null) {
+			terms = new HashMap<String, Integer>(1);
+			termVectorsMap.put(labelId, terms);
+		}
+		terms.put(word, wordId);
 	}
 	
-	public void putTermNumber(Integer number, String word) {
-		termVectorMap.put(word, number);
+	public void putLabeledWords(int labelId, Map<String, Integer> words) {
+		Map<String, Integer> terms = termVectorsMap.get(labelId);
+		if(terms == null) {
+			terms = new HashMap<String, Integer>(1);
+			termVectorsMap.put(labelId, terms);
+		}
+		terms.putAll(words);
 	}
 	
 	public boolean containsTerm(String word) {
-		return termVectorMap.get(word) == null ? false : true;
+		return termVectorsMap.get(word) == null ? false : true;
 	}
 	
 	//////// label vector map
 	
+	// label->id
+	
 	public Iterator<Entry<String, Integer>> labelVectorMapIterator() {
-		return labelVectorMap.entrySet().iterator();
+		return globalLabelToIdMap.entrySet().iterator();
 	}
 	
-	public Integer getlabelNumber(String label) {
-		return labelVectorMap.get(label);
+	public Integer getlabelId(String label) {
+		return globalLabelToIdMap.get(label);
 	}
 	
-	public void putLabelNumber(Integer number, String label) {
-		labelVectorMap.put(label, number);
+	public void putLabelToIdPairs(Map<String, Integer> globalLabelToIdMap) {
+		this.globalLabelToIdMap.putAll(globalLabelToIdMap);
 	}
 	
-	public boolean containsLabel(String label) {
-		return labelVectorMap.get(label) == null ? false : true;
+	// id->label
+	
+	public void putIdToLabelPairs(Map<Integer, String> globalIdToLabelMap) {
+		this.globalIdToLabelMap.putAll(globalIdToLabelMap);
 	}
+	
+	public String getlabel(Integer labelId) {
+		return globalIdToLabelMap.get(labelId);
+	}
+	
 }

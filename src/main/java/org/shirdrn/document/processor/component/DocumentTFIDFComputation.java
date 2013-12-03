@@ -22,7 +22,7 @@ public class DocumentTFIDFComputation extends AbstractComponent {
 	@Override
 	public void fire() {
 		// for each document, compute TF, IDF, TF-UDF
-		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getMetadata().termTableIterator();
+		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getVectorMetadata().termTableIterator();
 		while(iter.hasNext()) {
 			Entry<String, Map<String, Map<String, Term>>> labelledDocsEntry = iter.next();
 			String label = labelledDocsEntry.getKey();
@@ -35,10 +35,10 @@ public class DocumentTFIDFComputation extends AbstractComponent {
 				for(Entry<String, Term> termEntry : terms.entrySet()) {
 					Term term = termEntry.getValue();
 					int freq = term.getFreq();
-					int termCount = context.getMetadata().getTermCount(label, doc);
+					int termCount = context.getVectorMetadata().getTermCount(label, doc);
 					double tf = MetricUtils.tf(freq, termCount);
-					int totalDocCount = context.getMetadata().getTotalDocCount();
-					int docCountContainingTerm = context.getMetadata().getDocCount(term);
+					int totalDocCount = context.getVectorMetadata().getTotalDocCount();
+					int docCountContainingTerm = context.getVectorMetadata().getDocCount(term);
 					double idf = MetricUtils.idf(totalDocCount, docCountContainingTerm);
 					termEntry.getValue().setIdf(idf);
 					termEntry.getValue().setTf(tf);

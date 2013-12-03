@@ -21,7 +21,7 @@ public abstract class AbstractDenoisingDocumentTerms extends AbstractComponent {
 
 	@Override
 	public void fire() {
-		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getMetadata().termTableIterator();
+		Iterator<Entry<String, Map<String, Map<String, Term>>>> iter = context.getVectorMetadata().termTableIterator();
 		while(iter.hasNext()) {
 			Entry<String, Map<String, Map<String, Term>>> labelledDocsEntry = iter.next();
 			Iterator<Entry<String, Map<String, Term>>> docsIter = labelledDocsEntry.getValue().entrySet().iterator();
