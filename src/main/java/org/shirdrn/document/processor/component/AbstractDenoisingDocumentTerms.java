@@ -30,20 +30,20 @@ public abstract class AbstractDenoisingDocumentTerms extends AbstractComponent {
 				String doc = docsEntry.getKey();
 				// terms contained by a doc
 				Map<String, Term> terms = docsEntry.getValue();
-				if(terms != null && terms.isEmpty()) {
+				if(terms != null && !terms.isEmpty()) {
 					int keptTermCount = getKeptTermCount(terms.size());
 					LOG.debug("termCount=" + terms.size() + ", keptTermCount=" + keptTermCount);
 					// sort by TF-IDF
 					LOG.info("Sort by TDIDF for document: doc=" + doc);
 					if(keptTermCount > 0) {
 						Entry<String, Term>[] a = sort(terms, keptTermCount);
-						if(LOG.isDebugEnabled()) {
+						if(LOG.isInfoEnabled()) {
 							StringBuffer buf = new StringBuffer();
 							for(int i=0; i<keptTermCount - 1; i++) {
 								buf.append(a[i]).append(", ");
 							}
 							buf.append(a[keptTermCount - 1]);
-							LOG.debug("Kept terms: " + buf.toString());
+							LOG.info("Kept terms: doc=" + doc + ", terms=" + buf.toString());
 						}
 						// remove noising terms
 						for(int i=keptTermCount; i<a.length; i++) {
