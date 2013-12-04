@@ -3,7 +3,7 @@ package org.shirdrn.document.processor;
 import org.shirdrn.document.processor.common.Component;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.ProcessorType;
-import org.shirdrn.document.processor.component.BasicContextInitializer;
+import org.shirdrn.document.processor.component.BasicInformationCollector;
 import org.shirdrn.document.processor.component.DocumentTFIDFComputation;
 import org.shirdrn.document.processor.component.test.CollectingTestDocumentWords;
 import org.shirdrn.document.processor.component.test.LoadFeatureTermVector;
@@ -16,7 +16,7 @@ public class TestDocumentProcessorDriver extends AbstractDocumentProcessorDriver
 		Context context = new Context(ProcessorType.TEST, "config-test.properties");
 		// for test data
 		Component[]	chain = new Component[] {
-				new BasicContextInitializer(context),
+				new BasicInformationCollector(context),
 				new CollectingTestDocumentWords(context),
 				new LoadFeatureTermVector(context),
 				new DocumentTFIDFComputation(context),

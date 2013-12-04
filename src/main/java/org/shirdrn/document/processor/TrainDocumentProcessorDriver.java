@@ -3,7 +3,7 @@ package org.shirdrn.document.processor;
 import org.shirdrn.document.processor.common.Component;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.ProcessorType;
-import org.shirdrn.document.processor.component.BasicContextInitializer;
+import org.shirdrn.document.processor.component.BasicInformationCollector;
 import org.shirdrn.document.processor.component.DocumentTFIDFComputation;
 import org.shirdrn.document.processor.component.train.CollectingTrainDocumentWords;
 import org.shirdrn.document.processor.component.train.FeatureTermVectorSelector;
@@ -16,7 +16,7 @@ public class TrainDocumentProcessorDriver extends AbstractDocumentProcessorDrive
 		Context context = new Context(ProcessorType.TRAIN, "config-train.properties");
 		// for train data
 		Component[]	chain = new Component[] {
-				new BasicContextInitializer(context),
+				new BasicInformationCollector(context),
 				new CollectingTrainDocumentWords(context),
 				new FeatureTermVectorSelector(context), 
 				new DocumentTFIDFComputation(context),

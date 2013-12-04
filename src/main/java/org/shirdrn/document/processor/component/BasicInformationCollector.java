@@ -8,11 +8,11 @@ import org.apache.commons.logging.LogFactory;
 import org.shirdrn.document.processor.common.AbstractComponent;
 import org.shirdrn.document.processor.common.Context;
 
-public class BasicContextInitializer extends AbstractComponent {
+public class BasicInformationCollector extends AbstractComponent {
 	
-	private static final Log LOG = LogFactory.getLog(BasicContextInitializer.class);
+	private static final Log LOG = LogFactory.getLog(BasicInformationCollector.class);
 	
-	public BasicContextInitializer(Context context) {
+	public BasicInformationCollector(Context context) {
 		super(context);
 	}
 
