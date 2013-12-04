@@ -6,22 +6,21 @@ import org.shirdrn.document.processor.common.ProcessorType;
 import org.shirdrn.document.processor.component.BasicContextInitializer;
 import org.shirdrn.document.processor.component.DocumentTFIDFComputation;
 import org.shirdrn.document.processor.component.train.CollectingTrainDocumentWords;
-import org.shirdrn.document.processor.component.train.DenoisingTrainDocumentTerms;
+import org.shirdrn.document.processor.component.train.FeatureTermVectorSelector;
 import org.shirdrn.document.processor.component.train.OutputtingQuantizedTrainData;
 
 public class TrainDocumentProcessorDriver extends AbstractDocumentProcessorDriver {
 
 	@Override
 	public void process() {
-		Context context = new Context("config-train.properties");
-		context.setProcessorType(ProcessorType.TRAIN);
+		Context context = new Context(ProcessorType.TRAIN, "config-train.properties");
 		// for train data
 		Component[]	chain = new Component[] {
-					new BasicContextInitializer(context),
-					new CollectingTrainDocumentWords(context),
-					new DocumentTFIDFComputation(context),
-					new DenoisingTrainDocumentTerms(context),
-					new OutputtingQuantizedTrainData(context)
+				new BasicContextInitializer(context),
+				new CollectingTrainDocumentWords(context),
+				new FeatureTermVectorSelector(context), 
+				new DocumentTFIDFComputation(context),
+				new OutputtingQuantizedTrainData(context)
 			};
 		run(chain);
 	}

@@ -6,21 +6,20 @@ import org.shirdrn.document.processor.common.ProcessorType;
 import org.shirdrn.document.processor.component.BasicContextInitializer;
 import org.shirdrn.document.processor.component.DocumentTFIDFComputation;
 import org.shirdrn.document.processor.component.test.CollectingTestDocumentWords;
-import org.shirdrn.document.processor.component.test.DenoisingTestDocumentTerms;
+import org.shirdrn.document.processor.component.test.LoadFeatureTermVector;
 import org.shirdrn.document.processor.component.test.OutputtingQuantizedTestData;
 
 public class TestDocumentProcessorDriver extends AbstractDocumentProcessorDriver {
 
 	@Override
 	public void process() {
-		Context context = new Context("config-test.properties");
-		context.setProcessorType(ProcessorType.TEST);
+		Context context = new Context(ProcessorType.TEST, "config-test.properties");
 		// for test data
 		Component[]	chain = new Component[] {
 				new BasicContextInitializer(context),
 				new CollectingTestDocumentWords(context),
+				new LoadFeatureTermVector(context),
 				new DocumentTFIDFComputation(context),
-				new DenoisingTestDocumentTerms(context),
 				new OutputtingQuantizedTestData(context)
 			};
 		run(chain);
