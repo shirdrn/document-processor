@@ -32,18 +32,30 @@ public class DocumentTFIDFComputation extends AbstractComponent {
 				Entry<String, Map<String, Term>> docsEntry = docsIter.next();
 				String doc = docsEntry.getKey();
 				Map<String, Term> terms = docsEntry.getValue();
-				for(Entry<String, Term> termEntry : terms.entrySet()) {
-					Term term = termEntry.getValue();
-					int freq = term.getFreq();
-					int termCount = context.getVectorMetadata().getTermCount(label, doc);
-					double tf = MetricUtils.tf(freq, termCount);
-					int totalDocCount = context.getVectorMetadata().getTotalDocCount();
-					int docCountContainingTerm = context.getVectorMetadata().getDocCount(term);
-					double idf = MetricUtils.idf(totalDocCount, docCountContainingTerm);
-					termEntry.getValue().setIdf(idf);
-					termEntry.getValue().setTf(tf);
-					termEntry.getValue().setTfidf(MetricUtils.tfidf(tf, idf));
-					LOG.info("Term detail: label=" + label + ", doc=" + doc + ", term=" + term);
+				Iterator<Entry<String, Term>> termsIter = terms.entrySet().iterator();
+				while(termsIter.hasNext()) {
+					Entry<String, Term> termEntry = termsIter.next();
+					String word = termEntry.getKey();
+					// check whether word is contained in CHI vector
+					if(context.getVectorMetadata().containsChiWord(word)) {
+						Term term = termEntry.getValue();
+						int freq = term.getFreq();
+						int termCount = context.getVectorMetadata().getTermCount(label, doc);
+						
+						double tf = MetricUtils.tf(freq, termCount);
+						int totalDocCount = context.getVectorMetadata().getTotalDocCount();
+						int docCountContainingTerm = context.getVectorMetadata().getDocCount(term);
+						
+						double idf = MetricUtils.idf(totalDocCount, docCountContainingTerm);
+						termEntry.getValue().setIdf(idf);
+						termEntry.getValue().setTf(tf);
+						termEntry.getValue().setTfidf(MetricUtils.tfidf(tf, idf));
+						LOG.info("Term detail: label=" + label + ", doc=" + doc + ", term=" + term);
+					} else {
+						// remove term not contained in CHI vector
+						termsIter.remove();
+						LOG.debug("Not in CHI vector: word=" + word);
+					}
 				}
 			}
 		}		

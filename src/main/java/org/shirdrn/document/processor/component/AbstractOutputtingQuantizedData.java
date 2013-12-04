@@ -11,12 +11,12 @@ import java.util.Map.Entry;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.shirdrn.document.processor.common.AbstractDatasetManager;
+import org.shirdrn.document.processor.common.AbstractComponent;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.component.test.OutputtingQuantizedTestData;
 
-public abstract class AbstractOutputtingQuantizedData extends AbstractDatasetManager {
+public abstract class AbstractOutputtingQuantizedData extends AbstractComponent {
 
 	private static final Log LOG = LogFactory.getLog(OutputtingQuantizedTestData.class);
 	protected BufferedWriter writer;
@@ -27,13 +27,13 @@ public abstract class AbstractOutputtingQuantizedData extends AbstractDatasetMan
 	
 	@Override
 	public void fire() {
-		super.fire();
 		// create term vectors for outputting/inputting
 		quantizeTermVectors();
 		// output train/test vectors
 		try {
 			writer = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(new File(outputDir, outputVectorFile)), charSet));
+					new FileOutputStream(new File(context.getFDMetadata().getOutputDir(), 
+							context.getFDMetadata().getOutputVectorFile())), charSet));
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
@@ -52,7 +52,7 @@ public abstract class AbstractOutputtingQuantizedData extends AbstractDatasetMan
 					Map<String, Term> terms = docsEntry.getValue();
 					for(Entry<String, Term> termEntry : terms.entrySet()) {
 						String word = termEntry.getKey();
-						Integer wordId = getWordId(labelId, word);
+						Integer wordId = getWordId(word);
 						if(wordId != null) {
 							Term term = termEntry.getValue();
 							line.append(wordId).append(":").append(term.getTfidf()).append(" ");
@@ -78,12 +78,12 @@ public abstract class AbstractOutputtingQuantizedData extends AbstractDatasetMan
 				e.printStackTrace();
 			}
 		}
-		LOG.info("Finished: outputVectorFile=" + outputVectorFile);
+		LOG.info("Finished: outputVectorFile=" + context.getFDMetadata().getOutputVectorFile());
 			
 	}
 	
-	private Integer getWordId(Integer labelId, String word) {
-		return context.getVectorMetadata().getLabeledWordId(labelId, word);
+	private Integer getWordId(String word) {
+		return context.getVectorMetadata().getWordId(word);
 	}
 
 	private Integer getLabelId(String label) {

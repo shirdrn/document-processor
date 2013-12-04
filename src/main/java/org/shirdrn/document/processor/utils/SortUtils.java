@@ -47,14 +47,14 @@ public class SortUtils {
         int i = 2 * s + 1; // 当前待调整结点的左孩子结点的索引(i+1为当前调整结点的右孩子结点的索引)
         while (i < m) {
         	if(isDescOrder) {
-        		if (i + 1 < m && a[i].getValue().getTfidf() > a[i + 1].getValue().getTfidf()) { // 如果右孩子小于左孩子(找到比当前待调整结点大的孩子结点)
+        		if (i + 1 < m && a[i].getValue().getChi() > a[i + 1].getValue().getChi()) { // 如果右孩子小于左孩子(找到比当前待调整结点大的孩子结点)
         			i = i + 1;
         		}
         		if(topN == 0) {
         			break;
         		}
         		topN--;
-        		if (a[s].getValue().getTfidf() > a[i].getValue().getTfidf()) {
+        		if (a[s].getValue().getChi() > a[i].getValue().getChi()) {
                     a[s] = a[i]; // 孩子结点小于当前待调整结点，将孩子结点放到当前待调整结点的位置上
                     s = i; // 重新设置待调整的下一个结点的索引
                     i = 2 * s + 1;
@@ -62,14 +62,14 @@ public class SortUtils {
                     break;
                 }
         	} else {
-        		if (i + 1 < m && a[i].getValue().getTfidf() < a[i + 1].getValue().getTfidf()) { // 如果右孩子大于左孩子(找到比当前待调整结点大的孩子结点)
+        		if (i + 1 < m && a[i].getValue().getChi() < a[i + 1].getValue().getChi()) { // 如果右孩子大于左孩子(找到比当前待调整结点大的孩子结点)
         			i = i + 1;
         		}
         		if(topN == 0) {
         			break;
         		}
         		topN--;
-        		if (a[s].getValue().getTfidf() < a[i].getValue().getTfidf()) {
+        		if (a[s].getValue().getChi() < a[i].getValue().getChi()) {
                     a[s] = a[i]; // 孩子结点大于当前待调整结点，将孩子结点放到当前待调整结点的位置上
                     s = i; // 重新设置待调整的下一个结点的索引
                     i = 2 * s + 1;

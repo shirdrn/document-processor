@@ -10,6 +10,7 @@ public class Term {
 	private double tf;
 	private double idf;
 	private double tfidf = 0;
+	private double chi = 0;
 	
 	public int getId() {
 		return id;
@@ -94,6 +95,14 @@ public class Term {
 			.append("tf-idf=").append(tfidf)
 			.append("]");
 		return buffer.toString();
+	}
+
+	public double getChi() {
+		return chi;
+	}
+
+	public void setChi(double chi) {
+		this.chi = chi;
 	}
 
 }

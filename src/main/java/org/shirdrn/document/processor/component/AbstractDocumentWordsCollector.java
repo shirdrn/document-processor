@@ -8,13 +8,13 @@ import java.util.Map.Entry;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.shirdrn.document.processor.common.AbstractDatasetManager;
+import org.shirdrn.document.processor.common.AbstractComponent;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.DocumentAnalyzer;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.utils.ReflectionUtils;
 
-public abstract class AbstractDocumentWordsCollector extends AbstractDatasetManager {
+public abstract class AbstractDocumentWordsCollector extends AbstractComponent {
 	
 	private static final Log LOG = LogFactory.getLog(AbstractDocumentWordsCollector.class);
 	private final DocumentAnalyzer analyzer;
@@ -29,13 +29,12 @@ public abstract class AbstractDocumentWordsCollector extends AbstractDatasetMana
 	
 	@Override
 	public void fire() {
-		super.fire();
-		for(String label : inputRootDir.list()) {
-			File labelDir = new File(inputRootDir, label);
+		for(String label : context.getFDMetadata().getInputRootDir().list()) {
+			File labelDir = new File(context.getFDMetadata().getInputRootDir(), label);
 			File[] files = labelDir.listFiles(new FileFilter() {
 				@Override
 				public boolean accept(File pathname) {
-					return pathname.getAbsolutePath().endsWith(fileExtensionName);
+					return pathname.getAbsolutePath().endsWith(context.getFDMetadata().getFileExtensionName());
 				}
 			});
 			for(File file : files) {

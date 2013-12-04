@@ -21,15 +21,17 @@ public class VectorMetadata {
 	//  Map<词 ,Map<类别, Set<文档>>>
 	private final Map<String, Map<String, Set<String>>> invertedTable = 
 			new HashMap<String, Map<String, Set<String>>>();
-	// Map<类别编号, Map<词, 词编号>>
-	private final Map<Integer, Map<String, Integer>> termVectorsMap = 
-			new HashMap<Integer, Map<String, Integer>>(0); 
 	
 	// <labelId, label>
 	private final Map<Integer, String> globalIdToLabelMap = new HashMap<Integer, String>(0);
 	// <label, labelId>
 	private final Map<String, Integer> globalLabelToIdMap = new HashMap<String, Integer>(0);
 	
+	// Map<label, Map<word, term>>
+	private final Map<String, Map<String, Term>> chiLabelToWordsVectorsMap = new HashMap<String, Map<String, Term>>(0);
+	// Map<word, term>, finally merged vector
+	private final Map<String, Term> chiMergedTermVectorMap = new HashMap<String, Term>(0);
+		
 	public void addLabel(String label) {
 		if(!labels.contains(label)) {
 			labels.add(label);
@@ -139,39 +141,7 @@ public class VectorMetadata {
 		return termTable.entrySet().iterator();
 	}
 	
-	//////// term vectors map ////////
-	
-	public Iterator<Map.Entry<Integer,Map<String,Integer>>> termVectorsMapIterator() {
-		return termVectorsMap.entrySet().iterator();
-	}
-	
-	public Integer getLabeledWordId(int labelId, String word) {
-		return termVectorsMap.get(labelId).get(word);
-	}
-	
-	public void putWordWithId(int labelId, String word, Integer wordId) {
-		Map<String, Integer> terms = termVectorsMap.get(labelId);
-		if(terms == null) {
-			terms = new HashMap<String, Integer>(1);
-			termVectorsMap.put(labelId, terms);
-		}
-		terms.put(word, wordId);
-	}
-	
-	public void putLabeledWords(int labelId, Map<String, Integer> words) {
-		Map<String, Integer> terms = termVectorsMap.get(labelId);
-		if(terms == null) {
-			terms = new HashMap<String, Integer>(1);
-			termVectorsMap.put(labelId, terms);
-		}
-		terms.putAll(words);
-	}
-	
-	public boolean containsTerm(String word) {
-		return termVectorsMap.get(word) == null ? false : true;
-	}
-	
-	//////// label vector map
+	//////// label vector map ////////
 	
 	// label->id
 	
@@ -195,6 +165,51 @@ public class VectorMetadata {
 	
 	public String getlabel(Integer labelId) {
 		return globalIdToLabelMap.get(labelId);
+	}
+	
+	public Set<String> getWordSet() {
+		return invertedTable.keySet();
+	}
+	
+	//////// CHI vectors ////////
+	
+	public void addChiTerm(String label, String word, Term term) {
+		Map<String,Term> words = chiLabelToWordsVectorsMap.get(label);
+		if(words == null) {
+			words = new HashMap<String,Term>(1);
+			chiLabelToWordsVectorsMap.put(label, words);
+		}
+		words.put(word, term);
+	}
+	
+	public Iterator<Entry<String, Map<String, Term>>> chiLabelToWordsVectorsIterator() {
+		return chiLabelToWordsVectorsMap.entrySet().iterator();
+	}
+	
+	public void addChiMergedTerm(String word, Term term) {
+		if(!chiMergedTermVectorMap.containsKey(word)) {
+			chiMergedTermVectorMap.put(word, term);
+		}
+	}
+	
+	public boolean containsChiWord(String word) {
+		return chiMergedTermVectorMap.containsKey(word);
+	}
+	
+	public Iterator<Entry<String, Term>> chiMergedTermVectorIterator() {
+		return chiMergedTermVectorMap.entrySet().iterator();
+	}
+	
+	public Integer getLabelId(String label) {
+		return globalLabelToIdMap.get(label);
+	}
+	
+	public Integer getWordId(String word) {
+		Term term = chiMergedTermVectorMap.get(word);
+		if(term != null) {
+			return term.getId();
+		}
+		return null;
 	}
 	
 }
