@@ -6,23 +6,25 @@ public class Context {
 
 	private final Configuration configuration;
 	private final VectorMetadata vectorMetadata;
-	private final FileMetadata fileMetadata;
-	private ProcessorType processorType = ProcessorType.TRAIN;
+	private final FDMetadata fDMetadata;
+	private final ProcessorType processorType;
 	
-	public Context(String config) {
+	public Context(ProcessorType processorType, String config) {
+		this.processorType = processorType;
 		this.configuration = new Configuration(config);
 		this.vectorMetadata = new VectorMetadata();
-		this.fileMetadata = new FileMetadata();
+		this.fDMetadata = new FDMetadata(processorType, configuration);
 	}
 	
 	public Context() {
+		this.processorType = ProcessorType.TRAIN;
 		this.configuration = new Configuration();
 		this.vectorMetadata = new VectorMetadata();
-		this.fileMetadata = new FileMetadata();
+		this.fDMetadata = new FDMetadata(processorType, configuration);
 	}
 	
-	public FileMetadata getFileMetadata() {
-		return fileMetadata;
+	public FDMetadata getFDMetadata() {
+		return fDMetadata;
 	}
 
 	public Configuration getConfiguration() {
@@ -37,8 +39,4 @@ public class Context {
 		return processorType;
 	}
 
-	public void setProcessorType(ProcessorType processorType) {
-		this.processorType = processorType;
-	}
-	
 }
