@@ -5,7 +5,7 @@ import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.ProcessorType;
 import org.shirdrn.document.processor.component.BasicInformationCollector;
 import org.shirdrn.document.processor.component.DocumentTFIDFComputation;
-import org.shirdrn.document.processor.component.test.CollectingTestDocumentWords;
+import org.shirdrn.document.processor.component.DocumentWordsCollector;
 import org.shirdrn.document.processor.component.test.LoadFeatureTermVector;
 import org.shirdrn.document.processor.component.test.OutputtingQuantizedTestData;
 
@@ -17,7 +17,7 @@ public class TestDocumentProcessorDriver extends AbstractDocumentProcessorDriver
 		// for test data
 		Component[]	chain = new Component[] {
 				new BasicInformationCollector(context),
-				new CollectingTestDocumentWords(context),
+				new DocumentWordsCollector(context),
 				new LoadFeatureTermVector(context),
 				new DocumentTFIDFComputation(context),
 				new OutputtingQuantizedTestData(context)

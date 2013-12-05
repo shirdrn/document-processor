@@ -5,7 +5,7 @@ import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.ProcessorType;
 import org.shirdrn.document.processor.component.BasicInformationCollector;
 import org.shirdrn.document.processor.component.DocumentTFIDFComputation;
-import org.shirdrn.document.processor.component.train.CollectingTrainDocumentWords;
+import org.shirdrn.document.processor.component.DocumentWordsCollector;
 import org.shirdrn.document.processor.component.train.FeatureTermVectorSelector;
 import org.shirdrn.document.processor.component.train.OutputtingQuantizedTrainData;
 
@@ -17,7 +17,7 @@ public class TrainDocumentProcessorDriver extends AbstractDocumentProcessorDrive
 		// for train data
 		Component[]	chain = new Component[] {
 				new BasicInformationCollector(context),
-				new CollectingTrainDocumentWords(context),
+				new DocumentWordsCollector(context),
 				new FeatureTermVectorSelector(context), 
 				new DocumentTFIDFComputation(context),
 				new OutputtingQuantizedTrainData(context)
