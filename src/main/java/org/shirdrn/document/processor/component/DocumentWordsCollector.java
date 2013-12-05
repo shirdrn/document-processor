@@ -17,13 +17,13 @@ import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.common.TermFilter;
 import org.shirdrn.document.processor.utils.ReflectionUtils;
 
-public abstract class AbstractDocumentWordsCollector extends AbstractComponent {
+public class DocumentWordsCollector extends AbstractComponent {
 	
-	private static final Log LOG = LogFactory.getLog(AbstractDocumentWordsCollector.class);
+	private static final Log LOG = LogFactory.getLog(DocumentWordsCollector.class);
 	private final DocumentAnalyzer analyzer;
 	private final Set<TermFilter> filters = new HashSet<TermFilter>();
 	
-	public AbstractDocumentWordsCollector(Context context) {
+	public DocumentWordsCollector(Context context) {
 		super(context);
 		String analyzerClass = context.getConfiguration().get("processor.document.analyzer.class");
 		LOG.info("Analyzer class name: class=" + analyzerClass);
