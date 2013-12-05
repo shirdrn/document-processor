@@ -24,13 +24,14 @@ public class FeatureTermVectorSelector extends AbstractComponent {
 
 	@Override
 	public void fire() {
-		Iterator<Entry<String, Integer>> iter = context.getVectorMetadata().labelVectorMapIterator();
-		while(iter.hasNext()) {
-			Entry<String, Integer> entry = iter.next();
+		// compute CHI value for selecting feature terms 
+		// after sorting by CHI value
+		for(String label : context.getVectorMetadata().getLabels()) {
 			// for each label, compute CHI vector
-			LOG.info("Compute CHI for: label=" + entry.getKey());
-			processOneLabel(entry.getKey());
+			LOG.info("Compute CHI for: label=" + label);
+			processOneLabel(label);
 		}
+		
 		// sort and select CHI vectors
 		Iterator<Entry<String, Map<String, Term>>> chiIter = 
 				context.getVectorMetadata().chiLabelToWordsVectorsIterator();
