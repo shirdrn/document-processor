@@ -11,11 +11,13 @@ How To
 
 Compute data for libsvm tool, include 2 phases: train and test.
 
-* For train:
+* For train
+
 Program entrance class: org.shirdrn.document.processor.TrainDocumentProcessorDriver
 Configuration file    : config-train.properties
 
-* For test:
+* For test
+
 Program entrance class: org.shirdrn.document.processor.TestDocumentProcessorDriver
 Configuration file    : config-test.properties
 
@@ -25,7 +27,7 @@ FAQ
 
 * If you choose ICTCLAS Chinese analyzer, be sure to copy file 'NLPIR_JNI.dll' to 
 directory 'C:\Windows\System32' in Win7 operating system(default Win7 64bit, more about
-ICTCLAS, please see also http://ictclas.nlpir.org/downloads). 
+ICTCLAS, please hit http://ictclas.nlpir.org/downloads). 
 
 
 Contact
