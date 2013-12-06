@@ -63,7 +63,7 @@ public class DocumentWordsCollector extends AbstractComponent {
 				analyze(label, file);
 				++n;
 			}
-			LOG.info("Analyzed file: count=" + n);
+			LOG.info("Analyzed files: count=" + n);
 		}
 		// output statistics
 		stat();
@@ -71,7 +71,7 @@ public class DocumentWordsCollector extends AbstractComponent {
 	
 	protected void analyze(String label, File file) {
 		String doc = file.getAbsolutePath();
-		LOG.info("Process document: label=" + label + ", file=" + doc);
+		LOG.debug("Process document: label=" + label + ", file=" + doc);
 		Map<String, Term> terms = analyzer.analyze(file);
 		// filter terms
 		filterTerms(terms);
