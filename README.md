@@ -13,13 +13,15 @@ Compute data for libsvm tool, include 2 phases: train and test.
 
 * For train
 
-Program entrance class: org.shirdrn.document.processor.TrainDocumentProcessorDriver
-Configuration file    : config-train.properties
+  Program entrance class: org.shirdrn.document.processor.TrainDocumentProcessorDriver
+
+  Configuration file    : config-train.properties
 
 * For test
 
-Program entrance class: org.shirdrn.document.processor.TestDocumentProcessorDriver
-Configuration file    : config-test.properties
+  Program entrance class: org.shirdrn.document.processor.TestDocumentProcessorDriver
+  
+  Configuration file    : config-test.properties
 
 
 FAQ
