@@ -33,6 +33,10 @@ public class FDMetadata {
 			outputVectorFile = train;
 			outputDir = new File(trainOutputDir);
 			
+			// check existence: 
+			// parent directory of term file MUST exist
+			CheckUtils.checkFile(chiTermVectorFile.getParentFile(), false);
+			// term file MUST NOT exist
 			CheckUtils.checkFile(chiTermVectorFile, true);			
 		} else if(processorType == ProcessorType.TEST) {
 			String testInputRootDir = configuration.get("processor.dataset.test.input.root.dir");
@@ -78,6 +82,5 @@ public class FDMetadata {
 	public File getChiTermVectorFile() {
 		return chiTermVectorFile;
 	}
-	
 	
 }
