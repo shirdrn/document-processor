@@ -41,7 +41,7 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 		Map<String, Term> terms = new HashMap<String, Term>(0);
 		BufferedReader br = null;
 		try {
-			br = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+			br = new BufferedReader(new InputStreamReader(new FileInputStream(file), charSet));
 			String line = null;
 			while((line = br.readLine()) != null) {
 				line = line.trim();
