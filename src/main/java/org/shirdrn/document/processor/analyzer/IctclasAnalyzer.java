@@ -2,8 +2,9 @@ package org.shirdrn.document.processor.analyzer;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,7 +41,7 @@ public class IctclasAnalyzer extends AbstractDocumentAnalyzer implements Documen
 		Map<String, Term> terms = new HashMap<String, Term>(0);
 		BufferedReader br = null;
 		try {
-			br = new BufferedReader(new FileReader(file));
+			br = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
 			String line = null;
 			while((line = br.readLine()) != null) {
 				line = line.trim();
