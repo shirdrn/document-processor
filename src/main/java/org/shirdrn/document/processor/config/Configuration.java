@@ -147,37 +147,37 @@ public final class Configuration implements ContextReadable, ContextWriteable {
 
 	@Override
 	public void setByte(String key, byte value) {
-		properties.put(key, value);		
+		properties.put(key, Byte.toString(value));		
 	}
 
 	@Override
 	public void setShort(String key, short value) {
-		properties.put(key, value);		
+		properties.put(key, Short.toString(value));		
 	}
 
 	@Override
 	public void setInt(String key, int value) {
-		properties.put(key, value);		
+		properties.put(key, Integer.toString(value));		
 	}
 
 	@Override
 	public void setLong(String key, long value) {
-		properties.put(key, value);		
+		properties.put(key, Long.toString(value));		
 	}
 
 	@Override
 	public void setFloat(String key, float value) {
-		properties.put(key, value);		
+		properties.put(key, Float.toString(value));		
 	}
 
 	@Override
 	public void setDouble(String key, double value) {
-		properties.put(key, value);		
+		properties.put(key, Double.toString(value));		
 	}
 
 	@Override
 	public void setBoolean(String key, boolean value) {
-		properties.put(key, value);		
+		properties.put(key, Boolean.toString(value));		
 	}
 
 	@Override
