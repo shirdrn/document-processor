@@ -49,6 +49,7 @@ public class DocumentWordsCollector extends AbstractComponent {
 	@Override
 	public void fire() {
 		for(String label : context.getFDMetadata().getInputRootDir().list()) {
+			LOG.info("Collect words for: label=" + label);
 			File labelDir = new File(context.getFDMetadata().getInputRootDir(), label);
 			File[] files = labelDir.listFiles(new FileFilter() {
 				@Override
@@ -56,9 +57,13 @@ public class DocumentWordsCollector extends AbstractComponent {
 					return pathname.getAbsolutePath().endsWith(context.getFDMetadata().getFileExtensionName());
 				}
 			});
+			LOG.info("Prepare to analyze " + files.length + " files.");
+			int n = 0;
 			for(File file : files) {
 				analyze(label, file);
+				++n;
 			}
+			LOG.info("Analyzed files: count=" + n);
 		}
 		// output statistics
 		stat();
@@ -66,7 +71,7 @@ public class DocumentWordsCollector extends AbstractComponent {
 	
 	protected void analyze(String label, File file) {
 		String doc = file.getAbsolutePath();
-		LOG.info("Process document: label=" + label + ", file=" + doc);
+		LOG.debug("Process document: label=" + label + ", file=" + doc);
 		Map<String, Term> terms = analyzer.analyze(file);
 		// filter terms
 		filterTerms(terms);
@@ -74,7 +79,7 @@ public class DocumentWordsCollector extends AbstractComponent {
 		context.getVectorMetadata().addTerms(label, doc, terms);
 		// add inverted table as needed
 		context.getVectorMetadata().addTermsToInvertedTable(label, doc, terms);
-		LOG.info("Done: file=" + file + ", termCount=" + terms.size());
+		LOG.debug("Done: file=" + file + ", termCount=" + terms.size());
 		LOG.debug("Terms in a doc: terms=" + terms);
 	}
 

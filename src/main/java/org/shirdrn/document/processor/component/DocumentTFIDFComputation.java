@@ -50,7 +50,7 @@ public class DocumentTFIDFComputation extends AbstractComponent {
 						termEntry.getValue().setIdf(idf);
 						termEntry.getValue().setTf(tf);
 						termEntry.getValue().setTfidf(MetricUtils.tfidf(tf, idf));
-						LOG.info("Term detail: label=" + label + ", doc=" + doc + ", term=" + term);
+						LOG.debug("Term detail: label=" + label + ", doc=" + doc + ", term=" + term);
 					} else {
 						// remove term not contained in CHI vector
 						termsIter.remove();
