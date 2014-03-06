@@ -12,6 +12,17 @@ import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.utils.SortUtils;
 
+/**
+ * Select term vector from the train data. The selection can be based on
+ * any effective metric, here we use the Chi-square distance metric to
+ * choose suitable terms. Certainly you can use another one to replace the
+ * default one.</br>
+ * If you have a huge data set which can fit in memory, the better practices
+ * are plus a cache for caching computation result, because there are too many
+ * identical computation logic.
+ * 
+ * @author Shirdrn
+ */
 public class FeatureTermVectorSelector extends AbstractComponent {
 
 	private static final Log LOG = LogFactory.getLog(FeatureTermVectorSelector.class);

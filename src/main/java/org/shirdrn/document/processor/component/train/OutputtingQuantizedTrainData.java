@@ -17,6 +17,13 @@ import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.component.AbstractOutputtingQuantizedData;
 
+/**
+ * Give a unique id to a unique term or label respectively, and output
+ * the mapping from text word to number id to a file, because the libSVM
+ * require quantized data lines from a input file.
+ * 
+ * @author Shirdrn
+ */
 public class OutputtingQuantizedTrainData extends AbstractOutputtingQuantizedData {
 
 	private static final Log LOG = LogFactory.getLog(OutputtingQuantizedTrainData.class);

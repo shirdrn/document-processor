@@ -2,6 +2,6 @@ package org.shirdrn.document.processor.common;
 
 public enum ProcessorType {
 
-	TRAIN,
-	TEST
+	TRAIN, // for tain data
+	TEST   // for test data
 }
