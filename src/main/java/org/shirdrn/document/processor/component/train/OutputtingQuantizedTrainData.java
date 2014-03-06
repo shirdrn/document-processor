@@ -18,9 +18,9 @@ import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.component.AbstractOutputtingQuantizedData;
 
 /**
- * Give a unique id to a unique term or label respectively, and output
+ * Give a unique id to a unique term or label respectively, and then output
  * the mapping from text word to number id to a file, because the libSVM
- * require quantized data lines from a input file.
+ * require quantized data lines from input files.
  * 
  * @author Shirdrn
  */

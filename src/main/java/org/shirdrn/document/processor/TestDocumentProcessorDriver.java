@@ -10,7 +10,7 @@ import org.shirdrn.document.processor.component.test.LoadFeatureTermVector;
 import org.shirdrn.document.processor.component.test.OutputtingQuantizedTestData;
 
 /**
- * Driver for starting components to process TEST data set.
+ * The driver for starting components to process TEST data set.
  * It includes the following 5 components:
  * <ol>
  * <li>{@link BasicInformationCollector}</li>

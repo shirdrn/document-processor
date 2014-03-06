@@ -10,7 +10,7 @@ import org.shirdrn.document.processor.component.train.FeatureTermVectorSelector;
 import org.shirdrn.document.processor.component.train.OutputtingQuantizedTrainData;
 
 /**
- * Driver for starting components to process TRAIN data set.
+ * The driver for starting components to process TRAIN data set.
  * It includes the following 5 components:
  * <ol>
  * <li>{@link BasicInformationCollector}</li>
