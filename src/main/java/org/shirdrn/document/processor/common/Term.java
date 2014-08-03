@@ -92,7 +92,8 @@ public class Term {
 			.append("freq=").append(freq).append(", ")
 			.append("tf=").append(tf).append(", ")
 			.append("idf=").append(idf).append(", ")
-			.append("tf-idf=").append(tfidf)
+			.append("tf-idf=").append(tfidf).append(", ")
+			.append("chi=").append(chi)
 			.append("]");
 		return buffer.toString();
 	}

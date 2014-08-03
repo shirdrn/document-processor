@@ -11,6 +11,7 @@ import org.shirdrn.document.processor.common.AbstractComponent;
 import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.utils.SortUtils;
+import org.shirdrn.document.processor.utils.SortUtils.Result;
 
 /**
  * Select term vector from the procedure of processing train data. The selection can
@@ -50,21 +51,19 @@ public class FeatureTermVectorSelector extends AbstractComponent {
 			Entry<String, Map<String, Term>> entry = chiIter.next();
 			String label = entry.getKey();
 			LOG.info("Sort CHI terms for: label=" + label + ", termCount=" + entry.getValue().size());
-			Entry<String, Term>[] a = sort(entry.getValue());
-			for (int i = 0; i < Math.min(a.length, keptTermCountEachLabel); i++) {
-				Entry<String, Term> termEntry = a[i];
+			Result result = sort(entry.getValue());
+			for (int i = result.getStartIndex(); i <= result.getEndIndex(); i++) {
+				Entry<String, Term> termEntry = result.get(i);
 				// merge CHI terms for all labels
 				context.getVectorMetadata().addChiMergedTerm(termEntry.getKey(), termEntry.getValue());
 			}
 		}
 	}
 	
-	@SuppressWarnings("unchecked")
-	private Entry<String, Term>[] sort(Map<String, Term> terms) {
-		Entry<String, Term>[] a = new Entry[terms.size()];
-		a = terms.entrySet().toArray(a);
-		SortUtils.heapSort(a, true, keptTermCountEachLabel);
-		return a;
+	private Result sort(Map<String, Term> terms) {
+		SortUtils sorter = new SortUtils(terms, true, keptTermCountEachLabel);
+		Result result = sorter.heapSort();
+		return result;
 	}
 
 	private void processOneLabel(String label) {
