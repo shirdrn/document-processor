@@ -107,7 +107,8 @@ public class FeatureTermVectorSelector extends AbstractComponent {
 			int C = docCountNotContainingWordInLabel;
 			int D = docCountNotContainingWordNotInLabel;
 			int temp = (A*D-B*C);
-			double chi = (double) N*temp*temp / (A+C)*(A+B)*(B+D)*(C+D);
+			// double chi = (double) N*temp*temp / (A+C)*(A+B)*(B+D)*(C+D); // incorrect!!!
+			double chi = (double) N*temp*temp / ((A+C)*(A+B)*(B+D)*(C+D)); // correct formula computation
 			Term term = new Term(word);
 			term.setChi(chi);
 			context.getVectorMetadata().addChiTerm(label, word, term);
