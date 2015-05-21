@@ -36,7 +36,7 @@ public class OutputtingQuantizedTrainData extends AbstractOutputtingQuantizedDat
 
 	@Override
 	public void fire() {
-		super.fire();
+		super.fire();//很多方法通过基类调用
 		LOG.info("Output label mapping file: labelFile=" + context.getFDMetadata().getLabelVectorFile());
 		output(context.getFDMetadata().getLabelVectorFile(), context.getVectorMetadata().labelVectorMapIterator());
 	}
@@ -74,7 +74,7 @@ public class OutputtingQuantizedTrainData extends AbstractOutputtingQuantizedDat
 		Map<Integer, String> globalIdToLabelMap = new HashMap<Integer, String>(0);
 		
 		// generate label id
-		for(String label : context.getVectorMetadata().getLabels()) {
+		for(String label : context.getVectorMetadata().getLabels()) {//所有类别的名字已经在BasicInformationCollector阶段收集好了
 			Integer labelId = globalLabelToIdMap.get(label);
 			if(labelId == null) {
 				++labelNumber;
@@ -99,7 +99,7 @@ public class OutputtingQuantizedTrainData extends AbstractOutputtingQuantizedDat
 		outputChiTermVector();
 	}
 
-	private void outputChiTermVector() {
+	private void outputChiTermVector() {//输出 关键词 词编号 格式的文件
 		BufferedWriter w = null;
 		Iterator<Entry<String,Term>> iter = 
 				context.getVectorMetadata().chiMergedTermVectorIterator();
@@ -115,7 +115,7 @@ public class OutputtingQuantizedTrainData extends AbstractOutputtingQuantizedDat
 					.append(word).append("\t")
 					.append(wordId);
 				LOG.debug("Write CHI term vector: word=" + word + 
-						", datum=" + buf.toString());
+						", data=" + buf.toString());
 				w.write(buf.toString());
 				w.newLine();
 			}
@@ -124,6 +124,14 @@ public class OutputtingQuantizedTrainData extends AbstractOutputtingQuantizedDat
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
+			try {
+				w.write("F-Measure	6000");
+				w.newLine();
+				w.write("Mood-Feature	6001");
+			} catch (IOException e1) {
+				// TODO 自动生成的 catch 块
+				e1.printStackTrace();
+			}
 			if(w != null) {
 				try {
 					w.close();

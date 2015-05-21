@@ -31,7 +31,7 @@ public class AbstractDocumentAnalyzer {
 		String stopWordsDir = configuration.get("processor.analyzer.stopwords.path");
 		if(stopWordsDir != null) {
 			File dir = new File(stopWordsDir);
-			File[] files = dir.listFiles(new FileFilter() {
+			File[] files = dir.listFiles(new FileFilter() {//返回非文件夹文件
 
 				@Override
 				public boolean accept(File file) {
@@ -44,7 +44,7 @@ public class AbstractDocumentAnalyzer {
 			});
 			for(File file : files) {
 				try {
-					load(file);
+					load(file);//读取文件中的停用词并更新停用词表
 				} catch (Exception e) {
 					LOG.warn("Fail to load stop words: file=" + file, e);
 				}

@@ -42,7 +42,7 @@ public class LoadFeatureTermVector extends AbstractComponent {
 			while((line = reader.readLine()) != null) {
 				line = line.trim();
 				if(!line.isEmpty()) {
-					String[] aWord = line.split("\\s+");
+					String[] aWord = line.split("\\s+");//一个以上的空格为分隔符
 					if(aWord.length == 2) {
 						String word = aWord[0];
 						int wordId = Integer.parseInt(aWord[1]);

@@ -17,7 +17,7 @@ public class Context {
 	}
 	
 	public Context() {
-		this.processorType = ProcessorType.TRAIN;
+		this.processorType = ProcessorType.TRAIN;//默认为训练集
 		this.configuration = new Configuration();
 		this.vectorMetadata = new VectorMetadata();
 		this.fDMetadata = new FDMetadata(processorType, configuration);

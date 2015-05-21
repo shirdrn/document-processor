@@ -1,0 +1,254 @@
+2015-05-07 10:47:15.550 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-07 10:47:15.573 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-07 10:47:15.581 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\性别分类实验数据集
+2015-05-07 10:47:15.582 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-07 10:47:15.582 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-07 10:47:15.603 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-07 10:47:15.689 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-07 10:47:15.701 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@117a0daa
+2015-05-07 10:47:15.714 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@4be03c55
+2015-05-07 10:47:15.723 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@43c32b82
+2015-05-07 10:47:15.769 [main] INFO  processor.component.BasicInformationCollector - Add label: label=女性用户
+2015-05-07 10:47:15.782 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 女性用户, docCount=10
+2015-05-07 10:47:15.783 [main] INFO  processor.component.BasicInformationCollector - Add label: label=男性用户
+2015-05-07 10:47:15.783 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 男性用户, docCount=10
+2015-05-07 10:47:15.783 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 20
+2015-05-07 10:47:15.783 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=女性用户
+2015-05-07 10:47:15.784 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 10 files.
+2015-05-07 10:47:15.784 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (1).txt
+2015-05-07 10:47:16.143 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (10).txt
+2015-05-07 10:47:16.383 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (2).txt
+2015-05-07 10:47:16.591 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (3).txt
+2015-05-07 10:47:16.799 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (4).txt
+2015-05-07 10:47:16.999 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (5).txt
+2015-05-07 10:47:17.194 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (6).txt
+2015-05-07 10:47:17.368 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (7).txt
+2015-05-07 10:47:17.542 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (8).txt
+2015-05-07 10:47:17.712 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (9).txt
+2015-05-07 10:47:17.871 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=10
+2015-05-07 10:47:17.871 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=男性用户
+2015-05-07 10:47:17.872 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 10 files.
+2015-05-07 10:47:17.872 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (1).txt
+2015-05-07 10:47:18.110 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (10).txt
+2015-05-07 10:47:18.274 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (2).txt
+2015-05-07 10:47:18.481 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (3).txt
+2015-05-07 10:47:18.702 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (4).txt
+2015-05-07 10:47:18.900 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (5).txt
+2015-05-07 10:47:19.081 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (6).txt
+2015-05-07 10:47:19.247 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (7).txt
+2015-05-07 10:47:19.428 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (8).txt
+2015-05-07 10:47:19.605 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (9).txt
+2015-05-07 10:47:19.767 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=10
+2015-05-07 10:47:19.767 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=20
+2015-05-07 10:47:19.767 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-07 10:47:19.768 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=男性用户, docCount=10
+2015-05-07 10:47:19.768 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=女性用户, docCount=10
+2015-05-07 10:47:19.768 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=女性用户
+2015-05-07 10:47:19.800 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=男性用户
+2015-05-07 10:47:19.813 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=男性用户, termCount=5078
+2015-05-07 10:47:19.836 [main] INFO  component.train.FeatureTermVectorSelector - Label:男性用户
+2015-05-07 10:47:19.836 [main] INFO  component.train.FeatureTermVectorSelector - 机会=[word=机会, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=11.11111111111111]
+2015-05-07 10:47:19.837 [main] INFO  component.train.FeatureTermVectorSelector - 日子=[word=日子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 10:47:19.837 [main] INFO  component.train.FeatureTermVectorSelector - 电影=[word=电影, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.004329004329005]
+2015-05-07 10:47:19.837 [main] INFO  component.train.FeatureTermVectorSelector - 孩子=[word=孩子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=7.006060606060606]
+2015-05-07 10:47:19.837 [main] INFO  component.train.FeatureTermVectorSelector - 人们=[word=人们, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=7.006060606060606]
+2015-05-07 10:47:19.837 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=女性用户, termCount=5078
+2015-05-07 10:47:19.840 [main] INFO  component.train.FeatureTermVectorSelector - Label:女性用户
+2015-05-07 10:47:19.840 [main] INFO  component.train.FeatureTermVectorSelector - 问题=[word=问题, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 10:47:19.840 [main] INFO  component.train.FeatureTermVectorSelector - 内心=[word=内心, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 10:47:19.840 [main] INFO  component.train.FeatureTermVectorSelector - 时间=[word=时间, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 10:47:19.840 [main] INFO  component.train.FeatureTermVectorSelector - 结果=[word=结果, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 10:47:19.840 [main] INFO  component.train.FeatureTermVectorSelector - 理由=[word=理由, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.004329004329005]
+2015-05-07 10:47:19.880 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-07 10:47:19.881 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-05-07 11:06:12.121 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-07 11:06:12.125 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-07 11:06:24.746 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-07 11:06:24.748 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-07 11:06:24.749 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\性别分类实验数据集
+2015-05-07 11:06:24.749 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-07 11:06:24.749 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-07 11:06:24.756 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-07 11:06:24.872 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-07 11:06:24.879 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-07 11:06:24.882 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-07 11:06:24.885 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-07 11:06:24.897 [main] INFO  processor.component.BasicInformationCollector - Add label: label=女性用户
+2015-05-07 11:06:24.900 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 女性用户, docCount=10
+2015-05-07 11:06:24.900 [main] INFO  processor.component.BasicInformationCollector - Add label: label=男性用户
+2015-05-07 11:06:24.900 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 男性用户, docCount=10
+2015-05-07 11:06:24.901 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 20
+2015-05-07 11:06:24.901 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=女性用户
+2015-05-07 11:06:24.904 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 10 files.
+2015-05-07 11:06:24.904 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (1).txt
+2015-05-07 11:06:25.255 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (10).txt
+2015-05-07 11:06:25.432 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (2).txt
+2015-05-07 11:06:25.654 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (3).txt
+2015-05-07 11:06:25.861 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (4).txt
+2015-05-07 11:06:26.058 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (5).txt
+2015-05-07 11:06:26.250 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (6).txt
+2015-05-07 11:06:26.426 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (7).txt
+2015-05-07 11:06:26.600 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (8).txt
+2015-05-07 11:06:26.768 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (9).txt
+2015-05-07 11:06:26.927 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=10
+2015-05-07 11:06:26.927 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=男性用户
+2015-05-07 11:06:26.928 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 10 files.
+2015-05-07 11:06:26.928 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (1).txt
+2015-05-07 11:06:27.154 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (10).txt
+2015-05-07 11:06:27.310 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (2).txt
+2015-05-07 11:06:27.522 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (3).txt
+2015-05-07 11:06:27.744 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (4).txt
+2015-05-07 11:06:27.925 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (5).txt
+2015-05-07 11:06:28.091 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (6).txt
+2015-05-07 11:06:28.252 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (7).txt
+2015-05-07 11:06:28.438 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (8).txt
+2015-05-07 11:06:28.607 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (9).txt
+2015-05-07 11:06:28.760 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=10
+2015-05-07 11:06:28.761 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=20
+2015-05-07 11:06:28.761 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-07 11:06:28.761 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=男性用户, docCount=10
+2015-05-07 11:06:28.761 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=女性用户, docCount=10
+2015-05-07 11:06:28.761 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=女性用户
+2015-05-07 11:06:28.797 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=男性用户
+2015-05-07 11:06:28.812 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=男性用户, termCount=5078
+2015-05-07 11:06:28.822 [main] INFO  component.train.FeatureTermVectorSelector - Label:男性用户
+2015-05-07 11:06:28.822 [main] INFO  component.train.FeatureTermVectorSelector - 机会=[word=机会, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=11.11111111111111]
+2015-05-07 11:06:28.823 [main] INFO  component.train.FeatureTermVectorSelector - 日子=[word=日子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 11:06:28.823 [main] INFO  component.train.FeatureTermVectorSelector - 电影=[word=电影, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.004329004329005]
+2015-05-07 11:06:28.823 [main] INFO  component.train.FeatureTermVectorSelector - 孩子=[word=孩子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=7.006060606060606]
+2015-05-07 11:06:28.823 [main] INFO  component.train.FeatureTermVectorSelector - 人们=[word=人们, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=7.006060606060606]
+2015-05-07 11:06:28.823 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=女性用户, termCount=5078
+2015-05-07 11:06:28.826 [main] INFO  component.train.FeatureTermVectorSelector - Label:女性用户
+2015-05-07 11:06:28.826 [main] INFO  component.train.FeatureTermVectorSelector - 问题=[word=问题, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 11:06:28.826 [main] INFO  component.train.FeatureTermVectorSelector - 内心=[word=内心, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 11:06:28.826 [main] INFO  component.train.FeatureTermVectorSelector - 时间=[word=时间, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 11:06:28.826 [main] INFO  component.train.FeatureTermVectorSelector - 结果=[word=结果, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 11:06:28.826 [main] INFO  component.train.FeatureTermVectorSelector - 理由=[word=理由, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.004329004329005]
+2015-05-07 11:06:28.852 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-07 11:06:28.852 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-05-07 13:32:17.013 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-07 13:32:17.015 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-07 13:32:26.785 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-07 13:32:26.787 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-07 13:32:26.788 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\性别分类实验数据集
+2015-05-07 13:32:26.788 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-07 13:32:26.788 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-07 13:32:26.790 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-07 13:32:26.804 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-07 13:32:26.807 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-07 13:32:26.807 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-07 13:32:26.808 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-07 13:32:26.812 [main] INFO  processor.component.BasicInformationCollector - Add label: label=女性用户
+2015-05-07 13:32:26.813 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 女性用户, docCount=10
+2015-05-07 13:32:26.813 [main] INFO  processor.component.BasicInformationCollector - Add label: label=男性用户
+2015-05-07 13:32:26.813 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 男性用户, docCount=10
+2015-05-07 13:32:26.813 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 20
+2015-05-07 13:32:26.814 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=女性用户
+2015-05-07 13:32:26.814 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 10 files.
+2015-05-07 13:32:26.814 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (1).txt
+2015-05-07 13:32:27.155 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (10).txt
+2015-05-07 13:32:27.326 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (2).txt
+2015-05-07 13:32:27.539 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (3).txt
+2015-05-07 13:32:27.735 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (4).txt
+2015-05-07 13:32:27.925 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (5).txt
+2015-05-07 13:32:28.112 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (6).txt
+2015-05-07 13:32:28.280 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (7).txt
+2015-05-07 13:32:28.449 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (8).txt
+2015-05-07 13:32:28.611 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (9).txt
+2015-05-07 13:32:28.766 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=10
+2015-05-07 13:32:28.766 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=男性用户
+2015-05-07 13:32:28.766 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 10 files.
+2015-05-07 13:32:28.766 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (1).txt
+2015-05-07 13:32:28.985 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (10).txt
+2015-05-07 13:32:29.135 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (2).txt
+2015-05-07 13:32:29.330 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (3).txt
+2015-05-07 13:32:29.543 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (4).txt
+2015-05-07 13:32:29.712 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (5).txt
+2015-05-07 13:32:29.871 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (6).txt
+2015-05-07 13:32:30.026 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (7).txt
+2015-05-07 13:32:30.198 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (8).txt
+2015-05-07 13:32:30.358 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (9).txt
+2015-05-07 13:32:30.502 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=10
+2015-05-07 13:32:30.502 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=20
+2015-05-07 13:32:30.502 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-07 13:32:30.502 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=男性用户, docCount=10
+2015-05-07 13:32:30.502 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=女性用户, docCount=10
+2015-05-07 13:32:30.503 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=女性用户
+2015-05-07 13:32:30.534 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=男性用户
+2015-05-07 13:32:30.546 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=男性用户, termCount=5078
+2015-05-07 13:32:30.550 [main] INFO  component.train.FeatureTermVectorSelector - Label:男性用户
+2015-05-07 13:32:30.550 [main] INFO  component.train.FeatureTermVectorSelector - 机会=[word=机会, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=11.11111111111111]
+2015-05-07 13:32:30.551 [main] INFO  component.train.FeatureTermVectorSelector - 日子=[word=日子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:32:30.551 [main] INFO  component.train.FeatureTermVectorSelector - 电影=[word=电影, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.004329004329005]
+2015-05-07 13:32:30.551 [main] INFO  component.train.FeatureTermVectorSelector - 孩子=[word=孩子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=7.006060606060606]
+2015-05-07 13:32:30.551 [main] INFO  component.train.FeatureTermVectorSelector - 人们=[word=人们, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=7.006060606060606]
+2015-05-07 13:32:30.551 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=女性用户, termCount=5078
+2015-05-07 13:32:30.553 [main] INFO  component.train.FeatureTermVectorSelector - Label:女性用户
+2015-05-07 13:32:30.554 [main] INFO  component.train.FeatureTermVectorSelector - 问题=[word=问题, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:32:30.554 [main] INFO  component.train.FeatureTermVectorSelector - 内心=[word=内心, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:32:30.554 [main] INFO  component.train.FeatureTermVectorSelector - 时间=[word=时间, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:32:30.554 [main] INFO  component.train.FeatureTermVectorSelector - 结果=[word=结果, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:32:30.554 [main] INFO  component.train.FeatureTermVectorSelector - 理由=[word=理由, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.004329004329005]
+2015-05-07 13:37:26.525 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-07 13:37:26.528 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-07 13:37:26.528 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\性别分类实验数据集
+2015-05-07 13:37:26.529 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-07 13:37:26.529 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-07 13:37:26.530 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-07 13:37:26.545 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-07 13:37:26.548 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-07 13:37:26.549 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-07 13:37:26.549 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-07 13:37:26.553 [main] INFO  processor.component.BasicInformationCollector - Add label: label=女性用户
+2015-05-07 13:37:26.554 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 女性用户, docCount=10
+2015-05-07 13:37:26.554 [main] INFO  processor.component.BasicInformationCollector - Add label: label=男性用户
+2015-05-07 13:37:26.555 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 男性用户, docCount=10
+2015-05-07 13:37:26.555 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 20
+2015-05-07 13:37:26.555 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=女性用户
+2015-05-07 13:37:26.555 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 10 files.
+2015-05-07 13:37:26.556 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (1).txt
+2015-05-07 13:37:26.896 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (10).txt
+2015-05-07 13:37:27.066 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (2).txt
+2015-05-07 13:37:27.273 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (3).txt
+2015-05-07 13:37:27.467 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (4).txt
+2015-05-07 13:37:27.658 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (5).txt
+2015-05-07 13:37:27.837 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (6).txt
+2015-05-07 13:37:28.005 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (7).txt
+2015-05-07 13:37:28.173 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (8).txt
+2015-05-07 13:37:28.333 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (9).txt
+2015-05-07 13:37:28.486 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=10
+2015-05-07 13:37:28.486 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=男性用户
+2015-05-07 13:37:28.487 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 10 files.
+2015-05-07 13:37:28.487 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (1).txt
+2015-05-07 13:37:28.707 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (10).txt
+2015-05-07 13:37:28.857 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (2).txt
+2015-05-07 13:37:29.055 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (3).txt
+2015-05-07 13:37:29.271 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (4).txt
+2015-05-07 13:37:29.443 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (5).txt
+2015-05-07 13:37:29.606 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (6).txt
+2015-05-07 13:37:29.761 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (7).txt
+2015-05-07 13:37:29.934 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (8).txt
+2015-05-07 13:37:30.091 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (9).txt
+2015-05-07 13:37:30.243 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=10
+2015-05-07 13:37:30.243 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=20
+2015-05-07 13:37:30.243 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-07 13:37:30.244 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=男性用户, docCount=10
+2015-05-07 13:37:30.244 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=女性用户, docCount=10
+2015-05-07 13:37:30.244 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=女性用户
+2015-05-07 13:37:30.276 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=男性用户
+2015-05-07 13:37:30.289 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=男性用户, termCount=5078
+2015-05-07 13:37:30.292 [main] INFO  component.train.FeatureTermVectorSelector - Label:男性用户
+2015-05-07 13:37:30.293 [main] INFO  component.train.FeatureTermVectorSelector - 机会=[word=机会, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=11.11111111111111]
+2015-05-07 13:37:30.293 [main] INFO  component.train.FeatureTermVectorSelector - 日子=[word=日子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:37:30.294 [main] INFO  component.train.FeatureTermVectorSelector - 电影=[word=电影, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.004329004329005]
+2015-05-07 13:37:30.294 [main] INFO  component.train.FeatureTermVectorSelector - 孩子=[word=孩子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=7.006060606060606]
+2015-05-07 13:37:30.294 [main] INFO  component.train.FeatureTermVectorSelector - 人们=[word=人们, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=7.006060606060606]
+2015-05-07 13:37:30.294 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=女性用户, termCount=5078
+2015-05-07 13:37:30.297 [main] INFO  component.train.FeatureTermVectorSelector - Label:女性用户
+2015-05-07 13:37:30.298 [main] INFO  component.train.FeatureTermVectorSelector - 问题=[word=问题, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:37:30.298 [main] INFO  component.train.FeatureTermVectorSelector - 内心=[word=内心, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:37:30.298 [main] INFO  component.train.FeatureTermVectorSelector - 时间=[word=时间, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:37:30.298 [main] INFO  component.train.FeatureTermVectorSelector - 结果=[word=结果, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.333333333333334]
+2015-05-07 13:37:30.298 [main] INFO  component.train.FeatureTermVectorSelector - 理由=[word=理由, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=8.004329004329005]
+2015-05-07 13:37:30.324 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-07 13:37:30.324 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt

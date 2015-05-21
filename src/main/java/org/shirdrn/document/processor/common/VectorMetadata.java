@@ -12,13 +12,13 @@ import java.util.Set;
 public class VectorMetadata {
 
 	private int totalDocCount;
-	private final List<String> labels = new ArrayList<String>();
+	private final List<String> labels = new ArrayList<String>();//labels表示类别
 	// Map<类别, 文档数量>
 	private final Map<String, Integer> labelledTotalDocCountMap = new HashMap<String, Integer>();
-	//  Map<类别, Map<文档 ,Map<词, 词信息>>>
+	//  Map<类别, Map<文档 ,Map<词, 词信息>>> 分析结果 通过文档词语收集器更新
 	private final Map<String, Map<String, Map<String, Term>>> termTable = 
 			new HashMap<String, Map<String, Map<String, Term>>>();
-	//  Map<词 ,Map<类别, Set<文档>>>
+	//  Map<词 ,Map<类别, Set<文档>>> 倒排表 通过文档词语收集器更新
 	private final Map<String, Map<String, Set<String>>> invertedTable = 
 			new HashMap<String, Map<String, Set<String>>>();
 	
@@ -27,10 +27,25 @@ public class VectorMetadata {
 	// <label, labelId>
 	private final Map<String, Integer> globalLabelToIdMap = new HashMap<String, Integer>(0);
 	
-	// Map<label, Map<word, term>>
+	// Map<label, Map<word, term>> 每个类别包含的特征词表，包含了chi值信息（跟具体文档无关，通过特征选择模块更新）
 	private final Map<String, Map<String, Term>> chiLabelToWordsVectorsMap = new HashMap<String, Map<String, Term>>(0);
-	// Map<word, term>, finally merged vector
+	// Map<word, term>, finally merged vector 合并后的全类别特征向量表
 	private final Map<String, Term> chiMergedTermVectorMap = new HashMap<String, Term>(0);
+	//存储每个文档对应的F-Measure的值
+	private final Map<String,Map<String,DocInfo>> docInfoMap=new HashMap<String,Map<String,DocInfo>>(0);
+	
+	public void addDocInfoMap(String label,String doc,DocInfo docInfo){
+		Map<String, DocInfo> docs = docInfoMap.get(label);
+		if(docs == null) {
+			docs = new HashMap<String, DocInfo>();
+			docInfoMap.put(label, docs);
+		}
+		docs.put(doc, docInfo);
+	}
+	
+	public DocInfo getDocInfo(String label,String doc){
+		return docInfoMap.get(label).get(doc);
+	}
 		
 	public void addLabel(String label) {
 		if(!labels.contains(label)) {
@@ -68,13 +83,13 @@ public class VectorMetadata {
 	
 	public void addTermToInvertedTable(String label, String doc, Term term) {
 		String word = term.getWord();
-		Map<String, Set<String>> labelledDocs = invertedTable.get(word);
-		if(labelledDocs == null) {
+		Map<String/*类别*/, Set<String>/*文档*/> labelledDocs = invertedTable.get(word);//读取倒排表
+		if(labelledDocs == null) {//说明这个词是第一次出现
 			labelledDocs = new HashMap<String, Set<String>>(0);
 			invertedTable.put(word, labelledDocs);
 		}
-		Set<String> docs = labelledDocs.get(label);
-		if(docs == null) {
+		Set<String> docs = labelledDocs.get(label);//得到包含term的特定类别label的文档的列表
+		if(docs == null) {//该类之前没有包含term的文档
 			docs = new HashSet<String>();
 			labelledDocs.put(label, docs);
 		}
@@ -83,7 +98,7 @@ public class VectorMetadata {
 	
 	public void addTermsToInvertedTable(String label, String doc, Map<String, Term> terms) {
 		Iterator<Entry<String, Term>> iter = terms.entrySet().iterator();
-		while(iter.hasNext()) {
+		while(iter.hasNext()) {//遍历terms中的每一个term
 			Entry<String, Term> entry = iter.next();
 			addTermToInvertedTable(label, doc, entry.getValue());
 		}
@@ -130,7 +145,7 @@ public class VectorMetadata {
 			docs = new HashMap<String, Map<String, Term>>();
 			termTable.put(label, docs);
 		}
-		docs.put(doc, terms);
+		docs.put(doc, terms);//将某类别label下的特定文档doc的关键词表terms记录下来
 	}
 	
 	public int getLabelCount() {

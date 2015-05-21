@@ -27,7 +27,7 @@ import org.shirdrn.document.processor.utils.SortUtils.Result;
 public class FeatureTermVectorSelector extends AbstractComponent {
 
 	private static final Log LOG = LogFactory.getLog(FeatureTermVectorSelector.class);
-	private final int keptTermCountEachLabel;
+	private final int keptTermCountEachLabel;//每个类别可保留的特征词数量
 	
 	public FeatureTermVectorSelector(Context context) {
 		super(context);
@@ -39,40 +39,49 @@ public class FeatureTermVectorSelector extends AbstractComponent {
 		// compute CHI value for selecting feature terms 
 		// after sorting by CHI value
 		for(String label : context.getVectorMetadata().getLabels()) {
-			// for each label, compute CHI vector
+			// for each label, compute CHI vector  CHI是相对于某一类别而言的，chiLabelToWordsVectorsMap存储着每个类别所有词的CHI信息
 			LOG.info("Compute CHI for: label=" + label);
 			processOneLabel(label);
 		}
 		
 		// sort and select CHI vectors
 		Iterator<Entry<String, Map<String, Term>>> chiIter = 
-				context.getVectorMetadata().chiLabelToWordsVectorsIterator();
+				context.getVectorMetadata().chiLabelToWordsVectorsIterator();//每个类别对应的关键词
 		while(chiIter.hasNext()) {
 			Entry<String, Map<String, Term>> entry = chiIter.next();
-			String label = entry.getKey();
+			String label = entry.getKey();//得到当前类别
+			//因为是遍历倒排表来得到每个类别的所有词的CHI，所以每个类别的关键词的数量相同
 			LOG.info("Sort CHI terms for: label=" + label + ", termCount=" + entry.getValue().size());
-			Result result = sort(entry.getValue());
-			for (int i = result.getStartIndex(); i <= result.getEndIndex(); i++) {
+			Result result = sort(entry.getValue());//对当前类别的特征词进行排序，按照chi值大小
+			for (int i = result.getEndIndex(),l=0; i >= result.getStartIndex(); i--,l++) {
 				Entry<String, Term> termEntry = result.get(i);
 				// merge CHI terms for all labels
 				context.getVectorMetadata().addChiMergedTerm(termEntry.getKey(), termEntry.getValue());
+				
+				if(l==0)
+				{
+					LOG.info("Label:"+label);
+					LOG.info(result.get(i));
+				}
+				else if(l<=5)
+					LOG.info(result.get(i));
 			}
 		}
 	}
 	
 	private Result sort(Map<String, Term> terms) {
-		SortUtils sorter = new SortUtils(terms, true, keptTermCountEachLabel);
+		SortUtils sorter = new SortUtils(terms, true, keptTermCountEachLabel);//降序
 		Result result = sorter.heapSort();
 		return result;
 	}
 
 	private void processOneLabel(String label) {
 		Iterator<Entry<String, Map<String, Set<String>>>> iter = 
-				context.getVectorMetadata().invertedTableIterator();
-		while(iter.hasNext()) {
+				context.getVectorMetadata().invertedTableIterator();//倒排表
+		while(iter.hasNext()) {//针对倒排表中的每个词
 			Entry<String, Map<String, Set<String>>> entry = iter.next();
 			String word = entry.getKey();
-			Map<String, Set<String>> labelledDocs = entry.getValue();
+			Map<String, Set<String>> labelledDocs = entry.getValue();//含有该词的某类别下的所有文档
 			
 			// A: doc count containing the word in this label
 			int docCountContainingWordInLabel = 0;
@@ -111,7 +120,7 @@ public class FeatureTermVectorSelector extends AbstractComponent {
 			double chi = (double) N*temp*temp / ((A+C)*(A+B)*(B+D)*(C+D)); // correct formula computation
 			Term term = new Term(word);
 			term.setChi(chi);
-			context.getVectorMetadata().addChiTerm(label, word, term);
+			context.getVectorMetadata().addChiTerm(label, word, term);//将计算好的CHI值存入chiLabelToWordsVectorsMap
 		}
 	}
 
@@ -119,7 +128,7 @@ public class FeatureTermVectorSelector extends AbstractComponent {
 		int count = 0;
 		Iterator<Entry<String,Map<String,Map<String,Term>>>> iter = 
 				context.getVectorMetadata().termTableIterator();
-		while(iter.hasNext()) {
+		while(iter.hasNext()) {//针对每一个类别
 			Entry<String,Map<String,Map<String,Term>>> entry = iter.next();
 			String tmpLabel = entry.getKey();
 			// in this label
