@@ -88,7 +88,7 @@ public class FeatureTermVectorSelector extends AbstractComponent {
 				Entry<String, Set<String>> labelledEntry = labelledIter.next();
 				String tmpLabel = labelledEntry.getKey();
 				if(!label.equals(tmpLabel)) {
-					docCountContainingWordNotInLabel += entry.getValue().size();
+					docCountContainingWordNotInLabel += labelledEntry.getValue().size();
 				}
 			}
 			
