@@ -27,7 +27,7 @@ Compute data for libsvm tool, include 2 phases: train and test.
 FAQ
 ==================
 
-* If you choose ICTCLAS Chinese analyzer, be sure to copy file 'NLPIR_JNI.dll' to 
+* If you choose to use ICTCLAS Chinese analyzer, be sure to copy file 'NLPIR_JNI.dll' to 
 directory 'C:\Windows\System32' in Win7 operating system(default Win7 64bit, more about
 ICTCLAS, please hit http://ictclas.nlpir.org/downloads). 
 
