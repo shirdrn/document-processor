@@ -23,12 +23,12 @@ public class FDMetadata {
 		LOG.info("Train dataset file extension: name=" + fileExtensionName);
 		String termsFile = configuration.get("processor.dataset.chi.term.vector.file");
 		CheckUtils.checkNotNull(termsFile);
-		chiTermVectorFile = new File(termsFile);
+		chiTermVectorFile = new File(termsFile);//词 词编号 特征向量格式说明
 		
 		if(processorType == ProcessorType.TRAIN) {
-			String trainInputRootDir = configuration.get("processor.dataset.train.input.root.dir");
-			String train = configuration.get("processor.dataset.train.svm.vector.file");
-			String trainOutputDir = configuration.get("processor.dataset.train.svm.vector.output.dir");
+			String trainInputRootDir = configuration.get("processor.dataset.train.input.root.dir");//训练集语料路径
+			String train = configuration.get("processor.dataset.train.svm.vector.file");//机器学习后的输出文件名
+			String trainOutputDir = configuration.get("processor.dataset.train.svm.vector.output.dir");//机器学习后的输出路径
 			inputRootDir = new File(trainInputRootDir);
 			outputVectorFile = train;
 			outputDir = new File(trainOutputDir);
@@ -46,15 +46,15 @@ public class FDMetadata {
 			outputVectorFile = test;
 			outputDir = new File(testOutputDir);
 			
-			CheckUtils.checkFile(chiTermVectorFile, false);
+			CheckUtils.checkFile(chiTermVectorFile, false);//必须已存在关键词表
 		} else {
 			throw new RuntimeException("Undefined processor type!");
 		}
 		
-		String labels = configuration.get("processor.dataset.label.vector.file");
+		String labels = configuration.get("processor.dataset.label.vector.file");//分类标记文件（数字代表分类）
 		labelVectorFile = new File(labels);
 		
-		LOG.info("Vector input root directory: outputDir=" + inputRootDir);
+		LOG.info("Vector input root directory 训练集语料路径: inputDir=" + inputRootDir);
 		LOG.info("Vector output directory: outputDir=" + outputDir);
 		LOG.info("Vector output file: outputFile=" + outputVectorFile);
 	}

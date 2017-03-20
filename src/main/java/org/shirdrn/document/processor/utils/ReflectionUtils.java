@@ -33,8 +33,8 @@ public class ReflectionUtils {
 	public static <T> T getInstance(String className, Class<T> baseClass, ClassLoader classLoader) {
 		return getInstance(className, baseClass, classLoader, new Object[] {});
 	}
-
-	public static <T> T getInstance(String className, Class<T> baseClass, ClassLoader classLoader, Object... parameters) {
+	//parameter是对应类的构造函数的参数
+	public static <T> T getInstance(String className, Class<T> baseClass, ClassLoader classLoader, Object[] parameters) {
 		T instance = null;
 		try {
 			Class<T> clazz = newClass(className, baseClass, classLoader);
@@ -48,7 +48,7 @@ public class ReflectionUtils {
 	public static Object getInstance(String className, Object[] parameters) {
 		return getInstance(className, getClassLoader(null), parameters);
 	}
-
+	
 	public static Object getInstance(String className, ClassLoader classLoader, Object[] parameters) {
 		return getInstance(className, classLoader, parameters);
 	}
@@ -71,8 +71,8 @@ public class ReflectionUtils {
 			throws InstantiationException, IllegalAccessException, InvocationTargetException {
 		T instance = null;
 		Constructor<T>[] constructors = (Constructor<T>[]) clazz.getConstructors();
-		for (Constructor<T> c : constructors) {
-			if (c.getParameterTypes().length == parameters.length) {
+		for (Constructor<T> c : constructors) {//遍历该类所有的构造函数
+			if (c.getParameterTypes().length == parameters.length) {//找到与提供的参数匹配的版本
 				instance = c.newInstance(parameters);
 				break;
 			}

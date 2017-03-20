@@ -1,0 +1,2 @@
+2015-04-15 18:01:52.783 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-04-15 18:01:52.786 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=

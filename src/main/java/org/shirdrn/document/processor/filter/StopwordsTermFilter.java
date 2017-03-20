@@ -43,7 +43,7 @@ public class StopwordsTermFilter implements TermFilter {
 
 					@Override
 					public boolean accept(File file) {
-						if(file.isFile()) {
+						if(file.isFile()) {//过滤掉文件夹文件
 							return true;
 						}
 						return false;

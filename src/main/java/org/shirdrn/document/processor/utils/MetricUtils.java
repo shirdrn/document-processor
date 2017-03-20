@@ -7,7 +7,7 @@ public class MetricUtils {
 	}
 	
 	public static double idf(int totalDocCount, int docCountContainingTerm) {
-		return log2((double) totalDocCount / (1 + docCountContainingTerm));
+		return log2((double) totalDocCount / (docCountContainingTerm));
 	}
 	
 	private static double log2(double x) {

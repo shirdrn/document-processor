@@ -1,0 +1,101 @@
+2015-04-21 11:21:00.728 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-04-21 11:21:00.766 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-04-21 11:21:00.772 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\语料
+2015-04-21 11:21:00.772 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-04-21 11:21:00.772 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-04-21 11:21:00.815 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-04-21 11:21:01.259 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-04-21 11:21:01.288 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-04-21 11:21:01.290 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-04-21 11:21:01.301 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-04-21 11:21:01.333 [main] INFO  processor.component.BasicInformationCollector - Add label: label=游戏
+2015-04-21 11:21:01.345 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 游戏, docCount=2
+2015-04-21 11:21:01.345 [main] INFO  processor.component.BasicInformationCollector - Add label: label=篮球
+2015-04-21 11:21:01.345 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 篮球, docCount=2
+2015-04-21 11:21:01.346 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 4
+2015-04-21 11:21:01.346 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=游戏
+2015-04-21 11:21:01.348 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-04-21 11:21:01.348 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\英雄联盟.txt
+2015-04-21 11:21:01.366 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\魔兽世界.txt
+2015-04-21 11:21:01.377 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-04-21 11:21:01.377 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=篮球
+2015-04-21 11:21:01.378 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-04-21 11:21:01.378 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\CBA.txt
+2015-04-21 11:21:01.380 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\NBA.txt
+2015-04-21 11:21:01.391 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-04-21 11:21:01.391 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=4
+2015-04-21 11:21:01.391 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-04-21 11:21:01.392 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=游戏, docCount=2
+2015-04-21 11:21:01.392 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=篮球, docCount=2
+2015-04-21 11:21:01.392 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=游戏
+2015-04-21 11:21:01.393 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=篮球
+2015-04-21 11:21:01.394 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=篮球, termCount=14
+2015-04-21 11:21:01.407 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=游戏, termCount=14
+2015-04-21 11:21:01.422 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-04-21 11:21:01.423 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-04-21 11:43:38.643 [main] INFO  processor.config.Configuration - Load properties file: prop=config-test.properties
+2015-04-21 11:43:38.645 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=
+2015-04-21 11:43:38.646 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=C:\Users\Alex\Desktop\wow.txt
+2015-04-21 11:43:38.646 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-04-21 11:43:38.646 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=test.txt
+2015-04-21 11:43:38.648 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-04-21 11:43:38.661 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-04-21 11:43:38.663 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@117a0daa
+2015-04-21 11:43:38.664 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@4be03c55
+2015-04-21 11:43:38.664 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@43c32b82
+2015-04-21 11:45:24.957 [main] INFO  processor.config.Configuration - Load properties file: prop=config-test.properties
+2015-04-21 11:45:24.960 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-04-21 11:45:24.960 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=C:\Users\Alex\Desktop\wow.txt
+2015-04-21 11:45:24.960 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-04-21 11:45:24.960 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=test.txt
+2015-04-21 11:45:24.962 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-04-21 11:45:24.975 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-04-21 11:45:24.978 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-04-21 11:45:24.978 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-04-21 11:45:24.979 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-04-21 11:45:57.399 [main] INFO  processor.config.Configuration - Load properties file: prop=config-test.properties
+2015-04-21 11:45:57.401 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-04-21 11:45:57.402 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\语料
+2015-04-21 11:45:57.402 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-04-21 11:45:57.402 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=test.txt
+2015-04-21 11:45:57.403 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-04-21 11:45:57.418 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-04-21 11:45:57.421 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-04-21 11:45:57.421 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-04-21 11:45:57.422 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-04-21 11:45:57.425 [main] INFO  processor.component.BasicInformationCollector - Add label: label=游戏
+2015-04-21 11:45:57.426 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 游戏, docCount=2
+2015-04-21 11:45:57.426 [main] INFO  processor.component.BasicInformationCollector - Add label: label=篮球
+2015-04-21 11:45:57.426 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 篮球, docCount=2
+2015-04-21 11:45:57.426 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 4
+2015-04-21 11:45:57.426 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=游戏
+2015-04-21 11:45:57.427 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-04-21 11:45:57.427 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\英雄联盟.txt
+2015-04-21 11:45:57.429 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\魔兽世界.txt
+2015-04-21 11:45:57.430 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-04-21 11:45:57.430 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=篮球
+2015-04-21 11:45:57.430 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-04-21 11:45:57.430 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\CBA.txt
+2015-04-21 11:45:57.431 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\NBA.txt
+2015-04-21 11:45:57.432 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-04-21 11:45:57.432 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=4
+2015-04-21 11:45:57.432 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-04-21 11:45:57.432 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=游戏, docCount=2
+2015-04-21 11:45:57.432 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=篮球, docCount=2
+2015-04-21 11:45:57.432 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=部落, wordId=1
+2015-04-21 11:45:57.432 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=正义, wordId=2
+2015-04-21 11:45:57.433 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=外援, wordId=3
+2015-04-21 11:45:57.433 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=射手, wordId=4
+2015-04-21 11:45:57.433 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=裁判, wordId=5
+2015-04-21 11:45:57.433 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=球员, wordId=6
+2015-04-21 11:45:57.433 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=竞技, wordId=7
+2015-04-21 11:45:57.433 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=篮球, wordId=8
+2015-04-21 11:45:57.433 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=联盟, wordId=9
+2015-04-21 11:45:57.433 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=走狗, wordId=10
+2015-04-21 11:45:57.434 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=丛林, wordId=11
+2015-04-21 11:45:57.434 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=对手, wordId=12
+2015-04-21 11:45:57.434 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=恶魔, wordId=13
+2015-04-21 11:45:57.434 [main] INFO  component.test.LoadFeatureTermVector - Load CHI term: word=球迷, wordId=14
+2015-04-21 11:45:57.436 [main] INFO  component.test.OutputtingQuantizedTestData - Load label vector...
+2015-04-21 11:45:57.436 [main] INFO  component.test.OutputtingQuantizedTestData - Loaded: globalIdToLabelMap={2=篮球, 1=游戏}
+2015-04-21 11:45:57.437 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=test.txt

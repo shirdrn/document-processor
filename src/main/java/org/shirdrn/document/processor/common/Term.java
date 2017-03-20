@@ -6,9 +6,9 @@ public class Term {
 	private int id;
 	private String word;
 	private String lexicalCategory = "unknown";
-	private int freq = 0;
-	private double tf;
-	private double idf;
+	private int freq = 0;//词频，在某文件（文档）中的出现次数
+	private double tf;//Term Frequency，词在文档中的出现次数
+	private double idf;//Inverse Document Frequency，与含有改词的文档的数量成反比。IDF=log(N/DF)
 	private double tfidf = 0;
 	private double chi = 0;
 	

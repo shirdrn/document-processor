@@ -18,7 +18,7 @@ public class LexicalCategoryFilter implements TermFilter {
 		// read configured lexical categories
 		String lexicalCategories = 
 				context.getConfiguration().get("processor.document.filter.kept.lexical.categories", "n");
-		for(String category : lexicalCategories.split("\\s*,\\s*")) {
+		for(String category : lexicalCategories.split("\\s*,\\s*")) {//*：0 or more +:1 or more
 			keptLexicalCategories.add(category);
 		}
 	}

@@ -11,7 +11,7 @@ import org.shirdrn.document.processor.common.Term;
 public class SortUtils {
 	
 	private static final Log LOG = LogFactory.getLog(SortUtils.class);
-	private final Entry<String, Term>[] array;
+	private final Entry<String, Term>[] array;//项目数组
 	private boolean isDescOrder;
 	private int topN;
 	private final Result result = new Result();
@@ -34,17 +34,17 @@ public class SortUtils {
 	private void print() {
 		for(int i=0; i<array.length; i++) {
 			Entry<String, Term> t = array[i];
-			System.out.println(t.getKey() + "\t:" + t.getValue());
+			System.out.println(t.getKey() + "\t:" + t.getValue());//输出排序前的原始数组
 		}
 	}
 
 	public Result heapSort() {
 		Entry<String, Term> tmp; // 用于交换的暂存单元
-		buildHeap(); // 执行初始建堆，并调整
+		buildHeap(); // 执行初始建堆，并调整（此时根节点最大
 		if(LOG.isDebugEnabled()) {
 			System.out.println("Build heap:");
 			for (int j = 0; j < array.length; j++) {
-				System.out.print(array[j].getValue().getChi() + "    ");
+				System.out.print(array[j].getValue().getChi() + "    ");//输出数组的chi值
 			}
 			System.out.println();
 		}
@@ -54,11 +54,11 @@ public class SortUtils {
 			tmp = array[0];
 			array[0] = array[array.length - 1 - i];
 			array[array.length - 1 - i] = tmp;
-			if(--topN < 0) {
+			if(--topN < 0) {//筛选topN个词
 				result.setStartIndex(array.length - i);
 				break;
 			}
-			// 每次交换堆顶元素和堆中最后一个元素之后，都要对堆进行调整
+			// 每次交换堆顶元素和堆中最后一个元素之后，都要对堆进行调整（？
 			adjustHeap(0, array.length - 1 - i);
 			
 			if(LOG.isDebugEnabled()) {
@@ -89,39 +89,39 @@ public class SortUtils {
      * 
      * 调整堆的方法
      * @param s 待调整结点的索引
-     * @param m 待调整堆的结点的数量(亦即：排除叶子结点)
+     * @param m 待调整堆的结点的数量
      */
     private void adjustHeap(int s, int m) {
     	if(isDescOrder) {
-    		adjustForAsc(s, m);
-    	} else {
     		adjustForDesc(s, m);
+    	} else {
+    		adjustForAsc(s, m);
     	}
-    }
-    
-    private void adjustForDesc(int s, int m) {
-    	Entry<String, Term> tmp = array[s]; // 当前待调整的结点
-		int i = 2 * s + 1; // 当前待调整结点的左孩子结点的索引(i+1为当前调整结点的右孩子结点的索引)
-		while (i < m) {
-			if (i + 1 < m && array[i].getValue().getChi() > array[i + 1].getValue().getChi()) { // 如果右孩子大于左孩子(找到比当前待调整结点大的孩子结点)
-				i = i + 1;
-			}
-			if (array[s].getValue().getChi() > array[i].getValue().getChi()) {
-				array[s] = array[i]; // 孩子结点大于当前待调整结点，将孩子结点放到当前待调整结点的位置上
-				s = i; // 重新设置待调整的下一个结点的索引
-				i = 2 * s + 1;
-			} else { // 如果当前待调整结点大于它的左右孩子，则不需要调整，直接退出
-				break;
-			}
-			array[s] = tmp; // 当前待调整的结点放到比其大的孩子结点位置上
-		}
     }
     
     private void adjustForAsc(int s, int m) {
     	Entry<String, Term> tmp = array[s]; // 当前待调整的结点
 		int i = 2 * s + 1; // 当前待调整结点的左孩子结点的索引(i+1为当前调整结点的右孩子结点的索引)
 		while (i < m) {
-			if (i + 1 < m && array[i].getValue().getChi() < array[i + 1].getValue().getChi()) { // 如果右孩子大于左孩子(找到比当前待调整结点大的孩子结点)
+			if (i + 1 < m && array[i].getValue().getChi() > array[i + 1].getValue().getChi()) { // 如果右孩子小于左孩子
+				i = i + 1;
+			}
+			if (array[s].getValue().getChi() > array[i].getValue().getChi()) {
+				array[s] = array[i]; // 孩子结点小于当前待调整结点，将孩子结点放到当前待调整结点的位置上
+				s = i; // 重新设置待调整的下一个结点的索引
+				i = 2 * s + 1;
+			} else { // 如果当前待调整结点小于它的左右孩子，则不需要调整，直接退出
+				break;
+			}
+			array[s] = tmp; // 当前待调整的结点放到比其小的孩子结点位置上
+		}
+    }
+    
+    private void adjustForDesc(int s, int m) {
+    	Entry<String, Term> tmp = array[s]; // 当前待调整的结点
+		int i = 2 * s + 1; // 当前待调整结点的左孩子结点的索引(i+1为当前调整结点的右孩子结点的索引)
+		while (i < m) {//还存在子节点，m为二叉树的节点数
+			if (i + 1 < m && array[i].getValue().getChi() < array[i + 1].getValue().getChi()) { // 如果右孩子大于左孩子
 				i = i + 1;
 			}
 			if (array[s].getValue().getChi() < array[i].getValue().getChi()) {
@@ -180,9 +180,9 @@ public class SortUtils {
     	put(terms, "lion", 78.3223);
     	put(terms, "polo", 87.1209);
     	
-		SortUtils sorter = new SortUtils(terms, false, 4);
+		SortUtils sorter = new SortUtils(terms, true, 4);
 		Result result = sorter.heapSort();
-    	for(int i=result.getStartIndex(); i<=result.getEndIndex(); i++) {
+    	for(int i=result.getEndIndex(); i>=result.getStartIndex(); i--) {
     		Entry<String, Term> t = result.get(i);
     		System.out.println(t.getKey() + "\t:" + t.getValue());
     	}

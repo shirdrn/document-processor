@@ -1,0 +1,1333 @@
+2015-05-08 12:18:25.474 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-08 12:18:25.489 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-08 12:18:25.505 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\性别分类实验数据集
+2015-05-08 12:18:25.506 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-08 12:18:25.506 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-08 12:18:25.527 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-08 12:18:25.670 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-08 12:18:25.699 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-08 12:18:25.712 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-08 12:18:25.721 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-08 12:18:25.767 [main] INFO  processor.component.BasicInformationCollector - Add label: label=女性用户
+2015-05-08 12:18:25.782 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 女性用户, docCount=500
+2015-05-08 12:18:25.782 [main] INFO  processor.component.BasicInformationCollector - Add label: label=男性用户
+2015-05-08 12:18:25.784 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 男性用户, docCount=500
+2015-05-08 12:18:25.785 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 1000
+2015-05-08 12:18:25.785 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=女性用户
+2015-05-08 12:18:25.790 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 500 files.
+2015-05-08 12:18:25.790 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (1).txt
+2015-05-08 12:18:26.123 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (10).txt
+2015-05-08 12:18:26.290 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (100).txt
+2015-05-08 12:18:26.408 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (101).txt
+2015-05-08 12:18:26.528 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (102).txt
+2015-05-08 12:18:26.644 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (103).txt
+2015-05-08 12:18:26.752 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (104).txt
+2015-05-08 12:18:26.857 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (105).txt
+2015-05-08 12:18:26.960 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (106).txt
+2015-05-08 12:18:27.064 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (107).txt
+2015-05-08 12:18:27.172 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (108).txt
+2015-05-08 12:18:27.280 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (109).txt
+2015-05-08 12:18:27.387 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (11).txt
+2015-05-08 12:18:27.547 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (110).txt
+2015-05-08 12:18:27.653 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (111).txt
+2015-05-08 12:18:27.759 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (112).txt
+2015-05-08 12:18:27.871 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (113).txt
+2015-05-08 12:18:27.972 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (114).txt
+2015-05-08 12:18:28.081 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (115).txt
+2015-05-08 12:18:28.189 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (116).txt
+2015-05-08 12:18:28.298 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (117).txt
+2015-05-08 12:18:28.403 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (118).txt
+2015-05-08 12:18:28.516 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (119).txt
+2015-05-08 12:18:28.622 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (12).txt
+2015-05-08 12:18:28.774 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (120).txt
+2015-05-08 12:18:28.879 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (121).txt
+2015-05-08 12:18:28.985 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (122).txt
+2015-05-08 12:18:29.087 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (123).txt
+2015-05-08 12:18:29.188 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (124).txt
+2015-05-08 12:18:29.289 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (125).txt
+2015-05-08 12:18:29.385 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (126).txt
+2015-05-08 12:18:29.494 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (127).txt
+2015-05-08 12:18:29.634 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (128).txt
+2015-05-08 12:18:29.778 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (129).txt
+2015-05-08 12:18:29.899 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (13).txt
+2015-05-08 12:18:30.071 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (130).txt
+2015-05-08 12:18:30.199 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (131).txt
+2015-05-08 12:18:30.327 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (132).txt
+2015-05-08 12:18:30.429 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (133).txt
+2015-05-08 12:18:30.535 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (134).txt
+2015-05-08 12:18:30.623 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (135).txt
+2015-05-08 12:18:30.726 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (136).txt
+2015-05-08 12:18:30.832 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (137).txt
+2015-05-08 12:18:30.938 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (138).txt
+2015-05-08 12:18:31.039 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (139).txt
+2015-05-08 12:18:31.139 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (14).txt
+2015-05-08 12:18:31.287 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (140).txt
+2015-05-08 12:18:31.390 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (141).txt
+2015-05-08 12:18:31.489 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (142).txt
+2015-05-08 12:18:31.595 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (143).txt
+2015-05-08 12:18:31.690 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (144).txt
+2015-05-08 12:18:31.790 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (145).txt
+2015-05-08 12:18:31.888 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (146).txt
+2015-05-08 12:18:31.981 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (147).txt
+2015-05-08 12:18:32.074 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (148).txt
+2015-05-08 12:18:32.168 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (149).txt
+2015-05-08 12:18:32.269 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (15).txt
+2015-05-08 12:18:32.418 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (150).txt
+2015-05-08 12:18:32.527 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (151).txt
+2015-05-08 12:18:32.623 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (152).txt
+2015-05-08 12:18:32.737 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (153).txt
+2015-05-08 12:18:32.837 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (154).txt
+2015-05-08 12:18:32.947 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (155).txt
+2015-05-08 12:18:33.049 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (156).txt
+2015-05-08 12:18:33.159 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (157).txt
+2015-05-08 12:18:33.263 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (158).txt
+2015-05-08 12:18:33.373 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (159).txt
+2015-05-08 12:18:33.499 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (16).txt
+2015-05-08 12:18:33.708 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (160).txt
+2015-05-08 12:18:33.807 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (161).txt
+2015-05-08 12:18:33.920 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (162).txt
+2015-05-08 12:18:34.026 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (163).txt
+2015-05-08 12:18:34.121 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (164).txt
+2015-05-08 12:18:34.214 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (165).txt
+2015-05-08 12:18:34.311 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (166).txt
+2015-05-08 12:18:34.401 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (167).txt
+2015-05-08 12:18:34.502 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (168).txt
+2015-05-08 12:18:34.638 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (169).txt
+2015-05-08 12:18:34.778 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (17).txt
+2015-05-08 12:18:34.960 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (170).txt
+2015-05-08 12:18:35.053 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (171).txt
+2015-05-08 12:18:35.164 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (172).txt
+2015-05-08 12:18:35.296 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (173).txt
+2015-05-08 12:18:35.421 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (174).txt
+2015-05-08 12:18:35.530 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (175).txt
+2015-05-08 12:18:35.640 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (176).txt
+2015-05-08 12:18:35.736 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (177).txt
+2015-05-08 12:18:35.853 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (178).txt
+2015-05-08 12:18:35.942 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (179).txt
+2015-05-08 12:18:36.042 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (18).txt
+2015-05-08 12:18:36.200 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (180).txt
+2015-05-08 12:18:36.277 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (181).txt
+2015-05-08 12:18:36.360 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (182).txt
+2015-05-08 12:18:36.450 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (183).txt
+2015-05-08 12:18:36.546 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (184).txt
+2015-05-08 12:18:36.632 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (185).txt
+2015-05-08 12:18:36.714 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (186).txt
+2015-05-08 12:18:36.806 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (187).txt
+2015-05-08 12:18:36.890 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (188).txt
+2015-05-08 12:18:36.971 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (189).txt
+2015-05-08 12:18:37.054 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (19).txt
+2015-05-08 12:18:37.200 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (190).txt
+2015-05-08 12:18:37.281 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (191).txt
+2015-05-08 12:18:37.363 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (192).txt
+2015-05-08 12:18:37.447 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (193).txt
+2015-05-08 12:18:37.545 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (194).txt
+2015-05-08 12:18:37.633 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (195).txt
+2015-05-08 12:18:37.712 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (196).txt
+2015-05-08 12:18:37.795 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (197).txt
+2015-05-08 12:18:37.873 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (198).txt
+2015-05-08 12:18:37.956 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (199).txt
+2015-05-08 12:18:38.048 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (2).txt
+2015-05-08 12:18:38.234 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (20).txt
+2015-05-08 12:18:38.370 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (200).txt
+2015-05-08 12:18:38.467 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (201).txt
+2015-05-08 12:18:38.550 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (202).txt
+2015-05-08 12:18:38.631 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (203).txt
+2015-05-08 12:18:38.706 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (204).txt
+2015-05-08 12:18:38.784 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (205).txt
+2015-05-08 12:18:38.863 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (206).txt
+2015-05-08 12:18:38.939 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (207).txt
+2015-05-08 12:18:39.023 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (208).txt
+2015-05-08 12:18:39.120 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (209).txt
+2015-05-08 12:18:39.200 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (21).txt
+2015-05-08 12:18:39.329 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (210).txt
+2015-05-08 12:18:39.401 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (211).txt
+2015-05-08 12:18:39.473 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (212).txt
+2015-05-08 12:18:39.548 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (213).txt
+2015-05-08 12:18:39.624 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (214).txt
+2015-05-08 12:18:39.695 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (215).txt
+2015-05-08 12:18:39.767 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (216).txt
+2015-05-08 12:18:39.843 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (217).txt
+2015-05-08 12:18:39.918 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (218).txt
+2015-05-08 12:18:40.005 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (219).txt
+2015-05-08 12:18:40.106 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (22).txt
+2015-05-08 12:18:40.262 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (220).txt
+2015-05-08 12:18:40.337 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (221).txt
+2015-05-08 12:18:40.422 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (222).txt
+2015-05-08 12:18:40.518 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (223).txt
+2015-05-08 12:18:40.647 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (224).txt
+2015-05-08 12:18:40.749 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (225).txt
+2015-05-08 12:18:40.833 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (226).txt
+2015-05-08 12:18:40.915 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (227).txt
+2015-05-08 12:18:41.001 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (228).txt
+2015-05-08 12:18:41.082 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (229).txt
+2015-05-08 12:18:41.176 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (23).txt
+2015-05-08 12:18:41.343 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (230).txt
+2015-05-08 12:18:41.420 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (231).txt
+2015-05-08 12:18:41.496 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (232).txt
+2015-05-08 12:18:41.574 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (233).txt
+2015-05-08 12:18:41.655 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (234).txt
+2015-05-08 12:18:41.730 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (235).txt
+2015-05-08 12:18:41.804 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (236).txt
+2015-05-08 12:18:41.877 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (237).txt
+2015-05-08 12:18:41.953 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (238).txt
+2015-05-08 12:18:42.032 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (239).txt
+2015-05-08 12:18:42.103 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (24).txt
+2015-05-08 12:18:42.238 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (240).txt
+2015-05-08 12:18:42.312 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (241).txt
+2015-05-08 12:18:42.383 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (242).txt
+2015-05-08 12:18:42.456 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (243).txt
+2015-05-08 12:18:42.526 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (244).txt
+2015-05-08 12:18:42.599 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (245).txt
+2015-05-08 12:18:42.672 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (246).txt
+2015-05-08 12:18:42.745 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (247).txt
+2015-05-08 12:18:42.816 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (248).txt
+2015-05-08 12:18:42.887 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (249).txt
+2015-05-08 12:18:42.959 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (25).txt
+2015-05-08 12:18:43.093 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (250).txt
+2015-05-08 12:18:43.156 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (251).txt
+2015-05-08 12:18:43.229 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (252).txt
+2015-05-08 12:18:43.299 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (253).txt
+2015-05-08 12:18:43.371 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (254).txt
+2015-05-08 12:18:43.440 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (255).txt
+2015-05-08 12:18:43.518 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (256).txt
+2015-05-08 12:18:43.584 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (257).txt
+2015-05-08 12:18:43.654 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (258).txt
+2015-05-08 12:18:43.717 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (259).txt
+2015-05-08 12:18:43.790 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (26).txt
+2015-05-08 12:18:43.926 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (260).txt
+2015-05-08 12:18:43.989 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (261).txt
+2015-05-08 12:18:44.059 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (262).txt
+2015-05-08 12:18:44.125 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (263).txt
+2015-05-08 12:18:44.196 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (264).txt
+2015-05-08 12:18:44.272 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (265).txt
+2015-05-08 12:18:44.344 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (266).txt
+2015-05-08 12:18:44.413 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (267).txt
+2015-05-08 12:18:44.477 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (268).txt
+2015-05-08 12:18:44.547 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (269).txt
+2015-05-08 12:18:44.618 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (27).txt
+2015-05-08 12:18:44.752 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (270).txt
+2015-05-08 12:18:44.820 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (271).txt
+2015-05-08 12:18:44.888 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (272).txt
+2015-05-08 12:18:44.957 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (273).txt
+2015-05-08 12:18:45.026 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (274).txt
+2015-05-08 12:18:45.097 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (275).txt
+2015-05-08 12:18:45.163 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (276).txt
+2015-05-08 12:18:45.233 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (277).txt
+2015-05-08 12:18:45.299 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (278).txt
+2015-05-08 12:18:45.365 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (279).txt
+2015-05-08 12:18:45.428 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (28).txt
+2015-05-08 12:18:45.570 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (280).txt
+2015-05-08 12:18:45.642 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (281).txt
+2015-05-08 12:18:45.710 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (282).txt
+2015-05-08 12:18:45.770 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (283).txt
+2015-05-08 12:18:45.836 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (284).txt
+2015-05-08 12:18:45.902 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (285).txt
+2015-05-08 12:18:45.966 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (286).txt
+2015-05-08 12:18:46.034 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (287).txt
+2015-05-08 12:18:46.096 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (288).txt
+2015-05-08 12:18:46.159 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (289).txt
+2015-05-08 12:18:46.227 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (29).txt
+2015-05-08 12:18:46.362 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (290).txt
+2015-05-08 12:18:46.429 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (291).txt
+2015-05-08 12:18:46.502 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (292).txt
+2015-05-08 12:18:46.566 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (293).txt
+2015-05-08 12:18:46.632 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (294).txt
+2015-05-08 12:18:46.703 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (295).txt
+2015-05-08 12:18:46.768 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (296).txt
+2015-05-08 12:18:46.833 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (297).txt
+2015-05-08 12:18:46.896 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (298).txt
+2015-05-08 12:18:46.963 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (299).txt
+2015-05-08 12:18:47.026 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (3).txt
+2015-05-08 12:18:47.204 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (30).txt
+2015-05-08 12:18:47.335 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (300).txt
+2015-05-08 12:18:47.408 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (301).txt
+2015-05-08 12:18:47.473 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (302).txt
+2015-05-08 12:18:47.537 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (303).txt
+2015-05-08 12:18:47.602 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (304).txt
+2015-05-08 12:18:47.668 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (305).txt
+2015-05-08 12:18:47.759 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (306).txt
+2015-05-08 12:18:47.823 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (307).txt
+2015-05-08 12:18:47.883 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (308).txt
+2015-05-08 12:18:47.947 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (309).txt
+2015-05-08 12:18:48.007 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (31).txt
+2015-05-08 12:18:48.140 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (310).txt
+2015-05-08 12:18:48.203 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (311).txt
+2015-05-08 12:18:48.264 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (312).txt
+2015-05-08 12:18:48.327 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (313).txt
+2015-05-08 12:18:48.395 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (314).txt
+2015-05-08 12:18:48.458 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (315).txt
+2015-05-08 12:18:48.518 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (316).txt
+2015-05-08 12:18:48.579 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (317).txt
+2015-05-08 12:18:48.640 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (318).txt
+2015-05-08 12:18:48.703 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (319).txt
+2015-05-08 12:18:48.766 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (32).txt
+2015-05-08 12:18:48.886 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (320).txt
+2015-05-08 12:18:48.947 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (321).txt
+2015-05-08 12:18:49.016 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (322).txt
+2015-05-08 12:18:49.071 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (323).txt
+2015-05-08 12:18:49.130 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (324).txt
+2015-05-08 12:18:49.194 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (325).txt
+2015-05-08 12:18:49.254 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (326).txt
+2015-05-08 12:18:49.311 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (327).txt
+2015-05-08 12:18:49.372 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (328).txt
+2015-05-08 12:18:49.432 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (329).txt
+2015-05-08 12:18:49.494 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (33).txt
+2015-05-08 12:18:49.632 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (330).txt
+2015-05-08 12:18:49.693 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (331).txt
+2015-05-08 12:18:49.753 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (332).txt
+2015-05-08 12:18:49.810 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (333).txt
+2015-05-08 12:18:49.873 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (334).txt
+2015-05-08 12:18:49.931 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (335).txt
+2015-05-08 12:18:49.994 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (336).txt
+2015-05-08 12:18:50.063 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (337).txt
+2015-05-08 12:18:50.122 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (338).txt
+2015-05-08 12:18:50.182 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (339).txt
+2015-05-08 12:18:50.239 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (34).txt
+2015-05-08 12:18:50.369 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (340).txt
+2015-05-08 12:18:50.435 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (341).txt
+2015-05-08 12:18:50.494 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (342).txt
+2015-05-08 12:18:50.551 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (343).txt
+2015-05-08 12:18:50.608 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (344).txt
+2015-05-08 12:18:50.664 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (345).txt
+2015-05-08 12:18:50.720 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (346).txt
+2015-05-08 12:18:50.771 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (347).txt
+2015-05-08 12:18:50.833 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (348).txt
+2015-05-08 12:18:50.891 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (349).txt
+2015-05-08 12:18:50.949 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (35).txt
+2015-05-08 12:18:51.077 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (350).txt
+2015-05-08 12:18:51.139 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (351).txt
+2015-05-08 12:18:51.199 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (352).txt
+2015-05-08 12:18:51.258 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (353).txt
+2015-05-08 12:18:51.311 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (354).txt
+2015-05-08 12:18:51.370 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (355).txt
+2015-05-08 12:18:51.431 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (356).txt
+2015-05-08 12:18:51.488 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (357).txt
+2015-05-08 12:18:51.547 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (358).txt
+2015-05-08 12:18:51.608 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (359).txt
+2015-05-08 12:18:51.674 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (36).txt
+2015-05-08 12:18:51.805 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (360).txt
+2015-05-08 12:18:51.860 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (361).txt
+2015-05-08 12:18:51.917 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (362).txt
+2015-05-08 12:18:51.990 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (363).txt
+2015-05-08 12:18:52.051 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (364).txt
+2015-05-08 12:18:52.111 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (365).txt
+2015-05-08 12:18:52.171 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (366).txt
+2015-05-08 12:18:52.228 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (367).txt
+2015-05-08 12:18:52.284 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (368).txt
+2015-05-08 12:18:52.342 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (369).txt
+2015-05-08 12:18:52.398 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (37).txt
+2015-05-08 12:18:52.521 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (370).txt
+2015-05-08 12:18:52.581 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (371).txt
+2015-05-08 12:18:52.649 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (372).txt
+2015-05-08 12:18:52.703 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (373).txt
+2015-05-08 12:18:52.762 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (374).txt
+2015-05-08 12:18:52.826 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (375).txt
+2015-05-08 12:18:52.897 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (376).txt
+2015-05-08 12:18:52.956 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (377).txt
+2015-05-08 12:18:53.015 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (378).txt
+2015-05-08 12:18:53.072 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (379).txt
+2015-05-08 12:18:53.124 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (38).txt
+2015-05-08 12:18:53.247 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (380).txt
+2015-05-08 12:18:53.306 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (381).txt
+2015-05-08 12:18:53.366 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (382).txt
+2015-05-08 12:18:53.428 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (383).txt
+2015-05-08 12:18:53.484 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (384).txt
+2015-05-08 12:18:53.543 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (385).txt
+2015-05-08 12:18:53.601 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (386).txt
+2015-05-08 12:18:53.656 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (387).txt
+2015-05-08 12:18:53.725 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (388).txt
+2015-05-08 12:18:53.785 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (389).txt
+2015-05-08 12:18:53.841 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (39).txt
+2015-05-08 12:18:53.965 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (390).txt
+2015-05-08 12:18:54.025 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (391).txt
+2015-05-08 12:18:54.081 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (392).txt
+2015-05-08 12:18:54.136 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (393).txt
+2015-05-08 12:18:54.197 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (394).txt
+2015-05-08 12:18:54.251 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (395).txt
+2015-05-08 12:18:54.305 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (396).txt
+2015-05-08 12:18:54.363 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (397).txt
+2015-05-08 12:18:54.420 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (398).txt
+2015-05-08 12:18:54.479 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (399).txt
+2015-05-08 12:18:54.544 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (4).txt
+2015-05-08 12:18:54.733 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (40).txt
+2015-05-08 12:18:54.861 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (400).txt
+2015-05-08 12:18:54.917 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (401).txt
+2015-05-08 12:18:54.976 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (402).txt
+2015-05-08 12:18:55.033 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (403).txt
+2015-05-08 12:18:55.085 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (404).txt
+2015-05-08 12:18:55.137 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (405).txt
+2015-05-08 12:18:55.192 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (406).txt
+2015-05-08 12:18:55.251 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (407).txt
+2015-05-08 12:18:55.303 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (408).txt
+2015-05-08 12:18:55.358 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (409).txt
+2015-05-08 12:18:55.413 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (41).txt
+2015-05-08 12:18:55.537 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (410).txt
+2015-05-08 12:18:55.593 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (411).txt
+2015-05-08 12:18:55.645 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (412).txt
+2015-05-08 12:18:55.710 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (413).txt
+2015-05-08 12:18:55.768 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (414).txt
+2015-05-08 12:18:55.825 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (415).txt
+2015-05-08 12:18:55.895 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (416).txt
+2015-05-08 12:18:55.952 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (417).txt
+2015-05-08 12:18:56.013 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (418).txt
+2015-05-08 12:18:56.065 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (419).txt
+2015-05-08 12:18:56.120 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (42).txt
+2015-05-08 12:18:56.241 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (420).txt
+2015-05-08 12:18:56.297 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (421).txt
+2015-05-08 12:18:56.350 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (422).txt
+2015-05-08 12:18:56.420 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (423).txt
+2015-05-08 12:18:56.474 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (424).txt
+2015-05-08 12:18:56.525 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (425).txt
+2015-05-08 12:18:56.582 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (426).txt
+2015-05-08 12:18:56.639 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (427).txt
+2015-05-08 12:18:56.691 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (428).txt
+2015-05-08 12:18:56.741 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (429).txt
+2015-05-08 12:18:56.808 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (43).txt
+2015-05-08 12:18:56.925 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (430).txt
+2015-05-08 12:18:56.975 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (431).txt
+2015-05-08 12:18:57.031 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (432).txt
+2015-05-08 12:18:57.086 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (433).txt
+2015-05-08 12:18:57.139 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (434).txt
+2015-05-08 12:18:57.199 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (435).txt
+2015-05-08 12:18:57.254 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (436).txt
+2015-05-08 12:18:57.307 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (437).txt
+2015-05-08 12:18:57.359 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (438).txt
+2015-05-08 12:18:57.413 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (439).txt
+2015-05-08 12:18:57.466 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (44).txt
+2015-05-08 12:18:57.583 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (440).txt
+2015-05-08 12:18:57.638 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (441).txt
+2015-05-08 12:18:57.689 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (442).txt
+2015-05-08 12:18:57.745 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (443).txt
+2015-05-08 12:18:57.799 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (444).txt
+2015-05-08 12:18:57.852 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (445).txt
+2015-05-08 12:18:57.904 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (446).txt
+2015-05-08 12:18:57.968 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (447).txt
+2015-05-08 12:18:58.023 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (448).txt
+2015-05-08 12:18:58.074 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (449).txt
+2015-05-08 12:18:58.129 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (45).txt
+2015-05-08 12:18:58.252 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (450).txt
+2015-05-08 12:18:58.316 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (451).txt
+2015-05-08 12:18:58.386 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (452).txt
+2015-05-08 12:18:58.457 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (453).txt
+2015-05-08 12:18:58.526 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (454).txt
+2015-05-08 12:18:58.586 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (455).txt
+2015-05-08 12:18:58.657 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (456).txt
+2015-05-08 12:18:58.712 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (457).txt
+2015-05-08 12:18:58.764 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (458).txt
+2015-05-08 12:18:58.823 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (459).txt
+2015-05-08 12:18:58.874 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (46).txt
+2015-05-08 12:18:58.986 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (460).txt
+2015-05-08 12:18:59.038 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (461).txt
+2015-05-08 12:18:59.093 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (462).txt
+2015-05-08 12:18:59.146 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (463).txt
+2015-05-08 12:18:59.205 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (464).txt
+2015-05-08 12:18:59.257 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (465).txt
+2015-05-08 12:18:59.312 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (466).txt
+2015-05-08 12:18:59.378 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (467).txt
+2015-05-08 12:18:59.432 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (468).txt
+2015-05-08 12:18:59.484 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (469).txt
+2015-05-08 12:18:59.535 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (47).txt
+2015-05-08 12:18:59.656 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (470).txt
+2015-05-08 12:18:59.706 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (471).txt
+2015-05-08 12:18:59.757 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (472).txt
+2015-05-08 12:18:59.809 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (473).txt
+2015-05-08 12:18:59.862 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (474).txt
+2015-05-08 12:18:59.914 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (475).txt
+2015-05-08 12:18:59.967 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (476).txt
+2015-05-08 12:19:00.018 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (477).txt
+2015-05-08 12:19:00.068 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (478).txt
+2015-05-08 12:19:00.120 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (479).txt
+2015-05-08 12:19:00.176 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (48).txt
+2015-05-08 12:19:00.312 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (480).txt
+2015-05-08 12:19:00.367 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (481).txt
+2015-05-08 12:19:00.419 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (482).txt
+2015-05-08 12:19:00.469 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (483).txt
+2015-05-08 12:19:00.521 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (484).txt
+2015-05-08 12:19:00.572 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (485).txt
+2015-05-08 12:19:00.622 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (486).txt
+2015-05-08 12:19:00.672 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (487).txt
+2015-05-08 12:19:00.723 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (488).txt
+2015-05-08 12:19:00.774 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (489).txt
+2015-05-08 12:19:00.827 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (49).txt
+2015-05-08 12:19:00.945 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (490).txt
+2015-05-08 12:19:00.994 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (491).txt
+2015-05-08 12:19:01.043 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (492).txt
+2015-05-08 12:19:01.091 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (493).txt
+2015-05-08 12:19:01.143 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (494).txt
+2015-05-08 12:19:01.192 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (495).txt
+2015-05-08 12:19:01.242 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (496).txt
+2015-05-08 12:19:01.295 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (497).txt
+2015-05-08 12:19:01.345 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (498).txt
+2015-05-08 12:19:01.396 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (499).txt
+2015-05-08 12:19:01.449 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (5).txt
+2015-05-08 12:19:01.627 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (50).txt
+2015-05-08 12:19:01.749 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (500).txt
+2015-05-08 12:19:01.800 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (51).txt
+2015-05-08 12:19:01.922 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (52).txt
+2015-05-08 12:19:02.040 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (53).txt
+2015-05-08 12:19:02.156 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (54).txt
+2015-05-08 12:19:02.282 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (55).txt
+2015-05-08 12:19:02.400 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (56).txt
+2015-05-08 12:19:02.519 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (57).txt
+2015-05-08 12:19:02.648 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (58).txt
+2015-05-08 12:19:02.766 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (59).txt
+2015-05-08 12:19:02.886 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (6).txt
+2015-05-08 12:19:03.051 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (60).txt
+2015-05-08 12:19:03.170 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (61).txt
+2015-05-08 12:19:03.289 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (62).txt
+2015-05-08 12:19:03.407 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (63).txt
+2015-05-08 12:19:03.560 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (64).txt
+2015-05-08 12:19:03.705 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (65).txt
+2015-05-08 12:19:03.844 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (66).txt
+2015-05-08 12:19:03.960 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (67).txt
+2015-05-08 12:19:04.083 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (68).txt
+2015-05-08 12:19:04.203 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (69).txt
+2015-05-08 12:19:04.316 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (7).txt
+2015-05-08 12:19:04.493 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (70).txt
+2015-05-08 12:19:04.614 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (71).txt
+2015-05-08 12:19:04.722 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (72).txt
+2015-05-08 12:19:04.844 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (73).txt
+2015-05-08 12:19:04.959 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (74).txt
+2015-05-08 12:19:05.076 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (75).txt
+2015-05-08 12:19:05.193 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (76).txt
+2015-05-08 12:19:05.305 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (77).txt
+2015-05-08 12:19:05.421 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (78).txt
+2015-05-08 12:19:05.555 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (79).txt
+2015-05-08 12:19:05.704 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (8).txt
+2015-05-08 12:19:05.885 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (80).txt
+2015-05-08 12:19:05.997 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (81).txt
+2015-05-08 12:19:06.112 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (82).txt
+2015-05-08 12:19:06.221 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (83).txt
+2015-05-08 12:19:06.336 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (84).txt
+2015-05-08 12:19:06.451 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (85).txt
+2015-05-08 12:19:06.565 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (86).txt
+2015-05-08 12:19:06.677 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (87).txt
+2015-05-08 12:19:06.790 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (88).txt
+2015-05-08 12:19:06.907 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (89).txt
+2015-05-08 12:19:07.018 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (9).txt
+2015-05-08 12:19:07.169 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (90).txt
+2015-05-08 12:19:07.282 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (91).txt
+2015-05-08 12:19:07.396 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (92).txt
+2015-05-08 12:19:07.501 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (93).txt
+2015-05-08 12:19:07.612 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (94).txt
+2015-05-08 12:19:07.723 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (95).txt
+2015-05-08 12:19:07.832 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (96).txt
+2015-05-08 12:19:07.944 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (97).txt
+2015-05-08 12:19:08.059 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (98).txt
+2015-05-08 12:19:08.165 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\女性用户\fenci (99).txt
+2015-05-08 12:19:08.278 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=500
+2015-05-08 12:19:08.279 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=男性用户
+2015-05-08 12:19:08.280 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 500 files.
+2015-05-08 12:19:08.280 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (1).txt
+2015-05-08 12:19:08.500 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (10).txt
+2015-05-08 12:19:08.648 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (100).txt
+2015-05-08 12:19:08.740 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (101).txt
+2015-05-08 12:19:08.833 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (102).txt
+2015-05-08 12:19:08.922 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (103).txt
+2015-05-08 12:19:09.012 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (104).txt
+2015-05-08 12:19:09.100 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (105).txt
+2015-05-08 12:19:09.185 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (106).txt
+2015-05-08 12:19:09.279 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (107).txt
+2015-05-08 12:19:09.365 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (108).txt
+2015-05-08 12:19:09.455 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (109).txt
+2015-05-08 12:19:09.542 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (11).txt
+2015-05-08 12:19:09.695 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (110).txt
+2015-05-08 12:19:09.779 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (111).txt
+2015-05-08 12:19:09.866 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (112).txt
+2015-05-08 12:19:09.958 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (113).txt
+2015-05-08 12:19:10.043 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (114).txt
+2015-05-08 12:19:10.126 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (115).txt
+2015-05-08 12:19:10.225 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (116).txt
+2015-05-08 12:19:10.307 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (117).txt
+2015-05-08 12:19:10.388 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (118).txt
+2015-05-08 12:19:10.471 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (119).txt
+2015-05-08 12:19:10.553 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (12).txt
+2015-05-08 12:19:10.702 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (120).txt
+2015-05-08 12:19:10.787 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (121).txt
+2015-05-08 12:19:10.871 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (122).txt
+2015-05-08 12:19:10.961 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (123).txt
+2015-05-08 12:19:11.056 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (124).txt
+2015-05-08 12:19:11.147 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (125).txt
+2015-05-08 12:19:11.229 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (126).txt
+2015-05-08 12:19:11.324 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (127).txt
+2015-05-08 12:19:11.427 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (128).txt
+2015-05-08 12:19:11.524 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (129).txt
+2015-05-08 12:19:11.627 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (13).txt
+2015-05-08 12:19:11.769 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (130).txt
+2015-05-08 12:19:11.850 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (131).txt
+2015-05-08 12:19:11.928 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (132).txt
+2015-05-08 12:19:12.007 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (133).txt
+2015-05-08 12:19:12.087 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (134).txt
+2015-05-08 12:19:12.169 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (135).txt
+2015-05-08 12:19:12.248 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (136).txt
+2015-05-08 12:19:12.328 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (137).txt
+2015-05-08 12:19:12.404 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (138).txt
+2015-05-08 12:19:12.484 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (139).txt
+2015-05-08 12:19:12.566 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (14).txt
+2015-05-08 12:19:12.713 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (140).txt
+2015-05-08 12:19:12.788 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (141).txt
+2015-05-08 12:19:12.868 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (142).txt
+2015-05-08 12:19:12.944 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (143).txt
+2015-05-08 12:19:13.021 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (144).txt
+2015-05-08 12:19:13.101 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (145).txt
+2015-05-08 12:19:13.180 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (146).txt
+2015-05-08 12:19:13.262 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (147).txt
+2015-05-08 12:19:13.341 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (148).txt
+2015-05-08 12:19:13.420 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (149).txt
+2015-05-08 12:19:13.496 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (15).txt
+2015-05-08 12:19:13.633 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (150).txt
+2015-05-08 12:19:13.707 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (151).txt
+2015-05-08 12:19:13.792 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (152).txt
+2015-05-08 12:19:13.874 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (153).txt
+2015-05-08 12:19:13.949 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (154).txt
+2015-05-08 12:19:14.025 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (155).txt
+2015-05-08 12:19:14.100 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (156).txt
+2015-05-08 12:19:14.180 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (157).txt
+2015-05-08 12:19:14.248 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (158).txt
+2015-05-08 12:19:14.324 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (159).txt
+2015-05-08 12:19:14.394 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (16).txt
+2015-05-08 12:19:14.524 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (160).txt
+2015-05-08 12:19:14.597 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (161).txt
+2015-05-08 12:19:14.677 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (162).txt
+2015-05-08 12:19:14.751 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (163).txt
+2015-05-08 12:19:14.823 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (164).txt
+2015-05-08 12:19:14.895 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (165).txt
+2015-05-08 12:19:14.967 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (166).txt
+2015-05-08 12:19:15.041 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (167).txt
+2015-05-08 12:19:15.113 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (168).txt
+2015-05-08 12:19:15.204 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (169).txt
+2015-05-08 12:19:15.278 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (17).txt
+2015-05-08 12:19:15.415 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (170).txt
+2015-05-08 12:19:15.485 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (171).txt
+2015-05-08 12:19:15.557 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (172).txt
+2015-05-08 12:19:15.620 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (173).txt
+2015-05-08 12:19:15.694 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (174).txt
+2015-05-08 12:19:15.760 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (175).txt
+2015-05-08 12:19:15.834 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (176).txt
+2015-05-08 12:19:15.905 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (177).txt
+2015-05-08 12:19:15.974 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (178).txt
+2015-05-08 12:19:16.043 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (179).txt
+2015-05-08 12:19:16.120 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (18).txt
+2015-05-08 12:19:16.257 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (180).txt
+2015-05-08 12:19:16.324 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (181).txt
+2015-05-08 12:19:16.398 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (182).txt
+2015-05-08 12:19:16.474 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (183).txt
+2015-05-08 12:19:16.546 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (184).txt
+2015-05-08 12:19:16.614 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (185).txt
+2015-05-08 12:19:16.682 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (186).txt
+2015-05-08 12:19:16.754 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (187).txt
+2015-05-08 12:19:16.826 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (188).txt
+2015-05-08 12:19:16.894 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (189).txt
+2015-05-08 12:19:16.963 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (19).txt
+2015-05-08 12:19:17.103 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (190).txt
+2015-05-08 12:19:17.168 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (191).txt
+2015-05-08 12:19:17.239 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (192).txt
+2015-05-08 12:19:17.311 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (193).txt
+2015-05-08 12:19:17.379 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (194).txt
+2015-05-08 12:19:17.448 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (195).txt
+2015-05-08 12:19:17.515 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (196).txt
+2015-05-08 12:19:17.579 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (197).txt
+2015-05-08 12:19:17.647 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (198).txt
+2015-05-08 12:19:17.713 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (199).txt
+2015-05-08 12:19:17.780 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (2).txt
+2015-05-08 12:19:17.970 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (20).txt
+2015-05-08 12:19:18.100 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (200).txt
+2015-05-08 12:19:18.163 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (201).txt
+2015-05-08 12:19:18.227 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (202).txt
+2015-05-08 12:19:18.296 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (203).txt
+2015-05-08 12:19:18.362 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (204).txt
+2015-05-08 12:19:18.433 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (205).txt
+2015-05-08 12:19:18.502 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (206).txt
+2015-05-08 12:19:18.569 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (207).txt
+2015-05-08 12:19:18.629 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (208).txt
+2015-05-08 12:19:18.696 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (209).txt
+2015-05-08 12:19:18.760 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (21).txt
+2015-05-08 12:19:18.891 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (210).txt
+2015-05-08 12:19:18.954 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (211).txt
+2015-05-08 12:19:19.024 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (212).txt
+2015-05-08 12:19:19.092 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (213).txt
+2015-05-08 12:19:19.148 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (214).txt
+2015-05-08 12:19:19.220 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (215).txt
+2015-05-08 12:19:19.282 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (216).txt
+2015-05-08 12:19:19.351 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (217).txt
+2015-05-08 12:19:19.416 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (218).txt
+2015-05-08 12:19:19.496 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (219).txt
+2015-05-08 12:19:19.557 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (22).txt
+2015-05-08 12:19:19.691 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (220).txt
+2015-05-08 12:19:19.759 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (221).txt
+2015-05-08 12:19:19.827 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (222).txt
+2015-05-08 12:19:19.887 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (223).txt
+2015-05-08 12:19:19.950 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (224).txt
+2015-05-08 12:19:20.017 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (225).txt
+2015-05-08 12:19:20.083 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (226).txt
+2015-05-08 12:19:20.154 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (227).txt
+2015-05-08 12:19:20.219 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (228).txt
+2015-05-08 12:19:20.281 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (229).txt
+2015-05-08 12:19:20.347 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (23).txt
+2015-05-08 12:19:20.484 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (230).txt
+2015-05-08 12:19:20.552 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (231).txt
+2015-05-08 12:19:20.616 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (232).txt
+2015-05-08 12:19:20.678 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (233).txt
+2015-05-08 12:19:20.739 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (234).txt
+2015-05-08 12:19:20.810 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (235).txt
+2015-05-08 12:19:20.872 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (236).txt
+2015-05-08 12:19:20.939 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (237).txt
+2015-05-08 12:19:21.025 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (238).txt
+2015-05-08 12:19:21.112 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (239).txt
+2015-05-08 12:19:21.212 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (24).txt
+2015-05-08 12:19:21.352 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (240).txt
+2015-05-08 12:19:21.417 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (241).txt
+2015-05-08 12:19:21.480 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (242).txt
+2015-05-08 12:19:21.535 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (243).txt
+2015-05-08 12:19:21.599 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (244).txt
+2015-05-08 12:19:21.661 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (245).txt
+2015-05-08 12:19:21.725 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (246).txt
+2015-05-08 12:19:21.787 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (247).txt
+2015-05-08 12:19:21.850 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (248).txt
+2015-05-08 12:19:21.913 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (249).txt
+2015-05-08 12:19:21.977 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (25).txt
+2015-05-08 12:19:22.104 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (250).txt
+2015-05-08 12:19:22.195 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (251).txt
+2015-05-08 12:19:22.253 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (252).txt
+2015-05-08 12:19:22.316 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (253).txt
+2015-05-08 12:19:22.378 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (254).txt
+2015-05-08 12:19:22.442 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (255).txt
+2015-05-08 12:19:22.505 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (256).txt
+2015-05-08 12:19:22.567 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (257).txt
+2015-05-08 12:19:22.634 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (258).txt
+2015-05-08 12:19:22.694 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (259).txt
+2015-05-08 12:19:22.754 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (26).txt
+2015-05-08 12:19:22.872 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (260).txt
+2015-05-08 12:19:22.933 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (261).txt
+2015-05-08 12:19:23.001 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (262).txt
+2015-05-08 12:19:23.063 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (263).txt
+2015-05-08 12:19:23.121 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (264).txt
+2015-05-08 12:19:23.185 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (265).txt
+2015-05-08 12:19:23.247 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (266).txt
+2015-05-08 12:19:23.298 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (267).txt
+2015-05-08 12:19:23.356 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (268).txt
+2015-05-08 12:19:23.415 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (269).txt
+2015-05-08 12:19:23.477 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (27).txt
+2015-05-08 12:19:23.607 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (270).txt
+2015-05-08 12:19:23.671 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (271).txt
+2015-05-08 12:19:23.729 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (272).txt
+2015-05-08 12:19:23.793 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (273).txt
+2015-05-08 12:19:23.856 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (274).txt
+2015-05-08 12:19:23.916 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (275).txt
+2015-05-08 12:19:23.980 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (276).txt
+2015-05-08 12:19:24.041 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (277).txt
+2015-05-08 12:19:24.097 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (278).txt
+2015-05-08 12:19:24.159 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (279).txt
+2015-05-08 12:19:24.215 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (28).txt
+2015-05-08 12:19:24.353 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (280).txt
+2015-05-08 12:19:24.425 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (281).txt
+2015-05-08 12:19:24.481 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (282).txt
+2015-05-08 12:19:24.538 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (283).txt
+2015-05-08 12:19:24.596 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (284).txt
+2015-05-08 12:19:24.656 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (285).txt
+2015-05-08 12:19:24.720 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (286).txt
+2015-05-08 12:19:24.780 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (287).txt
+2015-05-08 12:19:24.839 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (288).txt
+2015-05-08 12:19:24.896 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (289).txt
+2015-05-08 12:19:24.956 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (29).txt
+2015-05-08 12:19:25.071 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (290).txt
+2015-05-08 12:19:25.129 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (291).txt
+2015-05-08 12:19:25.193 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (292).txt
+2015-05-08 12:19:25.251 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (293).txt
+2015-05-08 12:19:25.309 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (294).txt
+2015-05-08 12:19:25.372 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (295).txt
+2015-05-08 12:19:25.425 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (296).txt
+2015-05-08 12:19:25.483 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (297).txt
+2015-05-08 12:19:25.543 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (298).txt
+2015-05-08 12:19:25.599 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (299).txt
+2015-05-08 12:19:25.654 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (3).txt
+2015-05-08 12:19:25.859 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (30).txt
+2015-05-08 12:19:25.975 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (300).txt
+2015-05-08 12:19:26.032 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (301).txt
+2015-05-08 12:19:26.086 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (302).txt
+2015-05-08 12:19:26.141 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (303).txt
+2015-05-08 12:19:26.201 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (304).txt
+2015-05-08 12:19:26.261 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (305).txt
+2015-05-08 12:19:26.315 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (306).txt
+2015-05-08 12:19:26.373 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (307).txt
+2015-05-08 12:19:26.431 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (308).txt
+2015-05-08 12:19:26.489 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (309).txt
+2015-05-08 12:19:26.542 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (31).txt
+2015-05-08 12:19:26.665 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (310).txt
+2015-05-08 12:19:26.722 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (311).txt
+2015-05-08 12:19:26.778 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (312).txt
+2015-05-08 12:19:26.837 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (313).txt
+2015-05-08 12:19:26.893 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (314).txt
+2015-05-08 12:19:26.947 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (315).txt
+2015-05-08 12:19:27.004 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (316).txt
+2015-05-08 12:19:27.056 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (317).txt
+2015-05-08 12:19:27.107 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (318).txt
+2015-05-08 12:19:27.160 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (319).txt
+2015-05-08 12:19:27.215 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (32).txt
+2015-05-08 12:19:27.337 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (320).txt
+2015-05-08 12:19:27.398 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (321).txt
+2015-05-08 12:19:27.453 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (322).txt
+2015-05-08 12:19:27.508 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (323).txt
+2015-05-08 12:19:27.562 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (324).txt
+2015-05-08 12:19:27.618 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (325).txt
+2015-05-08 12:19:27.669 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (326).txt
+2015-05-08 12:19:27.724 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (327).txt
+2015-05-08 12:19:27.775 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (328).txt
+2015-05-08 12:19:27.830 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (329).txt
+2015-05-08 12:19:27.885 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (33).txt
+2015-05-08 12:19:28.007 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (330).txt
+2015-05-08 12:19:28.064 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (331).txt
+2015-05-08 12:19:28.117 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (332).txt
+2015-05-08 12:19:28.167 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (333).txt
+2015-05-08 12:19:28.221 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (334).txt
+2015-05-08 12:19:28.276 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (335).txt
+2015-05-08 12:19:28.329 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (336).txt
+2015-05-08 12:19:28.381 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (337).txt
+2015-05-08 12:19:28.435 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (338).txt
+2015-05-08 12:19:28.489 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (339).txt
+2015-05-08 12:19:28.542 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (34).txt
+2015-05-08 12:19:28.663 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (340).txt
+2015-05-08 12:19:28.718 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (341).txt
+2015-05-08 12:19:28.771 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (342).txt
+2015-05-08 12:19:28.828 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (343).txt
+2015-05-08 12:19:28.882 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (344).txt
+2015-05-08 12:19:28.936 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (345).txt
+2015-05-08 12:19:28.992 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (346).txt
+2015-05-08 12:19:29.051 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (347).txt
+2015-05-08 12:19:29.103 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (348).txt
+2015-05-08 12:19:29.160 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (349).txt
+2015-05-08 12:19:29.212 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (35).txt
+2015-05-08 12:19:29.330 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (350).txt
+2015-05-08 12:19:29.386 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (351).txt
+2015-05-08 12:19:29.430 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (352).txt
+2015-05-08 12:19:29.479 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (353).txt
+2015-05-08 12:19:29.530 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (354).txt
+2015-05-08 12:19:29.584 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (355).txt
+2015-05-08 12:19:29.634 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (356).txt
+2015-05-08 12:19:29.685 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (357).txt
+2015-05-08 12:19:29.737 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (358).txt
+2015-05-08 12:19:29.792 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (359).txt
+2015-05-08 12:19:29.845 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (36).txt
+2015-05-08 12:19:29.965 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (360).txt
+2015-05-08 12:19:30.015 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (361).txt
+2015-05-08 12:19:30.066 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (362).txt
+2015-05-08 12:19:30.116 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (363).txt
+2015-05-08 12:19:30.167 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (364).txt
+2015-05-08 12:19:30.210 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (365).txt
+2015-05-08 12:19:30.266 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (366).txt
+2015-05-08 12:19:30.320 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (367).txt
+2015-05-08 12:19:30.374 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (368).txt
+2015-05-08 12:19:30.426 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (369).txt
+2015-05-08 12:19:30.473 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (37).txt
+2015-05-08 12:19:30.588 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (370).txt
+2015-05-08 12:19:30.638 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (371).txt
+2015-05-08 12:19:30.696 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (372).txt
+2015-05-08 12:19:30.757 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (373).txt
+2015-05-08 12:19:31.166 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (374).txt
+2015-05-08 12:19:31.213 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (375).txt
+2015-05-08 12:19:31.260 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (376).txt
+2015-05-08 12:19:31.308 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (377).txt
+2015-05-08 12:19:31.356 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (378).txt
+2015-05-08 12:19:31.403 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (379).txt
+2015-05-08 12:19:31.453 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (38).txt
+2015-05-08 12:19:31.568 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (380).txt
+2015-05-08 12:19:31.618 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (381).txt
+2015-05-08 12:19:31.668 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (382).txt
+2015-05-08 12:19:31.718 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (383).txt
+2015-05-08 12:19:31.765 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (384).txt
+2015-05-08 12:19:31.816 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (385).txt
+2015-05-08 12:19:31.865 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (386).txt
+2015-05-08 12:19:31.917 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (387).txt
+2015-05-08 12:19:31.966 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (388).txt
+2015-05-08 12:19:32.017 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (389).txt
+2015-05-08 12:19:32.065 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (39).txt
+2015-05-08 12:19:32.177 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (390).txt
+2015-05-08 12:19:32.228 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (391).txt
+2015-05-08 12:19:32.274 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (392).txt
+2015-05-08 12:19:32.320 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (393).txt
+2015-05-08 12:19:32.369 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (394).txt
+2015-05-08 12:19:32.420 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (395).txt
+2015-05-08 12:19:32.465 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (396).txt
+2015-05-08 12:19:32.514 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (397).txt
+2015-05-08 12:19:32.563 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (398).txt
+2015-05-08 12:19:32.612 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (399).txt
+2015-05-08 12:19:32.666 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (4).txt
+2015-05-08 12:19:32.834 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (40).txt
+2015-05-08 12:19:32.951 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (400).txt
+2015-05-08 12:19:32.998 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (401).txt
+2015-05-08 12:19:33.045 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (402).txt
+2015-05-08 12:19:33.093 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (403).txt
+2015-05-08 12:19:33.141 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (404).txt
+2015-05-08 12:19:33.193 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (405).txt
+2015-05-08 12:19:33.240 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (406).txt
+2015-05-08 12:19:33.287 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (407).txt
+2015-05-08 12:19:33.335 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (408).txt
+2015-05-08 12:19:33.390 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (409).txt
+2015-05-08 12:19:33.436 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (41).txt
+2015-05-08 12:19:33.547 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (410).txt
+2015-05-08 12:19:33.597 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (411).txt
+2015-05-08 12:19:33.642 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (412).txt
+2015-05-08 12:19:33.690 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (413).txt
+2015-05-08 12:19:33.736 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (414).txt
+2015-05-08 12:19:33.786 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (415).txt
+2015-05-08 12:19:33.830 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (416).txt
+2015-05-08 12:19:33.876 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (417).txt
+2015-05-08 12:19:33.921 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (418).txt
+2015-05-08 12:19:33.970 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (419).txt
+2015-05-08 12:19:34.018 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (42).txt
+2015-05-08 12:19:34.132 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (420).txt
+2015-05-08 12:19:34.179 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (421).txt
+2015-05-08 12:19:34.225 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (422).txt
+2015-05-08 12:19:34.269 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (423).txt
+2015-05-08 12:19:34.324 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (424).txt
+2015-05-08 12:19:34.371 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (425).txt
+2015-05-08 12:19:34.417 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (426).txt
+2015-05-08 12:19:34.464 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (427).txt
+2015-05-08 12:19:34.509 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (428).txt
+2015-05-08 12:19:34.556 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (429).txt
+2015-05-08 12:19:34.602 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (43).txt
+2015-05-08 12:19:34.720 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (430).txt
+2015-05-08 12:19:34.763 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (431).txt
+2015-05-08 12:19:34.808 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (432).txt
+2015-05-08 12:19:34.853 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (433).txt
+2015-05-08 12:19:34.894 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (434).txt
+2015-05-08 12:19:34.946 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (435).txt
+2015-05-08 12:19:34.997 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (436).txt
+2015-05-08 12:19:35.040 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (437).txt
+2015-05-08 12:19:35.084 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (438).txt
+2015-05-08 12:19:35.131 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (439).txt
+2015-05-08 12:19:35.178 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (44).txt
+2015-05-08 12:19:35.291 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (440).txt
+2015-05-08 12:19:35.341 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (441).txt
+2015-05-08 12:19:35.387 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (442).txt
+2015-05-08 12:19:35.432 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (443).txt
+2015-05-08 12:19:35.478 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (444).txt
+2015-05-08 12:19:35.521 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (445).txt
+2015-05-08 12:19:35.566 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (446).txt
+2015-05-08 12:19:35.613 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (447).txt
+2015-05-08 12:19:35.654 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (448).txt
+2015-05-08 12:19:35.702 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (449).txt
+2015-05-08 12:19:35.744 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (45).txt
+2015-05-08 12:19:35.864 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (450).txt
+2015-05-08 12:19:35.911 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (451).txt
+2015-05-08 12:19:35.951 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (452).txt
+2015-05-08 12:19:35.998 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (453).txt
+2015-05-08 12:19:36.046 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (454).txt
+2015-05-08 12:19:36.094 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (455).txt
+2015-05-08 12:19:36.141 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (456).txt
+2015-05-08 12:19:36.187 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (457).txt
+2015-05-08 12:19:36.236 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (458).txt
+2015-05-08 12:19:36.279 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (459).txt
+2015-05-08 12:19:36.321 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (46).txt
+2015-05-08 12:19:36.439 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (460).txt
+2015-05-08 12:19:36.488 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (461).txt
+2015-05-08 12:19:36.532 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (462).txt
+2015-05-08 12:19:36.581 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (463).txt
+2015-05-08 12:19:36.634 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (464).txt
+2015-05-08 12:19:36.678 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (465).txt
+2015-05-08 12:19:36.725 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (466).txt
+2015-05-08 12:19:36.768 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (467).txt
+2015-05-08 12:19:36.815 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (468).txt
+2015-05-08 12:19:36.859 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (469).txt
+2015-05-08 12:19:36.899 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (47).txt
+2015-05-08 12:19:37.018 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (470).txt
+2015-05-08 12:19:37.053 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (471).txt
+2015-05-08 12:19:37.101 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (472).txt
+2015-05-08 12:19:37.145 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (473).txt
+2015-05-08 12:19:37.190 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (474).txt
+2015-05-08 12:19:37.232 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (475).txt
+2015-05-08 12:19:37.274 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (476).txt
+2015-05-08 12:19:37.320 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (477).txt
+2015-05-08 12:19:37.361 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (478).txt
+2015-05-08 12:19:37.408 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (479).txt
+2015-05-08 12:19:37.451 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (48).txt
+2015-05-08 12:19:37.552 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (480).txt
+2015-05-08 12:19:37.601 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (481).txt
+2015-05-08 12:19:37.646 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (482).txt
+2015-05-08 12:19:37.689 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (483).txt
+2015-05-08 12:19:37.732 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (484).txt
+2015-05-08 12:19:37.774 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (485).txt
+2015-05-08 12:19:37.816 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (486).txt
+2015-05-08 12:19:37.856 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (487).txt
+2015-05-08 12:19:37.899 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (488).txt
+2015-05-08 12:19:37.942 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (489).txt
+2015-05-08 12:19:37.985 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (49).txt
+2015-05-08 12:19:38.090 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (490).txt
+2015-05-08 12:19:38.136 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (491).txt
+2015-05-08 12:19:38.183 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (492).txt
+2015-05-08 12:19:38.226 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (493).txt
+2015-05-08 12:19:38.270 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (494).txt
+2015-05-08 12:19:38.308 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (495).txt
+2015-05-08 12:19:38.349 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (496).txt
+2015-05-08 12:19:38.405 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (497).txt
+2015-05-08 12:19:38.448 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (498).txt
+2015-05-08 12:19:38.490 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (499).txt
+2015-05-08 12:19:38.533 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (5).txt
+2015-05-08 12:19:38.696 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (50).txt
+2015-05-08 12:19:38.809 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (500).txt
+2015-05-08 12:19:38.850 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (51).txt
+2015-05-08 12:19:38.959 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (52).txt
+2015-05-08 12:19:39.073 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (53).txt
+2015-05-08 12:19:39.186 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (54).txt
+2015-05-08 12:19:39.289 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (55).txt
+2015-05-08 12:19:39.396 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (56).txt
+2015-05-08 12:19:39.505 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (57).txt
+2015-05-08 12:19:39.615 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (58).txt
+2015-05-08 12:19:39.723 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (59).txt
+2015-05-08 12:19:39.828 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (6).txt
+2015-05-08 12:19:39.978 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (60).txt
+2015-05-08 12:19:40.083 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (61).txt
+2015-05-08 12:19:40.181 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (62).txt
+2015-05-08 12:19:40.314 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (63).txt
+2015-05-08 12:19:40.441 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (64).txt
+2015-05-08 12:19:40.558 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (65).txt
+2015-05-08 12:19:40.661 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (66).txt
+2015-05-08 12:19:40.762 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (67).txt
+2015-05-08 12:19:40.876 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (68).txt
+2015-05-08 12:19:40.969 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (69).txt
+2015-05-08 12:19:41.071 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (7).txt
+2015-05-08 12:19:41.235 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (70).txt
+2015-05-08 12:19:41.332 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (71).txt
+2015-05-08 12:19:41.436 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (72).txt
+2015-05-08 12:19:41.534 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (73).txt
+2015-05-08 12:19:41.638 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (74).txt
+2015-05-08 12:19:41.744 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (75).txt
+2015-05-08 12:19:41.849 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (76).txt
+2015-05-08 12:19:41.947 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (77).txt
+2015-05-08 12:19:42.048 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (78).txt
+2015-05-08 12:19:42.146 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (79).txt
+2015-05-08 12:19:42.244 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (8).txt
+2015-05-08 12:19:42.396 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (80).txt
+2015-05-08 12:19:42.494 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (81).txt
+2015-05-08 12:19:42.590 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (82).txt
+2015-05-08 12:19:42.688 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (83).txt
+2015-05-08 12:19:42.784 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (84).txt
+2015-05-08 12:19:42.907 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (85).txt
+2015-05-08 12:19:43.004 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (86).txt
+2015-05-08 12:19:43.109 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (87).txt
+2015-05-08 12:19:43.201 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (88).txt
+2015-05-08 12:19:43.313 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (89).txt
+2015-05-08 12:19:43.409 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (9).txt
+2015-05-08 12:19:43.551 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (90).txt
+2015-05-08 12:19:43.644 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (91).txt
+2015-05-08 12:19:43.735 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (92).txt
+2015-05-08 12:19:43.862 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (93).txt
+2015-05-08 12:19:43.970 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (94).txt
+2015-05-08 12:19:44.075 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (95).txt
+2015-05-08 12:19:44.164 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (96).txt
+2015-05-08 12:19:44.256 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (97).txt
+2015-05-08 12:19:44.347 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (98).txt
+2015-05-08 12:19:44.438 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\性别分类实验数据集\男性用户\fenci (99).txt
+2015-05-08 12:19:44.525 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=500
+2015-05-08 12:19:44.526 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=1000
+2015-05-08 12:19:44.526 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-08 12:19:44.526 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=男性用户, docCount=500
+2015-05-08 12:19:44.526 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=女性用户, docCount=500
+2015-05-08 12:19:44.526 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=女性用户
+2015-05-08 12:19:45.652 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=男性用户
+2015-05-08 12:19:46.756 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=男性用户, termCount=20526
+2015-05-08 12:19:46.776 [main] INFO  component.train.FeatureTermVectorSelector - Label:男性用户
+2015-05-08 12:19:46.776 [main] INFO  component.train.FeatureTermVectorSelector - 全国=[word=全国, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=264462.9659601582]
+2015-05-08 12:19:46.776 [main] INFO  component.train.FeatureTermVectorSelector - 孩子=[word=孩子, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=206018.68651530007]
+2015-05-08 12:19:46.776 [main] INFO  component.train.FeatureTermVectorSelector - 外表=[word=外表, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=149924.3511535265]
+2015-05-08 12:19:46.777 [main] INFO  component.train.FeatureTermVectorSelector - 消息=[word=消息, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=146227.2028285197]
+2015-05-08 12:19:46.777 [main] INFO  component.train.FeatureTermVectorSelector - 天涯=[word=天涯, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=145761.9588935492]
+2015-05-08 12:19:46.777 [main] INFO  component.train.FeatureTermVectorSelector - 体育=[word=体育, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=145761.9588935492]
+2015-05-08 12:19:46.778 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=女性用户, termCount=20526
+2015-05-08 12:19:46.785 [main] INFO  component.train.FeatureTermVectorSelector - Label:女性用户
+2015-05-08 12:19:46.785 [main] INFO  component.train.FeatureTermVectorSelector - 经验=[word=经验, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=212843.0675646774]
+2015-05-08 12:19:46.785 [main] INFO  component.train.FeatureTermVectorSelector - 个人=[word=个人, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=104015.73397198494]
+2015-05-08 12:19:46.785 [main] INFO  component.train.FeatureTermVectorSelector - 女人=[word=女人, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=77710.8110468474]
+2015-05-08 12:19:46.786 [main] INFO  component.train.FeatureTermVectorSelector - 校园=[word=校园, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=61130.30404420758]
+2015-05-08 12:19:46.786 [main] INFO  component.train.FeatureTermVectorSelector - 啤酒=[word=啤酒, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=61130.30404420758]
+2015-05-08 12:19:46.786 [main] INFO  component.train.FeatureTermVectorSelector - 借口=[word=借口, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=35725.895624245975]
+2015-05-08 12:19:47.948 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-08 12:19:47.948 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-05-08 12:29:47.887 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-08 12:29:47.890 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-08 12:29:47.890 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\语料
+2015-05-08 12:29:47.891 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-08 12:29:47.891 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-08 12:29:47.892 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-08 12:29:47.906 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-08 12:29:47.909 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-08 12:29:47.909 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-08 12:29:47.910 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-08 12:29:47.914 [main] INFO  processor.component.BasicInformationCollector - Add label: label=游戏
+2015-05-08 12:29:47.915 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 游戏, docCount=2
+2015-05-08 12:29:47.915 [main] INFO  processor.component.BasicInformationCollector - Add label: label=篮球
+2015-05-08 12:29:47.915 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 篮球, docCount=2
+2015-05-08 12:29:47.916 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 4
+2015-05-08 12:29:47.916 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=游戏
+2015-05-08 12:29:47.916 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-05-08 12:29:47.916 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\英雄联盟.txt
+2015-05-08 12:29:47.918 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\魔兽世界.txt
+2015-05-08 12:29:47.919 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-05-08 12:29:47.919 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=篮球
+2015-05-08 12:29:47.920 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-05-08 12:29:47.920 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\CBA.txt
+2015-05-08 12:29:47.920 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\NBA.txt
+2015-05-08 12:29:47.921 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-05-08 12:29:47.921 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=4
+2015-05-08 12:29:47.921 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-08 12:29:47.921 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=游戏, docCount=2
+2015-05-08 12:29:47.921 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=篮球, docCount=2
+2015-05-08 12:29:47.922 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=游戏
+2015-05-08 12:29:47.922 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=篮球
+2015-05-08 12:29:47.922 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=篮球, termCount=14
+2015-05-08 12:29:47.923 [main] INFO  component.train.FeatureTermVectorSelector - Label:篮球
+2015-05-08 12:29:47.923 [main] INFO  component.train.FeatureTermVectorSelector - 篮球=[word=篮球, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=4.0]
+2015-05-08 12:29:47.924 [main] INFO  component.train.FeatureTermVectorSelector - 对手=[word=对手, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.924 [main] INFO  component.train.FeatureTermVectorSelector - 丛林=[word=丛林, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.924 [main] INFO  component.train.FeatureTermVectorSelector - 恶魔=[word=恶魔, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.924 [main] INFO  component.train.FeatureTermVectorSelector - 走狗=[word=走狗, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.925 [main] INFO  component.train.FeatureTermVectorSelector - 联盟=[word=联盟, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.925 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=游戏, termCount=14
+2015-05-08 12:29:47.925 [main] INFO  component.train.FeatureTermVectorSelector - Label:游戏
+2015-05-08 12:29:47.925 [main] INFO  component.train.FeatureTermVectorSelector - 篮球=[word=篮球, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=4.0]
+2015-05-08 12:29:47.925 [main] INFO  component.train.FeatureTermVectorSelector - 对手=[word=对手, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.925 [main] INFO  component.train.FeatureTermVectorSelector - 丛林=[word=丛林, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.925 [main] INFO  component.train.FeatureTermVectorSelector - 恶魔=[word=恶魔, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.925 [main] INFO  component.train.FeatureTermVectorSelector - 走狗=[word=走狗, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.926 [main] INFO  component.train.FeatureTermVectorSelector - 联盟=[word=联盟, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=1.3333333333333333]
+2015-05-08 12:29:47.934 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-08 12:29:47.934 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-05-08 13:06:28.261 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-08 13:06:28.263 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-08 13:06:28.264 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\语料
+2015-05-08 13:06:28.264 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-08 13:06:28.264 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-08 13:06:28.266 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-08 13:06:28.280 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-08 13:06:28.283 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@117a0daa
+2015-05-08 13:06:28.284 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@4be03c55
+2015-05-08 13:06:28.284 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@43c32b82
+2015-05-08 13:06:28.288 [main] INFO  processor.component.BasicInformationCollector - Add label: label=游戏
+2015-05-08 13:06:28.289 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 游戏, docCount=1
+2015-05-08 13:06:28.289 [main] INFO  processor.component.BasicInformationCollector - Add label: label=篮球
+2015-05-08 13:06:28.290 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 篮球, docCount=1
+2015-05-08 13:06:28.290 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 2
+2015-05-08 13:06:28.290 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=游戏
+2015-05-08 13:06:28.290 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 1 files.
+2015-05-08 13:06:28.290 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\暴雪回应《魔兽》用户下降：拯救或摧毁魔兽都很难.txt
+2015-05-08 13:06:28.328 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=1
+2015-05-08 13:06:28.328 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=篮球
+2015-05-08 13:06:28.329 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 1 files.
+2015-05-08 13:06:28.329 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登：努力是我们改变比赛的原因.txt
+2015-05-08 13:06:28.336 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=1
+2015-05-08 13:06:28.336 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=2
+2015-05-08 13:06:28.337 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-08 13:06:28.337 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=游戏, docCount=1
+2015-05-08 13:06:28.337 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=篮球, docCount=1
+2015-05-08 13:06:28.337 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=游戏
+2015-05-08 13:06:28.338 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=篮球
+2015-05-08 13:06:28.338 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=篮球, termCount=20
+2015-05-08 13:06:28.340 [main] INFO  component.train.FeatureTermVectorSelector - Label:篮球
+2015-05-08 13:06:28.340 [main] INFO  component.train.FeatureTermVectorSelector - 比分=[word=比分, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.340 [main] INFO  component.train.FeatureTermVectorSelector - 漏洞=[word=漏洞, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.341 [main] INFO  component.train.FeatureTermVectorSelector - 球队=[word=球队, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.341 [main] INFO  component.train.FeatureTermVectorSelector - 火箭=[word=火箭, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.341 [main] INFO  component.train.FeatureTermVectorSelector - 方式=[word=方式, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.341 [main] INFO  component.train.FeatureTermVectorSelector - 方面=[word=方面, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.341 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=游戏, termCount=20
+2015-05-08 13:06:28.341 [main] INFO  component.train.FeatureTermVectorSelector - Label:游戏
+2015-05-08 13:06:28.342 [main] INFO  component.train.FeatureTermVectorSelector - 比分=[word=比分, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.342 [main] INFO  component.train.FeatureTermVectorSelector - 漏洞=[word=漏洞, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.342 [main] INFO  component.train.FeatureTermVectorSelector - 球队=[word=球队, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.342 [main] INFO  component.train.FeatureTermVectorSelector - 火箭=[word=火箭, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.342 [main] INFO  component.train.FeatureTermVectorSelector - 方式=[word=方式, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.343 [main] INFO  component.train.FeatureTermVectorSelector - 方面=[word=方面, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=2.0]
+2015-05-08 13:06:28.351 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-08 13:06:28.361 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-05-08 13:12:21.771 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-08 13:12:21.773 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-08 13:12:21.773 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\语料
+2015-05-08 13:12:21.774 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-08 13:12:21.774 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-08 13:12:21.775 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-08 13:12:21.790 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-08 13:12:21.793 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-08 13:12:21.794 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-08 13:12:21.794 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-08 13:12:21.798 [main] INFO  processor.component.BasicInformationCollector - Add label: label=游戏
+2015-05-08 13:12:21.799 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 游戏, docCount=1
+2015-05-08 13:12:21.799 [main] INFO  processor.component.BasicInformationCollector - Add label: label=篮球
+2015-05-08 13:12:21.800 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 篮球, docCount=2
+2015-05-08 13:12:21.800 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 3
+2015-05-08 13:12:21.800 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=游戏
+2015-05-08 13:12:21.800 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 1 files.
+2015-05-08 13:12:21.800 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\6.2版本前瞻：时空漫游.txt
+2015-05-08 13:12:21.824 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=1
+2015-05-08 13:12:21.824 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=篮球
+2015-05-08 13:12:21.824 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-05-08 13:12:21.824 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登母亲：巴恩斯已亲自跟我道歉.txt
+2015-05-08 13:12:21.837 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登：努力是我们改变比赛的原因.txt
+2015-05-08 13:12:21.843 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-05-08 13:12:21.843 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=3
+2015-05-08 13:12:21.843 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-08 13:12:21.843 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=游戏, docCount=1
+2015-05-08 13:12:21.843 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=篮球, docCount=2
+2015-05-08 13:12:21.843 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=游戏
+2015-05-08 13:12:21.844 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=篮球
+2015-05-08 13:12:21.844 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=篮球, termCount=18
+2015-05-08 13:12:21.846 [main] INFO  component.train.FeatureTermVectorSelector - Label:篮球
+2015-05-08 13:12:21.846 [main] INFO  component.train.FeatureTermVectorSelector - �3=[word=�3, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:12:21.846 [main] INFO  component.train.FeatureTermVectorSelector - 漏洞=[word=漏洞, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.846 [main] INFO  component.train.FeatureTermVectorSelector - 球队=[word=球队, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.846 [main] INFO  component.train.FeatureTermVectorSelector - 火箭=[word=火箭, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.847 [main] INFO  component.train.FeatureTermVectorSelector - 方式=[word=方式, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.847 [main] INFO  component.train.FeatureTermVectorSelector - 方面=[word=方面, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.847 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=游戏, termCount=18
+2015-05-08 13:12:21.847 [main] INFO  component.train.FeatureTermVectorSelector - Label:游戏
+2015-05-08 13:12:21.847 [main] INFO  component.train.FeatureTermVectorSelector - �3=[word=�3, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:12:21.847 [main] INFO  component.train.FeatureTermVectorSelector - 漏洞=[word=漏洞, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.847 [main] INFO  component.train.FeatureTermVectorSelector - 球队=[word=球队, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.847 [main] INFO  component.train.FeatureTermVectorSelector - 火箭=[word=火箭, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.848 [main] INFO  component.train.FeatureTermVectorSelector - 方式=[word=方式, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.848 [main] INFO  component.train.FeatureTermVectorSelector - 方面=[word=方面, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:12:21.857 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-08 13:12:21.857 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-05-08 13:13:13.138 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-08 13:13:13.140 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-08 13:13:13.140 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\语料
+2015-05-08 13:13:13.140 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-08 13:13:13.141 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-08 13:13:13.142 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-08 13:13:13.157 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-08 13:13:13.160 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-08 13:13:13.160 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-08 13:13:13.161 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-08 13:13:13.165 [main] INFO  processor.component.BasicInformationCollector - Add label: label=游戏
+2015-05-08 13:13:13.166 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 游戏, docCount=1
+2015-05-08 13:13:13.166 [main] INFO  processor.component.BasicInformationCollector - Add label: label=篮球
+2015-05-08 13:13:13.166 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 篮球, docCount=2
+2015-05-08 13:13:13.166 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 3
+2015-05-08 13:13:13.167 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=游戏
+2015-05-08 13:13:13.167 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 1 files.
+2015-05-08 13:13:13.167 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\6.2版本前瞻：时空漫游.txt
+2015-05-08 13:13:13.191 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=1
+2015-05-08 13:13:13.191 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=篮球
+2015-05-08 13:13:13.191 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-05-08 13:13:13.191 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登母亲：巴恩斯已亲自跟我道歉.txt
+2015-05-08 13:13:13.204 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登：努力是我们改变比赛的原因.txt
+2015-05-08 13:13:13.210 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-05-08 13:13:13.210 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=3
+2015-05-08 13:13:13.210 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-08 13:13:13.210 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=游戏, docCount=1
+2015-05-08 13:13:13.210 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=篮球, docCount=2
+2015-05-08 13:13:13.210 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=游戏
+2015-05-08 13:13:13.211 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=篮球
+2015-05-08 13:13:13.211 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=篮球, termCount=18
+2015-05-08 13:13:13.212 [main] INFO  component.train.FeatureTermVectorSelector - Label:篮球
+2015-05-08 13:13:13.213 [main] INFO  component.train.FeatureTermVectorSelector - �3=[word=�3, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:13:13.213 [main] INFO  component.train.FeatureTermVectorSelector - 漏洞=[word=漏洞, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.213 [main] INFO  component.train.FeatureTermVectorSelector - 球队=[word=球队, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.213 [main] INFO  component.train.FeatureTermVectorSelector - 火箭=[word=火箭, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.214 [main] INFO  component.train.FeatureTermVectorSelector - 方式=[word=方式, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.214 [main] INFO  component.train.FeatureTermVectorSelector - 方面=[word=方面, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.214 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=游戏, termCount=18
+2015-05-08 13:13:13.214 [main] INFO  component.train.FeatureTermVectorSelector - Label:游戏
+2015-05-08 13:13:13.214 [main] INFO  component.train.FeatureTermVectorSelector - �3=[word=�3, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:13:13.214 [main] INFO  component.train.FeatureTermVectorSelector - 漏洞=[word=漏洞, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.214 [main] INFO  component.train.FeatureTermVectorSelector - 球队=[word=球队, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.214 [main] INFO  component.train.FeatureTermVectorSelector - 火箭=[word=火箭, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.215 [main] INFO  component.train.FeatureTermVectorSelector - 方式=[word=方式, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.215 [main] INFO  component.train.FeatureTermVectorSelector - 方面=[word=方面, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=0.75]
+2015-05-08 13:13:13.220 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-08 13:13:13.220 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-05-08 13:13:30.267 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-08 13:13:30.269 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-08 13:13:30.269 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\语料
+2015-05-08 13:13:30.269 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-08 13:13:30.270 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-08 13:13:30.271 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-08 13:13:30.287 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-08 13:13:30.290 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-08 13:13:30.290 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-08 13:13:30.291 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-08 13:13:30.295 [main] INFO  processor.component.BasicInformationCollector - Add label: label=游戏
+2015-05-08 13:13:30.296 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 游戏, docCount=0
+2015-05-08 13:13:30.296 [main] INFO  processor.component.BasicInformationCollector - Add label: label=篮球
+2015-05-08 13:13:30.297 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 篮球, docCount=2
+2015-05-08 13:13:30.297 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 2
+2015-05-08 13:13:30.297 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=游戏
+2015-05-08 13:13:30.297 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 0 files.
+2015-05-08 13:13:30.298 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=0
+2015-05-08 13:13:30.298 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=篮球
+2015-05-08 13:13:30.298 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-05-08 13:13:30.298 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登母亲：巴恩斯已亲自跟我道歉.txt
+2015-05-08 13:13:30.314 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登：努力是我们改变比赛的原因.txt
+2015-05-08 13:13:30.320 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-05-08 13:13:30.320 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=2
+2015-05-08 13:13:30.320 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=1
+2015-05-08 13:13:30.320 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=篮球, docCount=2
+2015-05-08 13:13:30.320 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=游戏
+2015-05-08 13:13:30.321 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=篮球
+2015-05-08 13:13:30.321 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=篮球, termCount=17
+2015-05-08 13:13:30.322 [main] INFO  component.train.FeatureTermVectorSelector - Label:篮球
+2015-05-08 13:13:30.322 [main] INFO  component.train.FeatureTermVectorSelector - 比分=[word=比分, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.322 [main] INFO  component.train.FeatureTermVectorSelector - 漏洞=[word=漏洞, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.323 [main] INFO  component.train.FeatureTermVectorSelector - 球队=[word=球队, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.323 [main] INFO  component.train.FeatureTermVectorSelector - 火箭=[word=火箭, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.323 [main] INFO  component.train.FeatureTermVectorSelector - 方式=[word=方式, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.323 [main] INFO  component.train.FeatureTermVectorSelector - 方面=[word=方面, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.323 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=游戏, termCount=17
+2015-05-08 13:13:30.323 [main] INFO  component.train.FeatureTermVectorSelector - Label:游戏
+2015-05-08 13:13:30.323 [main] INFO  component.train.FeatureTermVectorSelector - 比分=[word=比分, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.323 [main] INFO  component.train.FeatureTermVectorSelector - 漏洞=[word=漏洞, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.324 [main] INFO  component.train.FeatureTermVectorSelector - 球队=[word=球队, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.324 [main] INFO  component.train.FeatureTermVectorSelector - 火箭=[word=火箭, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.324 [main] INFO  component.train.FeatureTermVectorSelector - 方式=[word=方式, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.324 [main] INFO  component.train.FeatureTermVectorSelector - 方面=[word=方面, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=NaN]
+2015-05-08 13:13:30.332 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-08 13:13:30.333 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt
+2015-05-08 13:15:57.451 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-08 13:15:57.453 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-08 13:17:17.572 [main] INFO  processor.config.Configuration - Load properties file: prop=config-train.properties
+2015-05-08 13:17:17.574 [main] INFO  processor.common.FDMetadata - Train dataset file extension: name=.txt
+2015-05-08 13:17:17.574 [main] INFO  processor.common.FDMetadata - Vector input root directory 训练集语料路径: inputDir=A:\学习\【4】大四\毕设\语料
+2015-05-08 13:17:17.575 [main] INFO  processor.common.FDMetadata - Vector output directory: outputDir=C:\Users\Alex\Desktop
+2015-05-08 13:17:17.575 [main] INFO  processor.common.FDMetadata - Vector output file: outputFile=train.txt
+2015-05-08 13:17:17.576 [main] INFO  processor.component.DocumentWordsCollector - Analyzer class name: class=org.shirdrn.document.processor.analyzer.IctclasAnalyzer
+2015-05-08 13:17:17.591 [main] INFO  processor.component.DocumentWordsCollector - Load filter classes: classNames=org.shirdrn.document.processor.filter.LexicalCategoryFilter,org.shirdrn.document.processor.filter.SingleWordTermFilter,org.shirdrn.document.processor.filter.StopwordsTermFilter
+2015-05-08 13:17:17.594 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.LexicalCategoryFilter@64171cdc
+2015-05-08 13:17:17.594 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.SingleWordTermFilter@6e99175d
+2015-05-08 13:17:17.595 [main] INFO  processor.component.DocumentWordsCollector - Added filter instance: filter=org.shirdrn.document.processor.filter.StopwordsTermFilter@425d868f
+2015-05-08 13:17:17.599 [main] INFO  processor.component.BasicInformationCollector - Add label: label=游戏
+2015-05-08 13:17:17.600 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 游戏, docCount=1
+2015-05-08 13:17:17.600 [main] INFO  processor.component.BasicInformationCollector - Add label: label=篮球
+2015-05-08 13:17:17.600 [main] INFO  processor.component.BasicInformationCollector - Put document count: label= 篮球, docCount=2
+2015-05-08 13:17:17.600 [main] INFO  processor.component.BasicInformationCollector - Total documents: totalCount= 3
+2015-05-08 13:17:17.600 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=游戏
+2015-05-08 13:17:17.601 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 1 files.
+2015-05-08 13:17:17.601 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\游戏\关于F2P游戏三大显性特征的结构解析.txt
+2015-05-08 13:17:17.809 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=1
+2015-05-08 13:17:17.809 [main] INFO  processor.component.DocumentWordsCollector - Collect words for: label=篮球
+2015-05-08 13:17:17.810 [main] INFO  processor.component.DocumentWordsCollector - Prepare to analyze 2 files.
+2015-05-08 13:17:17.810 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登母亲：巴恩斯已亲自跟我道歉.txt
+2015-05-08 13:17:17.813 [main] INFO  processor.analyzer.IctclasAnalyzer - Process document: file=A:\学习\【4】大四\毕设\语料\篮球\哈登：努力是我们改变比赛的原因.txt
+2015-05-08 13:17:17.816 [main] INFO  processor.component.DocumentWordsCollector - Analyzed files: count=2
+2015-05-08 13:17:17.816 [main] INFO  processor.component.DocumentWordsCollector - STAT: totalDocCount=3
+2015-05-08 13:17:17.816 [main] INFO  processor.component.DocumentWordsCollector - STAT: labelCount=2
+2015-05-08 13:17:17.816 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=游戏, docCount=1
+2015-05-08 13:17:17.816 [main] INFO  processor.component.DocumentWordsCollector - STAT: label=篮球, docCount=2
+2015-05-08 13:17:17.816 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=游戏
+2015-05-08 13:17:17.817 [main] INFO  component.train.FeatureTermVectorSelector - Compute CHI for: label=篮球
+2015-05-08 13:17:17.818 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=篮球, termCount=33
+2015-05-08 13:17:17.819 [main] INFO  component.train.FeatureTermVectorSelector - Label:篮球
+2015-05-08 13:17:17.819 [main] INFO  component.train.FeatureTermVectorSelector - 成分=[word=成分, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.820 [main] INFO  component.train.FeatureTermVectorSelector - 拷纱=[word=拷纱, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.820 [main] INFO  component.train.FeatureTermVectorSelector - 水准=[word=水准, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.820 [main] INFO  component.train.FeatureTermVectorSelector - �(=[word=�(, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.820 [main] INFO  component.train.FeatureTermVectorSelector - 同时=[word=同时, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.820 [main] INFO  component.train.FeatureTermVectorSelector - 节点=[word=节点, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.820 [main] INFO  component.train.FeatureTermVectorSelector - Sort CHI terms for: label=游戏, termCount=33
+2015-05-08 13:17:17.820 [main] INFO  component.train.FeatureTermVectorSelector - Label:游戏
+2015-05-08 13:17:17.821 [main] INFO  component.train.FeatureTermVectorSelector - 成分=[word=成分, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.821 [main] INFO  component.train.FeatureTermVectorSelector - 拷纱=[word=拷纱, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.821 [main] INFO  component.train.FeatureTermVectorSelector - 水准=[word=水准, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.821 [main] INFO  component.train.FeatureTermVectorSelector - �(=[word=�(, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.821 [main] INFO  component.train.FeatureTermVectorSelector - 同时=[word=同时, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.821 [main] INFO  component.train.FeatureTermVectorSelector - 节点=[word=节点, freq=0, tf=0.0, idf=0.0, tf-idf=0.0, chi=3.0]
+2015-05-08 13:17:17.831 [main] INFO  component.test.OutputtingQuantizedTestData - Finished: outputVectorFile=train.txt
+2015-05-08 13:17:17.831 [main] INFO  component.train.OutputtingQuantizedTrainData - Output label mapping file: labelFile=C:\Users\Alex\Desktop\labels.txt

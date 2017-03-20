@@ -15,6 +15,7 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttributeImpl;
+import org.shirdrn.document.processor.common.Context;
 import org.shirdrn.document.processor.common.DocumentAnalyzer;
 import org.shirdrn.document.processor.common.Term;
 import org.shirdrn.document.processor.config.Configuration;
@@ -32,7 +33,7 @@ public class MMSeg4jAnalyzer extends AbstractDocumentAnalyzer implements Documen
 	}
 	
 	@Override
-	public Map<String, Term> analyze(File file) {
+	public Map<String, Term> analyze(File file,String label,Context context) {
 		String doc = file.getAbsolutePath();
 		LOG.info("Process document: file=" + doc);
 		Map<String, Term> terms = new HashMap<String, Term>(0);
